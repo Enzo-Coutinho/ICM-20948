@@ -1,5 +1,5 @@
-#ifndef registers_h
-#define registers_h
+#ifndef registers_icmp20948_h
+#define registers_icmp20948_h
 
 // Use this function to desloc bits
 #define BIT(x) (1 << x)
