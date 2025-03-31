@@ -1,8 +1,10 @@
 #ifndef registers_icmp20948_h
 #define registers_icmp20948_h
 
-// Use this function to desloc bits
-#define BIT(x) (1 << x)
+// Use this function to desloc BIT_POSEs
+#define BIT_POSE(x) (1UL << x)
+
+#define ICM_20948_DEVICE_ADDRESS 0x68
 
 #define __REG_BANK_SEL 0x7F
 #define __USER_BANK_0_ADDR 0
@@ -83,27 +85,24 @@ namespace __USER_BANK_0
 
     enum USER_CTRL
     {
-        __RESET_VALUE = 0x00,
-        __I2C_MST_RST = BIT(1),
-        __SRAM_RST = BIT(2),
-        __DMP_RST = BIT(3),
-        __I2C_IF_DIS = BIT(4),
-        __I2C_MST_EN = BIT(5),
-        __FIFO_EN = BIT(6),
-        __DMP_EN = BIT(7),
+        __I2C_MST_RST = BIT_POSE(1),
+        __SRAM_RST = BIT_POSE(2),
+        __DMP_RST = BIT_POSE(3),
+        __I2C_IF_DIS = BIT_POSE(4),
+        __I2C_MST_EN = BIT_POSE(5),
+        __FIFO_EN = BIT_POSE(6),
+        __DMP_EN = BIT_POSE(7),
     };
 
     enum LP_CONFIG
     {
-        __RESET_VALUE = 0x40,
-        __GYRO_CICLE = BIT(4),
-        __ACCEL_CYCLE = BIT(5),
-        __I2C_MST_CYCLE = BIT(6),
+        __GYRO_CICLE = BIT_POSE(4),
+        __ACCEL_CYCLE = BIT_POSE(5),
+        __I2C_MST_CYCLE = BIT_POSE(6),
     };
 
     enum PWR_MGMT_1
     {
-        __RESET_VALUE = 0x41,
         __CLKSEL_INTERNAL_OSCI = 0x00,
         __CLKSEL_CLK_1 = 0x01,
         __CLKSEL_CLK_2 = 0x02,
@@ -112,15 +111,14 @@ namespace __USER_BANK_0
         __CLKSEL_CLK_5 = 0x05,
         __CLKSEL_INTERNAL_OSCI_1 = 0x06,
         __CLKSEL_STOP_CLK = 0x07,
-        __TEMP_DIS = BIT(3),
-        __LP_EN = BIT(5),
-        __SLEEP = BIT(6),
-        __DEVICE_RESET = BIT(7)
+        __TEMP_DIS = BIT_POSE(3),
+        __LP_EN = BIT_POSE(5),
+        __SLEEP = BIT_POSE(6),
+        __DEVICE_RESET = BIT_POSE(7)
     };
 
     enum PWR_MGMT_2
     {
-        __RESET_VALUE = 0x00,
         __DISABLE_GYRO_ALL_AXES = 0x07,
         __ENABLE_GYRO_ALL_AXES = 0x00,
         __DISABLE_ACCEL_ALL_AXES = 0x38,
@@ -129,123 +127,111 @@ namespace __USER_BANK_0
 
     enum INT_PIN_CFG
     {
-        __RESET_VALUE = 0x00,
-        __BYPASS_EN = BIT(1),
-        __FSYNC_INT_MODE_EN = BIT(2),
-        __ACTL_FSYNC = BIT(3),
-        __INT_ANYRD_2CLEAR = BIT(4),
-        __INT1_LATCH_EN = BIT(5),
-        __INT1_OPEN = BIT(6),
-        __INT1_ACTL = BIT(7),
+        __BYPASS_EN = BIT_POSE(1),
+        __FSYNC_INT_MODE_EN = BIT_POSE(2),
+        __ACTL_FSYNC = BIT_POSE(3),
+        __INT_ANYRD_2CLEAR = BIT_POSE(4),
+        __INT1_LATCH_EN = BIT_POSE(5),
+        __INT1_OPEN = BIT_POSE(6),
+        __INT1_ACTL = BIT_POSE(7),
     };
 
     enum INT_ENABLE
     {
-        __I2C_MST_INT_EN = BIT(0),
-        __DMP_INT1_EN = BIT(1),
-        __PLL_RDY_EN = BIT(2),
-        __WOM_INT_EN = BIT(3),
-        __REG_WOF_EN = BIT(7),
+        __I2C_MST_INT_EN = BIT_POSE(0),
+        __DMP_INT1_EN = BIT_POSE(1),
+        __PLL_RDY_EN = BIT_POSE(2),
+        __WOM_INT_EN = BIT_POSE(3),
+        __REG_WOF_EN = BIT_POSE(7),
     };
 
     enum INT_ENABLE_1
     {
-        __RAW_DATA_0_RDY_EN = BIT(0),
+        __RAW_DATA_0_RDY_EN = BIT_POSE(0),
     };
 
     enum INT_ENABLE_2
     {
         __FIFO_OVERFLOW_DIS = 0x00,
-        __FIFO_OVERFLOW_EN = BIT(0),
+        __FIFO_OVERFLOW_EN = BIT_POSE(0),
     };
 
     enum INT_ENABLE_3
     {
         __FIFO_WM_DIS = 0x00,
-        __FIFO_WM_EN = BIT(0),
+        __FIFO_WM_EN = BIT_POSE(0),
     };
 
     enum I2C_MST_STATUS
     {
-        __RESET_VALUE = 0x00,
-        __I2C_SLV0_NACK = BIT(0),
-        __I2C_SLV1_NACK = BIT(1),
-        __I2C_SLV2_NACK = BIT(2),
-        __I2C_SLV3_NACK = BIT(3),
-        __I2C_SLV4_NACK = BIT(4),
-        __I2C_LOST_ARB = BIT(5),
-        __I2C_SLV4_DONE = BIT(6),
-        __PASS_THROUGH = BIT(7),
+        __I2C_SLV0_NACK = BIT_POSE(0),
+        __I2C_SLV1_NACK = BIT_POSE(1),
+        __I2C_SLV2_NACK = BIT_POSE(2),
+        __I2C_SLV3_NACK = BIT_POSE(3),
+        __I2C_SLV4_NACK = BIT_POSE(4),
+        __I2C_LOST_ARB = BIT_POSE(5),
+        __I2C_SLV4_DONE = BIT_POSE(6),
+        __PASS_THROUGH = BIT_POSE(7),
     };
 
     enum INT_STATUS
     {
-        __RESET_VALUE = 0x00,
-        __I2C_MST_INT = BIT(0),
-        __DMP_INT1 = BIT(1),
-        __PLL_RDY_INT = BIT(2),
-        __WOM_INT = BIT(3),
+        __I2C_MST_INT = BIT_POSE(0),
+        __DMP_INT1 = BIT_POSE(1),
+        __PLL_RDY_INT = BIT_POSE(2),
+        __WOM_INT = BIT_POSE(3),
     };
 
     enum INT_STATUS_1
     {
-        __RESET_VALUE = 0x00,
-        __RAW_DATA_0_RDY_INT = BIT(0),
+        __RAW_DATA_0_RDY_INT = BIT_POSE(0),
     };
 
     enum INT_STATUS_2
     {
-        __RESET_VALUE = 0x00,
-        __FIFO_OVERFLOW_INT = BIT(0),
+        __FIFO_OVERFLOW_INT = BIT_POSE(0),
     };
 
     enum INT_STATUS_3
     {
-        __RESET_VALUE = 0x00,
-        __FIFO_WM_INT = BIT(0),
+        __FIFO_WM_INT = BIT_POSE(0),
     };
 
     enum FIFO_EN_1
     {
-        __RESET_VALUE = 0x00,
-        __SLV_0_FIFO_EN = BIT(0),
-        __SLV_1_FIFO_EN = BIT(1),
-        __SLV_2_FIFO_EN = BIT(2),
-        __SLV_3_FIFO_EN = BIT(3),
+        __SLV_0_FIFO_EN = BIT_POSE(0),
+        __SLV_1_FIFO_EN = BIT_POSE(1),
+        __SLV_2_FIFO_EN = BIT_POSE(2),
+        __SLV_3_FIFO_EN = BIT_POSE(3),
     };
 
     enum FIFO_EN_2
     {
-        __RESET_VALUE = 0x00,
-        __TEMP_FIFO_EN = BIT(0),
-        __GYRO_X_FIFO_EN = BIT(1),
-        __GYRO_Y_FIFO_EN = BIT(2),
-        __GYRO_Z_FIFO_EN = BIT(3),
-        __ACCEL_FIFO_EN = BIT(4)
+        __TEMP_FIFO_EN = BIT_POSE(0),
+        __GYRO_X_FIFO_EN = BIT_POSE(1),
+        __GYRO_Y_FIFO_EN = BIT_POSE(2),
+        __GYRO_Z_FIFO_EN = BIT_POSE(3),
+        __ACCEL_FIFO_EN = BIT_POSE(4)
     };
 
     enum FIFO_RST
     {
-        __RESET_VALUE = 0x00,
-        __FIFO_RESET = BIT(0), 
+        __FIFO_RESET = BIT_POSE(0), 
     };
 
     enum FIFO_MODE
     {
-        __RESET_VALUE = 0x00,
         __STREAM = 0x00,
         __SNAPSHOT = 0x01,
     };
 
     enum FIFO_R_W
     {
-        __RESET_VALUE = 0x00,
         // create all write bytes late
     };
 
     enum FIFO_CFG
     {
-        __RESET_VALUE = 0x00,
         __FIFO_CFG_INTERRUPT = 0x01,
     };
 }
@@ -297,7 +283,6 @@ namespace __USER_BANK_2
 
     enum GYRO_CONFIG_1
     {
-        __RESET_VALUE = 0x01,
         __GYRO_FCHOICE_DISABLE = 0x00,
         __GYRO_FCHOICE_ENABLE = 0x01,
         __GYRO_FS_SEL_250DPS = 0x00,
@@ -316,7 +301,6 @@ namespace __USER_BANK_2
 
     enum GYRO_CONFIG_2
     {
-        __RESET_VALUE = 0x00,
         __GYRO_AVGCFG_1X = 0x00,
         __GYRO_AVGCFG_2X = 0x01,
         __GYRO_AVGCFG_4X = 0x02,
@@ -329,7 +313,6 @@ namespace __USER_BANK_2
 
     enum ACCEL_INTEL_CTRL
     {
-        __RESET_VALUE = 0x00,
         __ACCEL_INTEL_MODE_INT_INITA_SAMPLE_COMPARE = 0x00,
         __ACCEL_INTEL_MODE_INT_PREVIOUS_SAMPLE = 0x01,
         __ACCEL_INTEL_EN = 0x02
@@ -337,7 +320,6 @@ namespace __USER_BANK_2
 
     enum ACCEL_CONFIG
     {
-        __RESET_VALUE = 0x01,
         __ACCEL_FCHOICE_BYPASS_DLPF = 0x00,
         __ACCEL_FCHOICE_EN_ACCEL_DLPF = 0x01,
         __ACCEL_FS_SEL_2G = 0x00,
@@ -348,19 +330,17 @@ namespace __USER_BANK_2
 
     enum ACCEL_CONFIG_2
     {
-        __RESET_VALUE = 0x00,
         __DEC3_CFG__AVG_1 = 0x00,
         __DEC3_CFG_AVG_8 = 0x01,
         __DEC3_CFG_AVG_16 = 0x02,
         __DEC3_CFG_AVG_32 = 0x03,
-        __AZ_ST_EN_REG = BIT(2),
-        __AY_ST_EN_REG = BIT(3),
-        __AX_ST_EN_REG = BIT(4),
+        __AZ_ST_EN_REG = BIT_POSE(2),
+        __AY_ST_EN_REG = BIT_POSE(3),
+        __AX_ST_EN_REG = BIT_POSE(4),
     };
 
     enum TEMP_CONFIG
     {
-        __RESET_VALUE = 0x00,
         __TEMP_DLPFCFG_0 = 0x00,
         __TEMP_DLPFCFG_1 = 0x01,
         __TEMP_DLPFCFG_2 = 0x02,
@@ -373,8 +353,7 @@ namespace __USER_BANK_2
 
     enum MOD_CTRL_USR
     {
-        __RESET_VALUE = 0x03,
-        __REG_LP_DMP_EN = BIT(0),
+        __REG_LP_DMP_EN = BIT_POSE(0),
     };
 }
 
@@ -406,6 +385,38 @@ namespace __USER_BANK_3
         __I2C_SLV4_CTRL = 0x15,
         __I2C_SLV4_DO = 0x16,
         __I2C_SLV4_DI = 0x17,
+    };
+
+    typedef struct
+    {
+        uint8_t I2C_MST_CLK : 4;
+        uint8_t I2C_MST_P_NSR : 1;
+        uint8_t : 2;
+        uint8_t MULT_MST_EN : 1;
+    } _i2c_mst_ctrl;
+
+    enum I2C_MST_CTRL
+    {
+        //
+        //
+        I2C_MST_CLK_0 = 0x00,
+        I2C_MST_CLK_1 = 0x01,
+        I2C_MST_CLK_2 = 0x02,
+        I2C_MST_CLK_3 = 0x03,
+        I2C_MST_CLK_4 = 0x04,
+        I2C_MST_CLK_5 = 0x05,
+        I2C_MST_CLK_6 = 0x06,
+        I2C_MST_CLK_7 = 0x07,
+        I2C_MST_CLK_8 = 0x08,
+        I2C_MST_CLK_9 = 0x09,
+        I2C_MST_CLK_10 = 0x0A,
+        I2C_MST_CLK_11 = 0x0B,
+        I2C_MST_CLK_12 = 0x0C,
+        I2C_MST_CLK_13 = 0x0D,
+        I2C_MST_CLK_14 = 0x0E,
+        I2C_MST_CLK_15 = 0x0F,
+        I2C_MST_P_NSR = 0x10,
+        MULT_MST_EN = 0x80
     };
 }
 

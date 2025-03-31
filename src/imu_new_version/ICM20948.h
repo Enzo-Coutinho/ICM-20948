@@ -5,34 +5,51 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "registers_icm20948.h"
+#include "ak09916/ak09916.h"
 
-gpio_num_t i2c_sda_port = GPIO_NUM_21;
-gpio_num_t i2c_scl_port = GPIO_NUM_22;
-uint32_t timeout = 1000 / portTICK_PERIOD_MS;
+extern gpio_num_t i2c_sda_port;
+extern gpio_num_t i2c_scl_port;
+extern uint32_t timeout;
 
-i2c_master_bus_config_t i2c_mst_config = {
-    .i2c_port = -1,
-    .sda_io_num = i2c_sda_port,
-    .scl_io_num = i2c_scl_port,
-    .clk_source = I2C_CLK_SRC_DEFAULT,
-    .glitch_ignore_cnt = 7,
-    .flags.enable_internal_pullup = true,
-};
+extern i2c_master_bus_config_t i2c_mst_config;
 
-i2c_master_bus_handle_t i2c_bus_handle;
+extern i2c_master_bus_handle_t i2c_bus_handle;
 
-i2c_device_config_t icm20948_dev_cfg = {
-    .dev_addr_length = I2C_ADDR_BIT_LEN_7,
-    .device_address = 0x69,
-    .scl_speed_hz = 100000,
-};
+extern i2c_device_config_t icm20948_dev_cfg;
 
-i2c_master_dev_handle_t icm20948_dev_handle;
+extern i2c_master_dev_handle_t icm20948_dev_handle;
 
 void initialize(); //
 
-esp_err_t write_register(uint8_t reg, uint8_t data); //
-esp_err_t read_register(uint8_t reg, uint8_t len, uint8_t *data); //
+void write_register(uint8_t reg, uint8_t data); //
+void read_register(uint8_t reg, uint8_t len, uint8_t *data); //
 
+uint8_t getWhoIAm();
+void setBank(uint8_t bank);
+uint8_t getBank();
+
+void setPWR_MGMT_1(uint8_t pwr_mgmt_1_value);
+void setINT_PIN_CFG(uint8_t cfg);
+void setMST_CTRL(uint8_t ctrl);
+
+esp_err_t deviceIsConnected();
+
+void default_init();
+
+float magX(void); // micro teslas
+float magY(void); // micro teslas
+float magZ(void); // micro teslas
+
+float accX(void); // milli g's
+float accY(void); // milli g's
+float accZ(void); // milli g's
+
+float gyrX(void); // degrees per second
+float gyrY(void); // degrees per second
+float gyrZ(void); // degrees per second
+
+float temp(void); // degrees celsius
+
+uint8_t getWhoIAm_Mag();
 
 #endif
