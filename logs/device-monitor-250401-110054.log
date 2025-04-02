@@ -1,0 +1,8134 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    20][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   339660 B ( 331.7 KB)
+  Allocated Bytes   :    32808 B (  32.0 KB)
+  Minimum Free Bytes:   334404 B ( 326.6 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   531][I][i2c_driver.cpp:20] i2c_initialize(): Init I2C bus with code: 0
+[   538][I][i2c_driver.cpp:22] i2c_initialize(): Add device to I2C bus with code 0
+=========== After Setup Start ============
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   335832 B ( 328.0 KB)
+  Allocated Bytes   :    36156 B (  35.3 KB)
+  Minimum Free Bytes:   330472 B ( 322.7 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+GPIO Info:
+------------------------------------------
+  GPIO : BUS_TYPE[bus/unit][chan]
+  --------------------------------------  
+     1 : UART_TX[0]
+     3 : UART_RX[0]
+============ After Setup End =============
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    20][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   339660 B ( 331.7 KB)
+  Allocated Bytes   :    32808 B (  32.0 KB)
+  Minimum Free Bytes:   334404 B ( 326.6 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   531][I][i2c_driver.cpp:20] i2c_initialize(): Init I2C bus with code: 0
+[   538][I][i2c_driver.cpp:22] i2c_initialize(): Add device to I2C bus with code 0
+=========== After Setup Start ============
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   335832 B ( 328.0 KB)
+  Allocated Bytes   :    36156 B (  35.3 KB)
+  Minimum Free Bytes:   330472 B ( 322.7 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+GPIO Info:
+------------------------------------------
+  GPIO : BUS_TYPE[bus/unit][chan]
+  --------------------------------------  
+     1 : UART_TX[0]
+     3 : UART_RX[0]
+============ After Setup End =============
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+E (1018) i2c.master: I2C hardware NACK detected
+E (1019) i2c.master: I2C transaction unexpected nack detected
+E (1019) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1025) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1050][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1050) i2c.master: I2C hardware NACK detected
+E (1050) i2c.master: I2C transaction unexpected nack detected
+E (1050) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1055) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  1081][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (1081) i2c.master: I2C hardware NACK detected
+E (1081) i2c.master: I2C transaction unexpected nack detected
+E (1081) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1087) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1113][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1112) i2c.master: I2C hardware NACK detected
+E (1112) i2c.master: I2C transaction unexpected nack detected
+E (1113) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1118) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1143][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1143) i2c.master: I2C hardware NACK detected
+E (1143) i2c.master: I2C transaction unexpected nack detected
+E (1143) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1149) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1174][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1174) i2c.master: I2C hardware NACK detected
+E (1174) i2c.master: I2C transaction unexpected nack detected
+E (1174) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1180) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1205][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1205) i2c.master: I2C hardware NACK detected
+E (1205) i2c.master: I2C transaction unexpected nack detected
+E (1205) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1211) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  1237][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (1336) i2c.master: I2C hardware NACK detected
+E (1337) i2c.master: I2C transaction unexpected nack detected
+E (1337) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1342) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1367][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1367) i2c.master: I2C hardware NACK detected
+E (1367) i2c.master: I2C transaction unexpected nack detected
+E (1367) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1373) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  1399][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (1398) i2c.master: I2C hardware NACK detected
+E (1399) i2c.master: I2C transaction unexpected nack detected
+E (1399) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1405) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1430][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1430) i2c.master: I2C hardware NACK detected
+E (1430) i2c.master: I2C transaction unexpected nack detected
+E (1430) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1436) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1461][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1461) i2c.master: I2C hardware NACK detected
+E (1461) i2c.master: I2C transaction unexpected nack detected
+E (1461) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1467) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1492][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1492) i2c.master: I2C hardware NACK detected
+E (1492) i2c.master: I2C transaction unexpected nack detected
+E (1492) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1497) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1523][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1522) i2c.master: I2C hardware NACK detected
+E (1523) i2c.master: I2C transaction unexpected nack detected
+E (1523) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1528) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  1554][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (1653) i2c.master: I2C hardware NACK detected
+E (1654) i2c.master: I2C transaction unexpected nack detected
+E (1654) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1659) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1684][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1684) i2c.master: I2C hardware NACK detected
+E (1684) i2c.master: I2C transaction unexpected nack detected
+E (1684) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1690) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  1716][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (1715) i2c.master: I2C hardware NACK detected
+E (1716) i2c.master: I2C transaction unexpected nack detected
+E (1716) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1722) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1747][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1747) i2c.master: I2C hardware NACK detected
+E (1747) i2c.master: I2C transaction unexpected nack detected
+E (1747) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1753) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1778][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1778) i2c.master: I2C hardware NACK detected
+E (1778) i2c.master: I2C transaction unexpected nack detected
+E (1778) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1784) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1809][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1809) i2c.master: I2C hardware NACK detected
+E (1809) i2c.master: I2C transaction unexpected nack detected
+E (1809) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1814) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1840][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1839) i2c.master: I2C hardware NACK detected
+E (1840) i2c.master: I2C transaction unexpected nack detected
+E (1840) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1845) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  1871][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (1970) i2c.master: I2C hardware NACK detected
+E (1971) i2c.master: I2C transaction unexpected nack detected
+E (1971) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1976) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2001][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (2001) i2c.master: I2C hardware NACK detected
+E (2001) i2c.master: I2C transaction unexpected nack detected
+E (2001) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2007) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  2033][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (2032) i2c.master: I2C hardware NACK detected
+E (2033) i2c.master: I2C transaction unexpected nack detected
+E (2033) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2039) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2064][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (2064) i2c.master: I2C hardware NACK detected
+E (2064) i2c.master: I2C transaction unexpected nack detected
+E (2064) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2070) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2095][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (2095) i2c.master: I2C hardware NACK detected
+E (2095) i2c.master: I2C transaction unexpected nack detected
+E (2095) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2101) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2126][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (2126) i2c.master: I2C hardware NACK detected
+E (2126) i2c.master: I2C transaction unexpected nack detected
+E (2126) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2131) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2157][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (2156) i2c.master: I2C hardware NACK detected
+E (2157) i2c.master: I2C transaction unexpected nack detected
+E (2157) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2162) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  2188][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (2287) i2c.master: I2C hardware NACK detected
+E (2288) i2c.master: I2C transaction unexpected nack detected
+E (2288) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2293) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2318][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (2318) i2c.master: I2C hardware NACK detected
+E (2318) i2c.master: I2C transaction unexpected nack detected
+E (2318) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2324) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  2350][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (2349) i2c.master: I2C hardware NACK detected
+E (2350) i2c.master: I2C transaction unexpected nack detected
+E (2350) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2356) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2381][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (2381) i2c.master: I2C hardware NACK detected
+E (2381) i2c.master: I2C transaction unexpected nack detected
+E (2381) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2387) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2412][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (2412) i2c.master: I2C hardware NACK detected
+E (2412) i2c.master: I2C transaction unexpected nack detected
+E (2412) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2418) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2443][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (2443) i2c.master: I2C hardware NACK detected
+E (2443) i2c.master: I2C transaction unexpected nack detected
+E (2443) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2448) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2474][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (2473) i2c.master: I2C hardware NACK detected
+E (2474) i2c.master: I2C transaction unexpected nack detected
+E (2474) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2479) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  2505][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (2604) i2c.master: I2C hardware NACK detected
+E (2605) i2c.master: I2C transaction unexpected nack detected
+E (2605) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2610) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2635][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (2635) i2c.master: I2C hardware NACK detected
+E (2635) i2c.master: I2C transaction unexpected nack detected
+E (2635) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2641) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  2667][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (2666) i2c.master: I2C hardware NACK detected
+E (2667) i2c.master: I2C transaction unexpected nack detected
+E (2667) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2673) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2698][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (2698) i2c.master: I2C hardware NACK detected
+E (2698) i2c.master: I2C transaction unexpected nack detected
+E (2698) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2704) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2729][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (2729) i2c.master: I2C hardware NACK detected
+E (2729) i2c.master: I2C transaction unexpected nack detected
+E (2729) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2735) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2760][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+E (73518) i2c.master: I2C hardware NACK detected
+E (73519) i2c.master: I2C transaction unexpected nack detected
+E (73519) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (73524) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 73550][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Who i am: 0
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+E (80656) i2c.master: I2C hardware NACK detected
+E (80657) i2c.master: I2C transaction unexpected nack detected
+E (80657) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (80662) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 80688][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (80688) i2c.master: I2C hardware NACK detected
+E (80688) i2c.master: I2C transaction unexpected nack detected
+E (80688) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (80694) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 80720][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (80719) i2c.master: I2C hardware NACK detected
+E (80719) i2c.master: I2C transaction unexpected nack detected
+E (80719) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (80726) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 80751][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (80751) i2c.master: I2C hardware NACK detected
+E (80751) i2c.master: I2C transaction unexpected nack detected
+E (80751) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (80757) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 80782][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+E (80986) i2c.master: I2C hardware NACK detected
+E (80987) i2c.master: I2C transaction unexpected nack detected
+E (80987) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (80992) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 81018][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (81018) i2c.master: I2C hardware NACK detected
+E (81018) i2c.master: I2C transaction unexpected nack detected
+E (81018) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (81024) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 81050][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (81049) i2c.master: I2C hardware NACK detected
+E (81049) i2c.master: I2C transaction unexpected nack detected
+E (81049) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (81056) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 81081][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (81081) i2c.master: I2C hardware NACK detected
+E (81081) i2c.master: I2C transaction unexpected nack detected
+E (81081) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (81087) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 81112][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+E (81522) i2c.master: I2C hardware NACK detected
+E (81523) i2c.master: I2C transaction unexpected nack detected
+E (81523) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (81528) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 81554][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (81554) i2c.master: I2C hardware NACK detected
+E (81554) i2c.master: I2C transaction unexpected nack detected
+E (81554) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (81560) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 81586][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (81585) i2c.master: I2C hardware NACK detected
+E (81585) i2c.master: I2C transaction unexpected nack detected
+E (81585) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (81592) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 81617][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+E (82131) i2c.master: I2C hardware NACK detected
+E (82132) i2c.master: I2C transaction unexpected nack detected
+E (82132) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (82137) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 82163][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (82163) i2c.master: I2C hardware NACK detected
+E (82163) i2c.master: I2C transaction unexpected nack detected
+E (82163) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (82169) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 82195][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (82194) i2c.master: I2C hardware NACK detected
+E (82194) i2c.master: I2C transaction unexpected nack detected
+E (82194) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (82201) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 82226][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (82226) i2c.master: I2C hardware NACK detected
+E (82226) i2c.master: I2C transaction unexpected nack detected
+E (82226) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (82232) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 82257][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (82257) i2c.master: I2C hardware NACK detected
+E (82257) i2c.master: I2C transaction unexpected nack detected
+E (82257) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (82263) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 82289][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (82288) i2c.master: I2C hardware NACK detected
+E (82288) i2c.master: I2C transaction unexpected nack detected
+E (82289) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (82294) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 82320][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (82319) i2c.master: I2C hardware NACK detected
+E (82320) i2c.master: I2C transaction unexpected nack detected
+E (82320) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (82326) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 82352][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+E (83378) i2c.master: I2C hardware NACK detected
+E (83378) i2c.master: I2C transaction unexpected nack detected
+E (83379) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (83384) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 83410][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (83410) i2c.master: I2C hardware NACK detected
+E (83410) i2c.master: I2C transaction unexpected nack detected
+E (83410) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (83416) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 83442][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (83441) i2c.master: I2C hardware NACK detected
+E (83441) i2c.master: I2C transaction unexpected nack detected
+E (83441) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (83448) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 83473][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (83473) i2c.master: I2C hardware NACK detected
+E (83473) i2c.master: I2C transaction unexpected nack detected
+E (83473) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (83479) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 83504][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+E (84326) i2c.master: I2C hardware NACK detected
+E (84327) i2c.master: I2C transaction unexpected nack detected
+E (84327) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (84332) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 84358][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (84358) i2c.master: I2C hardware NACK detected
+E (84358) i2c.master: I2C transaction unexpected nack detected
+E (84358) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (84364) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 84390][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (84389) i2c.master: I2C hardware NACK detected
+E (84389) i2c.master: I2C transaction unexpected nack detected
+E (84389) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (84396) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 84421][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (84421) i2c.master: I2C hardware NACK detected
+E (84421) i2c.master: I2C transaction unexpected nack detected
+E (84421) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (84427) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 84452][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (84452) i2c.master: I2C hardware NACK detected
+E (84452) i2c.master: I2C transaction unexpected nack detected
+E (84452) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (84458) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 84484][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (84483) i2c.master: I2C hardware NACK detected
+E (84483) i2c.master: I2C transaction unexpected nack detected
+E (84484) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (84489) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 84515][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (84514) i2c.master: I2C hardware NACK detected
+E (84515) i2c.master: I2C transaction unexpected nack detected
+E (84515) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (84521) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 84547][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (84646) i2c.master: I2C hardware NACK detected
+E (84647) i2c.master: I2C transaction unexpected nack detected
+E (84647) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (84652) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 84678][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (84678) i2c.master: I2C hardware NACK detected
+E (84678) i2c.master: I2C transaction unexpected nack detected
+E (84678) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (84684) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 84710][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (84709) i2c.master: I2C hardware NACK detected
+E (84709) i2c.master: I2C transaction unexpected nack detected
+E (84709) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (84716) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 84741][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (84741) i2c.master: I2C hardware NACK detected
+E (84741) i2c.master: I2C transaction unexpected nack detected
+E (84741) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (84747) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 84772][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (84772) i2c.master: I2C hardware NACK detected
+E (84772) i2c.master: I2C transaction unexpected nack detected
+E (84772) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (84778) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 84804][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (84803) i2c.master: I2C hardware NACK detected
+E (84804) i2c.master: I2C transaction unexpected nack detected
+E (84804) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (84809) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 84835][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (84835) i2c.master: I2C hardware NACK detected
+E (84835) i2c.master: I2C transaction unexpected nack detected
+E (84835) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (84841) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 84867][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (84966) i2c.master: I2C hardware NACK detected
+E (84967) i2c.master: I2C transaction unexpected nack detected
+E (84967) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (84972) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 84998][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (84998) i2c.master: I2C hardware NACK detected
+E (84998) i2c.master: I2C transaction unexpected nack detected
+E (84998) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (85004) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 85030][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (85029) i2c.master: I2C hardware NACK detected
+E (85029) i2c.master: I2C transaction unexpected nack detected
+E (85029) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (85036) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 85061][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (85061) i2c.master: I2C hardware NACK detected
+E (85061) i2c.master: I2C transaction unexpected nack detected
+E (85061) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (85067) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 85092][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (85092) i2c.master: I2C hardware NACK detected
+E (85092) i2c.master: I2C transaction unexpected nack detected
+E (85092) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (85098) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 85124][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (85123) i2c.master: I2C hardware NACK detected
+E (85124) i2c.master: I2C transaction unexpected nack detected
+E (85124) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (85129) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 85155][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (85155) i2c.master: I2C hardware NACK detected
+E (85155) i2c.master: I2C transaction unexpected nack detected
+E (85155) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (85161) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 85187][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (85286) i2c.master: I2C hardware NACK detected
+E (85287) i2c.master: I2C transaction unexpected nack detected
+E (85287) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (85292) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 85318][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (85318) i2c.master: I2C hardware NACK detected
+E (85318) i2c.master: I2C transaction unexpected nack detected
+E (85318) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (85324) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 85350][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (85349) i2c.master: I2C hardware NACK detected
+E (85349) i2c.master: I2C transaction unexpected nack detected
+E (85349) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (85356) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 85381][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (85381) i2c.master: I2C hardware NACK detected
+E (85381) i2c.master: I2C transaction unexpected nack detected
+E (85381) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (85387) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 85412][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (85412) i2c.master: I2C hardware NACK detected
+E (85412) i2c.master: I2C transaction unexpected nack detected
+E (85412) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (85418) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 85444][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (85443) i2c.master: I2C hardware NACK detected
+E (85444) i2c.master: I2C transaction unexpected nack detected
+E (85444) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (85449) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 85475][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (85475) i2c.master: I2C hardware NACK detected
+E (85475) i2c.master: I2C transaction unexpected nack detected
+E (85475) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (85481) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 85507][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (85606) i2c.master: I2C hardware NACK detected
+E (85607) i2c.master: I2C transaction unexpected nack detected
+E (85607) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (85612) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 85638][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (85638) i2c.master: I2C hardware NACK detected
+E (85638) i2c.master: I2C transaction unexpected nack detected
+E (85638) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (85644) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 85670][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (85669) i2c.master: I2C hardware NACK detected
+E (85669) i2c.master: I2C transaction unexpected nack detected
+E (85669) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (85676) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 85701][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (85701) i2c.master: I2C hardware NACK detected
+E (85701) i2c.master: I2C transaction unexpected nack detected
+E (85701) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (85707) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 85732][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (85732) i2c.master: I2C hardware NACK detected
+E (85732) i2c.master: I2C transaction unexpected nack detected
+E (85732) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (85738) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 85764][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (85763) i2c.master: I2C hardware NACK detected
+E (85764) i2c.master: I2C transaction unexpected nack detected
+E (85764) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (85769) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 85795][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (85795) i2c.master: I2C hardware NACK detected
+E (85795) i2c.master: I2C transaction unexpected nack detected
+E (85795) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (85801) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 85827][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (85926) i2c.master: I2C hardware NACK detected
+E (85927) i2c.master: I2C transaction unexpected nack detected
+E (85927) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (85932) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 85958][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (85958) i2c.master: I2C hardware NACK detected
+E (85958) i2c.master: I2C transaction unexpected nack detected
+E (85958) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (85964) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 85990][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (85989) i2c.master: I2C hardware NACK detected
+E (85989) i2c.master: I2C transaction unexpected nack detected
+E (85989) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (85996) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 86021][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (86021) i2c.master: I2C hardware NACK detected
+E (86021) i2c.master: I2C transaction unexpected nack detected
+E (86021) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (86027) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 86052][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (86052) i2c.master: I2C hardware NACK detected
+E (86052) i2c.master: I2C transaction unexpected nack detected
+E (86052) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (86058) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 86084][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (86083) i2c.master: I2C hardware NACK detected
+E (86084) i2c.master: I2C transaction unexpected nack detected
+E (86084) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (86089) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 86115][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (86115) i2c.master: I2C hardware NACK detected
+E (86115) i2c.master: I2C transaction unexpected nack detected
+E (86115) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (86121) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 86147][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (86246) i2c.master: I2C hardware NACK detected
+E (86247) i2c.master: I2C transaction unexpected nack detected
+E (86247) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (86252) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 86278][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (86278) i2c.master: I2C hardware NACK detected
+E (86278) i2c.master: I2C transaction unexpected nack detected
+E (86278) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (86284) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 86310][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (86309) i2c.master: I2C hardware NACK detected
+E (86309) i2c.master: I2C transaction unexpected nack detected
+E (86309) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (86316) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 86341][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (86341) i2c.master: I2C hardware NACK detected
+E (86341) i2c.master: I2C transaction unexpected nack detected
+E (86341) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (86347) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 86372][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (86372) i2c.master: I2C hardware NACK detected
+E (86372) i2c.master: I2C transaction unexpected nack detected
+E (86372) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (86378) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 86404][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (86403) i2c.master: I2C hardware NACK detected
+E (86404) i2c.master: I2C transaction unexpected nack detected
+E (86404) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (86409) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 86435][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (86435) i2c.master: I2C hardware NACK detected
+E (86435) i2c.master: I2C transaction unexpected nack detected
+E (86435) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (86441) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 86467][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (86566) i2c.master: I2C hardware NACK detected
+E (86567) i2c.master: I2C transaction unexpected nack detected
+E (86567) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (86572) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 86598][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (86598) i2c.master: I2C hardware NACK detected
+E (86598) i2c.master: I2C transaction unexpected nack detected
+E (86598) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (86604) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 86630][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (86629) i2c.master: I2C hardware NACK detected
+E (86629) i2c.master: I2C transaction unexpected nack detected
+E (86629) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (86636) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 86661][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (86661) i2c.master: I2C hardware NACK detected
+E (86661) i2c.master: I2C transaction unexpected nack detected
+E (86661) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (86667) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 86692][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (86692) i2c.master: I2C hardware NACK detected
+E (86692) i2c.master: I2C transaction unexpected nack detected
+E (86692) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (86698) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 86724][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (86723) i2c.master: I2C hardware NACK detected
+E (86724) i2c.master: I2C transaction unexpected nack detected
+E (86724) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (86729) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 86755][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (86755) i2c.master: I2C hardware NACK detected
+E (86755) i2c.master: I2C transaction unexpected nack detected
+E (86755) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (86761) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 86787][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (86886) i2c.master: I2C hardware NACK detected
+E (86887) i2c.master: I2C transaction unexpected nack detected
+E (86887) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (86892) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 86918][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (86918) i2c.master: I2C hardware NACK detected
+E (86918) i2c.master: I2C transaction unexpected nack detected
+E (86918) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (86924) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 86950][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (86949) i2c.master: I2C hardware NACK detected
+E (86949) i2c.master: I2C transaction unexpected nack detected
+E (86949) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (86956) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 86981][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (86981) i2c.master: I2C hardware NACK detected
+E (86981) i2c.master: I2C transaction unexpected nack detected
+E (86981) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (86987) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 87012][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (87012) i2c.master: I2C hardware NACK detected
+E (87012) i2c.master: I2C transaction unexpected nack detected
+E (87012) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (87018) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 87044][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (87043) i2c.master: I2C hardware NACK detected
+E (87044) i2c.master: I2C transaction unexpected nack detected
+E (87044) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (87049) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 87075][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (87075) i2c.master: I2C hardware NACK detected
+E (87075) i2c.master: I2C transaction unexpected nack detected
+E (87075) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (87081) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 87107][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (87206) i2c.master: I2C hardware NACK detected
+E (87207) i2c.master: I2C transaction unexpected nack detected
+E (87207) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (87212) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 87238][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (87238) i2c.master: I2C hardware NACK detected
+E (87238) i2c.master: I2C transaction unexpected nack detected
+E (87238) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (87244) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 87270][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (87269) i2c.master: I2C hardware NACK detected
+E (87269) i2c.master: I2C transaction unexpected nack detected
+E (87269) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (87276) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 87301][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (87301) i2c.master: I2C hardware NACK detected
+E (87301) i2c.master: I2C transaction unexpected nack detected
+E (87301) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (87307) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 87332][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (87332) i2c.master: I2C hardware NACK detected
+E (87332) i2c.master: I2C transaction unexpected nack detected
+E (87332) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (87338) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 87364][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (87363) i2c.master: I2C hardware NACK detected
+E (87364) i2c.master: I2C transaction unexpected nack detected
+E (87364) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (87369) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 87395][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (87395) i2c.master: I2C hardware NACK detected
+E (87395) i2c.master: I2C transaction unexpected nack detected
+E (87395) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (87401) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 87427][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (87526) i2c.master: I2C hardware NACK detected
+E (87527) i2c.master: I2C transaction unexpected nack detected
+E (87527) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (87532) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 87558][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (87558) i2c.master: I2C hardware NACK detected
+E (87558) i2c.master: I2C transaction unexpected nack detected
+E (87558) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (87564) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 87590][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (87589) i2c.master: I2C hardware NACK detected
+E (87589) i2c.master: I2C transaction unexpected nack detected
+E (87589) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (87596) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 87621][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (87621) i2c.master: I2C hardware NACK detected
+E (87621) i2c.master: I2C transaction unexpected nack detected
+E (87621) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (87627) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 87652][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (87652) i2c.master: I2C hardware NACK detected
+E (87652) i2c.master: I2C transaction unexpected nack detected
+E (87652) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (87658) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 87684][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (87683) i2c.master: I2C hardware NACK detected
+E (87684) i2c.master: I2C transaction unexpected nack detected
+E (87684) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (87689) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 87715][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (87715) i2c.master: I2C hardware NACK detected
+E (87715) i2c.master: I2C transaction unexpected nack detected
+E (87715) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (87721) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 87747][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (87846) i2c.master: I2C hardware NACK detected
+E (87847) i2c.master: I2C transaction unexpected nack detected
+E (87847) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (87852) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 87878][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (87878) i2c.master: I2C hardware NACK detected
+E (87878) i2c.master: I2C transaction unexpected nack detected
+E (87878) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (87884) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 87910][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (87909) i2c.master: I2C hardware NACK detected
+E (87909) i2c.master: I2C transaction unexpected nack detected
+E (87909) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (87916) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 87941][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (87941) i2c.master: I2C hardware NACK detected
+E (87941) i2c.master: I2C transaction unexpected nack detected
+E (87941) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (87947) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 87972][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (87972) i2c.master: I2C hardware NACK detected
+E (87972) i2c.master: I2C transaction unexpected nack detected
+E (87972) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (87978) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 88004][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (88003) i2c.master: I2C hardware NACK detected
+E (88004) i2c.master: I2C transaction unexpected nack detected
+E (88004) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (88009) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 88035][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (88035) i2c.master: I2C hardware NACK detected
+E (88035) i2c.master: I2C transaction unexpected nack detected
+E (88035) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (88041) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 88067][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (88166) i2c.master: I2C hardware NACK detected
+E (88167) i2c.master: I2C transaction unexpected nack detected
+E (88167) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (88172) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 88198][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (88198) i2c.master: I2C hardware NACK detected
+E (88198) i2c.master: I2C transaction unexpected nack detected
+E (88198) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (88204) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 88230][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (88229) i2c.master: I2C hardware NACK detected
+E (88229) i2c.master: I2C transaction unexpected nack detected
+E (88229) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (88236) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 88261][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (88261) i2c.master: I2C hardware NACK detected
+E (88261) i2c.master: I2C transaction unexpected nack detected
+E (88261) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (88267) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 88292][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (88292) i2c.master: I2C hardware NACK detected
+E (88292) i2c.master: I2C transaction unexpected nack detected
+E (88292) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (88298) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 88324][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (88323) i2c.master: I2C hardware NACK detected
+E (88324) i2c.master: I2C transaction unexpected nack detected
+E (88324) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (88329) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 88355][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (88355) i2c.master: I2C hardware NACK detected
+E (88355) i2c.master: I2C transaction unexpected nack detected
+E (88355) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (88361) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 88387][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (88486) i2c.master: I2C hardware NACK detected
+E (88487) i2c.master: I2C transaction unexpected nack detected
+E (88487) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (88492) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 88518][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (88518) i2c.master: I2C hardware NACK detected
+E (88518) i2c.master: I2C transaction unexpected nack detected
+E (88518) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (88524) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 88550][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (88549) i2c.master: I2C hardware NACK detected
+E (88549) i2c.master: I2C transaction unexpected nack detected
+E (88549) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (88556) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 88581][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (88581) i2c.master: I2C hardware NACK detected
+E (88581) i2c.master: I2C transaction unexpected nack detected
+E (88581) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (88587) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 88612][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (88612) i2c.master: I2C hardware NACK detected
+E (88612) i2c.master: I2C transaction unexpected nack detected
+E (88612) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (88618) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 88644][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (88643) i2c.master: I2C hardware NACK detected
+E (88644) i2c.master: I2C transaction unexpected nack detected
+E (88644) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (88649) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 88675][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (88675) i2c.master: I2C hardware NACK detected
+E (88675) i2c.master: I2C transaction unexpected nack detected
+E (88675) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (88681) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 88707][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (88806) i2c.master: I2C hardware NACK detected
+E (88807) i2c.master: I2C transaction unexpected nack detected
+E (88807) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (88812) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 88838][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (88838) i2c.master: I2C hardware NACK detected
+E (88838) i2c.master: I2C transaction unexpected nack detected
+E (88838) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (88844) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 88870][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (88869) i2c.master: I2C hardware NACK detected
+E (88869) i2c.master: I2C transaction unexpected nack detected
+E (88869) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (88876) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 88901][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (88901) i2c.master: I2C hardware NACK detected
+E (88901) i2c.master: I2C transaction unexpected nack detected
+E (88901) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (88907) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 88932][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (88932) i2c.master: I2C hardware NACK detected
+E (88932) i2c.master: I2C transaction unexpected nack detected
+E (88932) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (88938) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 88964][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (88963) i2c.master: I2C hardware NACK detected
+E (88964) i2c.master: I2C transaction unexpected nack detected
+E (88964) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (88969) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 88995][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (88995) i2c.master: I2C hardware NACK detected
+E (88995) i2c.master: I2C transaction unexpected nack detected
+E (88995) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (89001) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 89027][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0

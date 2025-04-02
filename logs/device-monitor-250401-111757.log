@@ -1,0 +1,2551 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    20][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   339660 B ( 331.7 KB)
+  Allocated Bytes   :    32808 B (  32.0 KB)
+  Minimum Free Bytes:   334404 B ( 326.6 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   531][I][i2c_driver.cpp:20] i2c_initialize(): Init I2C bus with code: 0
+[   538][I][i2c_driver.cpp:22] i2c_initialize(): Add device to I2C bus with code 0
+Starting 261
+E (527) i2c.master: I2C hardware NACK detected
+E (528) i2c.master: I2C transaction unexpected nack detected
+E (528) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (534) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[   559][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (559) i2c.master: I2C hardware NACK detected
+E (559) i2c.master: I2C transaction unexpected nack detected
+E (559) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (564) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[   589][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (690) i2c.master: I2C hardware NACK detected
+E (690) i2c.master: I2C transaction unexpected nack detected
+E (690) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (696) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[   721][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (721) i2c.master: I2C hardware NACK detected
+E (721) i2c.master: I2C transaction unexpected nack detected
+E (721) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (727) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[   752][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (852) i2c.master: I2C hardware NACK detected
+E (852) i2c.master: I2C transaction unexpected nack detected
+E (852) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (858) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[   883][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (883) i2c.master: I2C hardware NACK detected
+E (883) i2c.master: I2C transaction unexpected nack detected
+E (883) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (889) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[   914][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (1014) i2c.master: I2C hardware NACK detected
+E (1014) i2c.master: I2C transaction unexpected nack detected
+E (1014) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1020) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1046][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1045) i2c.master: I2C hardware NACK detected
+E (1046) i2c.master: I2C transaction unexpected nack detected
+E (1046) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1051) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1076][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (1177) i2c.master: I2C hardware NACK detected
+E (1177) i2c.master: I2C transaction unexpected nack detected
+E (1177) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1183) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1209][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1208) i2c.master: I2C hardware NACK detected
+E (1209) i2c.master: I2C transaction unexpected nack detected
+E (1209) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1214) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1239][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (1340) i2c.master: I2C hardware NACK detected
+E (1340) i2c.master: I2C transaction unexpected nack detected
+E (1340) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1346) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1372][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1371) i2c.master: I2C hardware NACK detected
+E (1372) i2c.master: I2C transaction unexpected nack detected
+E (1372) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1377) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1402][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (1503) i2c.master: I2C hardware NACK detected
+E (1503) i2c.master: I2C transaction unexpected nack detected
+E (1503) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1509) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1535][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1534) i2c.master: I2C hardware NACK detected
+E (1535) i2c.master: I2C transaction unexpected nack detected
+E (1535) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1540) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1565][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (1666) i2c.master: I2C hardware NACK detected
+E (1666) i2c.master: I2C transaction unexpected nack detected
+E (1666) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1672) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1698][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1697) i2c.master: I2C hardware NACK detected
+E (1698) i2c.master: I2C transaction unexpected nack detected
+E (1698) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1703) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1728][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (1829) i2c.master: I2C hardware NACK detected
+E (1829) i2c.master: I2C transaction unexpected nack detected
+E (1829) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1835) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1861][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1860) i2c.master: I2C hardware NACK detected
+E (1861) i2c.master: I2C transaction unexpected nack detected
+E (1861) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1866) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1891][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (1992) i2c.master: I2C hardware NACK detected
+E (1992) i2c.master: I2C transaction unexpected nack detected
+E (1992) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1998) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2024][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (2023) i2c.master: I2C hardware NACK detected
+E (2024) i2c.master: I2C transaction unexpected nack detected
+E (2024) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2029) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2054][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (2155) i2c.master: I2C hardware NACK detected
+E (2155) i2c.master: I2C transaction unexpected nack detected
+E (2155) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2161) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2187][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+=========== After Setup Start ============
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   335724 B ( 327.9 KB)
+  Allocated Bytes   :    36248 B (  35.4 KB)
+  Minimum Free Bytes:   330360 B ( 322.6 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+GPIO Info:
+------------------------------------------
+  GPIO : BUS_TYPE[bus/unit][chan]
+  --------------------------------------  
+     1 : UART_TX[0]
+     3 : UART_RX[0]
+============ After Setup End =============
+Who i am: 234
+[  2388][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2395][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2403][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2410][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2417][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2424][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2431][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2438][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2445][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2452][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2459][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2466][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2473][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2480][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2487][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2495][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2502][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2509][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2516][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2523][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2530][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2537][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2544][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2551][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2558][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2565][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2572][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2579][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2587][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2594][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2601][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2608][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2615][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2622][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2629][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2636][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2643][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2650][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2657][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2664][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  2671][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (2659) i2c.master: I2C hardware NACK detected
+E (2659) i2c.master: I2C transaction unexpected nack detected
+E (2659) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2665) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  2691][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  2709][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (2697) i2c.master: I2C hardware NACK detected
+E (2697) i2c.master: I2C transaction unexpected nack detected
+E (2697) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2703) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  2729][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  2747][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (2734) i2c.master: I2C hardware NACK detected
+E (2735) i2c.master: I2C transaction unexpected nack detected
+E (2735) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2740) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  2766][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  2785][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (2772) i2c.master: I2C hardware NACK detected
+E (2772) i2c.master: I2C transaction unexpected nack detected
+E (2772) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2778) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  2804][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  2822][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (2810) i2c.master: I2C hardware NACK detected
+E (2810) i2c.master: I2C transaction unexpected nack detected
+E (2810) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2816) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  2842][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  2860][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (2847) i2c.master: I2C hardware NACK detected
+E (2848) i2c.master: I2C transaction unexpected nack detected
+E (2848) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2853) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  2879][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  2898][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (2885) i2c.master: I2C hardware NACK detected
+E (2885) i2c.master: I2C transaction unexpected nack detected
+E (2885) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2891) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  2917][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  2935][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (2923) i2c.master: I2C hardware NACK detected
+E (2923) i2c.master: I2C transaction unexpected nack detected
+E (2923) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2929) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  2955][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  2973][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (2960) i2c.master: I2C hardware NACK detected
+E (2961) i2c.master: I2C transaction unexpected nack detected
+E (2961) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2966) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  2992][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3011][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (2998) i2c.master: I2C hardware NACK detected
+E (2998) i2c.master: I2C transaction unexpected nack detected
+E (2998) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3004) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3030][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3048][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3036) i2c.master: I2C hardware NACK detected
+E (3036) i2c.master: I2C transaction unexpected nack detected
+E (3036) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3042) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3068][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3086][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3073) i2c.master: I2C hardware NACK detected
+E (3074) i2c.master: I2C transaction unexpected nack detected
+E (3074) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3079) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3105][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3124][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3111) i2c.master: I2C hardware NACK detected
+E (3111) i2c.master: I2C transaction unexpected nack detected
+E (3111) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3117) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3143][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3161][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3149) i2c.master: I2C hardware NACK detected
+E (3149) i2c.master: I2C transaction unexpected nack detected
+E (3149) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3155) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3181][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3199][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3186) i2c.master: I2C hardware NACK detected
+E (3187) i2c.master: I2C transaction unexpected nack detected
+E (3187) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3192) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3218][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3237][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3224) i2c.master: I2C hardware NACK detected
+E (3224) i2c.master: I2C transaction unexpected nack detected
+E (3224) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3230) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3256][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3274][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3262) i2c.master: I2C hardware NACK detected
+E (3262) i2c.master: I2C transaction unexpected nack detected
+E (3262) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3268) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3294][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3312][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3299) i2c.master: I2C hardware NACK detected
+E (3300) i2c.master: I2C transaction unexpected nack detected
+E (3300) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3305) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3331][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3350][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3337) i2c.master: I2C hardware NACK detected
+E (3337) i2c.master: I2C transaction unexpected nack detected
+E (3337) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3343) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3369][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3387][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3375) i2c.master: I2C hardware NACK detected
+E (3375) i2c.master: I2C transaction unexpected nack detected
+E (3375) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3381) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3407][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3425][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3412) i2c.master: I2C hardware NACK detected
+E (3413) i2c.master: I2C transaction unexpected nack detected
+E (3413) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3418) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3444][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3462][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3450) i2c.master: I2C hardware NACK detected
+E (3450) i2c.master: I2C transaction unexpected nack detected
+E (3450) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3456) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3482][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3500][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3488) i2c.master: I2C hardware NACK detected
+E (3488) i2c.master: I2C transaction unexpected nack detected
+E (3488) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3494) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3520][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3538][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3525) i2c.master: I2C hardware NACK detected
+E (3526) i2c.master: I2C transaction unexpected nack detected
+E (3526) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3531) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3557][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3575][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3563) i2c.master: I2C hardware NACK detected
+E (3563) i2c.master: I2C transaction unexpected nack detected
+E (3563) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3569) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3595][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3613][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3601) i2c.master: I2C hardware NACK detected
+E (3601) i2c.master: I2C transaction unexpected nack detected
+E (3601) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3607) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3633][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3651][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3638) i2c.master: I2C hardware NACK detected
+E (3639) i2c.master: I2C transaction unexpected nack detected
+E (3639) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3644) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3670][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3688][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3676) i2c.master: I2C hardware NACK detected
+E (3676) i2c.master: I2C transaction unexpected nack detected
+E (3676) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3682) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3708][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3726][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3714) i2c.master: I2C hardware NACK detected
+E (3714) i2c.master: I2C transaction unexpected nack detected
+E (3714) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3720) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3745][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3764][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3751) i2c.master: I2C hardware NACK detected
+E (3752) i2c.master: I2C transaction unexpected nack detected
+E (3752) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3757) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3783][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3801][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3789) i2c.master: I2C hardware NACK detected
+E (3789) i2c.master: I2C transaction unexpected nack detected
+E (3789) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3795) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3821][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3839][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3827) i2c.master: I2C hardware NACK detected
+E (3827) i2c.master: I2C transaction unexpected nack detected
+E (3827) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3833) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3858][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3877][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3864) i2c.master: I2C hardware NACK detected
+E (3865) i2c.master: I2C transaction unexpected nack detected
+E (3865) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3870) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3896][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3914][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3902) i2c.master: I2C hardware NACK detected
+E (3902) i2c.master: I2C transaction unexpected nack detected
+E (3902) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3908) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3934][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3952][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3940) i2c.master: I2C hardware NACK detected
+E (3940) i2c.master: I2C transaction unexpected nack detected
+E (3940) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3946) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3971][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  3990][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (3977) i2c.master: I2C hardware NACK detected
+E (3978) i2c.master: I2C transaction unexpected nack detected
+E (3978) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3983) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4009][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4027][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4015) i2c.master: I2C hardware NACK detected
+E (4015) i2c.master: I2C transaction unexpected nack detected
+E (4015) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4021) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4047][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4065][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4053) i2c.master: I2C hardware NACK detected
+E (4053) i2c.master: I2C transaction unexpected nack detected
+E (4053) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4059) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4084][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4103][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4090) i2c.master: I2C hardware NACK detected
+E (4091) i2c.master: I2C transaction unexpected nack detected
+E (4091) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4096) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4122][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4140][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4128) i2c.master: I2C hardware NACK detected
+E (4128) i2c.master: I2C transaction unexpected nack detected
+E (4128) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4134) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4160][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4178][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4166) i2c.master: I2C hardware NACK detected
+E (4166) i2c.master: I2C transaction unexpected nack detected
+E (4166) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4172) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4197][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4216][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4203) i2c.master: I2C hardware NACK detected
+E (4204) i2c.master: I2C transaction unexpected nack detected
+E (4204) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4209) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4235][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4253][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4241) i2c.master: I2C hardware NACK detected
+E (4241) i2c.master: I2C transaction unexpected nack detected
+E (4241) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4247) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4273][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4291][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4279) i2c.master: I2C hardware NACK detected
+E (4279) i2c.master: I2C transaction unexpected nack detected
+E (4279) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4285) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4310][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4329][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4316) i2c.master: I2C hardware NACK detected
+E (4317) i2c.master: I2C transaction unexpected nack detected
+E (4317) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4322) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4348][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4366][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4354) i2c.master: I2C hardware NACK detected
+E (4354) i2c.master: I2C transaction unexpected nack detected
+E (4354) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4360) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4386][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4404][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4392) i2c.master: I2C hardware NACK detected
+E (4392) i2c.master: I2C transaction unexpected nack detected
+E (4392) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4398) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4423][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4442][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4429) i2c.master: I2C hardware NACK detected
+E (4430) i2c.master: I2C transaction unexpected nack detected
+E (4430) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4435) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4461][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4479][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4467) i2c.master: I2C hardware NACK detected
+E (4467) i2c.master: I2C transaction unexpected nack detected
+E (4467) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4473) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4499][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4517][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4505) i2c.master: I2C hardware NACK detected
+E (4505) i2c.master: I2C transaction unexpected nack detected
+E (4505) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4510) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4536][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4555][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4542) i2c.master: I2C hardware NACK detected
+E (4542) i2c.master: I2C transaction unexpected nack detected
+E (4543) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4548) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4574][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4592][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4580) i2c.master: I2C hardware NACK detected
+E (4580) i2c.master: I2C transaction unexpected nack detected
+E (4580) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4586) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4612][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4630][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4618) i2c.master: I2C hardware NACK detected
+E (4618) i2c.master: I2C transaction unexpected nack detected
+E (4618) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4623) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4649][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4668][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4655) i2c.master: I2C hardware NACK detected
+E (4655) i2c.master: I2C transaction unexpected nack detected
+E (4656) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4661) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4687][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4705][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4693) i2c.master: I2C hardware NACK detected
+E (4693) i2c.master: I2C transaction unexpected nack detected
+E (4693) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4699) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4725][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4743][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4731) i2c.master: I2C hardware NACK detected
+E (4731) i2c.master: I2C transaction unexpected nack detected
+E (4731) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4736) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4762][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4781][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4768) i2c.master: I2C hardware NACK detected
+E (4768) i2c.master: I2C transaction unexpected nack detected
+E (4769) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4774) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4800][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4818][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4806) i2c.master: I2C hardware NACK detected
+E (4806) i2c.master: I2C transaction unexpected nack detected
+E (4806) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4812) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4838][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4856][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4844) i2c.master: I2C hardware NACK detected
+E (4844) i2c.master: I2C transaction unexpected nack detected
+E (4844) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4849) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4875][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4894][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4881) i2c.master: I2C hardware NACK detected
+E (4881) i2c.master: I2C transaction unexpected nack detected
+E (4882) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4887) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4913][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4931][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4919) i2c.master: I2C hardware NACK detected
+E (4919) i2c.master: I2C transaction unexpected nack detected
+E (4919) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4925) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4951][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  4969][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4957) i2c.master: I2C hardware NACK detected
+E (4957) i2c.master: I2C transaction unexpected nack detected
+E (4957) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4962) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4988][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5007][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (4994) i2c.master: I2C hardware NACK detected
+E (4994) i2c.master: I2C transaction unexpected nack detected
+E (4995) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5000) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5026][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5044][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5032) i2c.master: I2C hardware NACK detected
+E (5032) i2c.master: I2C transaction unexpected nack detected
+E (5032) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5038) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5064][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5082][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5070) i2c.master: I2C hardware NACK detected
+E (5070) i2c.master: I2C transaction unexpected nack detected
+E (5070) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5075) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5101][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5120][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5107) i2c.master: I2C hardware NACK detected
+E (5107) i2c.master: I2C transaction unexpected nack detected
+E (5108) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5113) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5139][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5157][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5145) i2c.master: I2C hardware NACK detected
+E (5145) i2c.master: I2C transaction unexpected nack detected
+E (5145) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5151) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5177][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5195][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5183) i2c.master: I2C hardware NACK detected
+E (5183) i2c.master: I2C transaction unexpected nack detected
+E (5183) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5188) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5214][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5233][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5220) i2c.master: I2C hardware NACK detected
+E (5220) i2c.master: I2C transaction unexpected nack detected
+E (5221) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5226) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5252][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5270][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5258) i2c.master: I2C hardware NACK detected
+E (5258) i2c.master: I2C transaction unexpected nack detected
+E (5258) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5264) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5290][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5308][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5296) i2c.master: I2C hardware NACK detected
+E (5296) i2c.master: I2C transaction unexpected nack detected
+E (5296) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5301) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5327][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5346][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5333) i2c.master: I2C hardware NACK detected
+E (5333) i2c.master: I2C transaction unexpected nack detected
+E (5334) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5339) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5365][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5383][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5371) i2c.master: I2C hardware NACK detected
+E (5371) i2c.master: I2C transaction unexpected nack detected
+E (5371) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5377) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5403][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5421][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5409) i2c.master: I2C hardware NACK detected
+E (5409) i2c.master: I2C transaction unexpected nack detected
+E (5409) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5414) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5440][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5459][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5446) i2c.master: I2C hardware NACK detected
+E (5446) i2c.master: I2C transaction unexpected nack detected
+E (5447) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5452) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5478][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5496][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5484) i2c.master: I2C hardware NACK detected
+E (5484) i2c.master: I2C transaction unexpected nack detected
+E (5484) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5490) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5516][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5534][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5522) i2c.master: I2C hardware NACK detected
+E (5522) i2c.master: I2C transaction unexpected nack detected
+E (5522) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5527) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5553][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5572][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5559) i2c.master: I2C hardware NACK detected
+E (5559) i2c.master: I2C transaction unexpected nack detected
+E (5560) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5565) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5591][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5609][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5597) i2c.master: I2C hardware NACK detected
+E (5597) i2c.master: I2C transaction unexpected nack detected
+E (5597) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5603) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5629][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5647][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5635) i2c.master: I2C hardware NACK detected
+E (5635) i2c.master: I2C transaction unexpected nack detected
+E (5635) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5640) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5666][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5685][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5672) i2c.master: I2C hardware NACK detected
+E (5672) i2c.master: I2C transaction unexpected nack detected
+E (5672) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5678) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5704][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5722][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5710) i2c.master: I2C hardware NACK detected
+E (5710) i2c.master: I2C transaction unexpected nack detected
+E (5710) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5716) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5742][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5760][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5748) i2c.master: I2C hardware NACK detected
+E (5748) i2c.master: I2C transaction unexpected nack detected
+E (5748) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5753) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5779][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5798][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5785) i2c.master: I2C hardware NACK detected
+E (5785) i2c.master: I2C transaction unexpected nack detected
+E (5785) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5791) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5817][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5835][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5823) i2c.master: I2C hardware NACK detected
+E (5823) i2c.master: I2C transaction unexpected nack detected
+E (5823) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5829) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5855][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5873][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5861) i2c.master: I2C hardware NACK detected
+E (5861) i2c.master: I2C transaction unexpected nack detected
+E (5861) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5866) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5892][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5911][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5898) i2c.master: I2C hardware NACK detected
+E (5898) i2c.master: I2C transaction unexpected nack detected
+E (5898) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5904) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5930][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5948][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5936) i2c.master: I2C hardware NACK detected
+E (5936) i2c.master: I2C transaction unexpected nack detected
+E (5936) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5942) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5968][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  5986][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (5974) i2c.master: I2C hardware NACK detected
+E (5974) i2c.master: I2C transaction unexpected nack detected
+E (5974) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5979) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  6005][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  6024][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (6011) i2c.master: I2C hardware NACK detected
+E (6011) i2c.master: I2C transaction unexpected nack detected
+E (6011) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (6017) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  6043][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  6061][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (6049) i2c.master: I2C hardware NACK detected
+E (6049) i2c.master: I2C transaction unexpected nack detected
+E (6049) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (6055) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  6081][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  6099][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (6087) i2c.master: I2C hardware NACK detected
+E (6087) i2c.master: I2C transaction unexpected nack detected
+E (6087) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (6092) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  6118][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  6137][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (6124) i2c.master: I2C hardware NACK detected
+E (6124) i2c.master: I2C transaction unexpected nack detected
+E (6124) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (6130) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  6156][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  6174][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (6162) i2c.master: I2C hardware NACK detected
+E (6162) i2c.master: I2C transaction unexpected nack detected
+E (6162) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (6168) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  6194][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  6212][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+E (6200) i2c.master: I2C hardware NACK detected
+E (6200) i2c.master: I2C transaction unexpected nack detected
+E (6200) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (6205) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  6231][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+[  6250][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6257][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6264][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6271][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6278][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6285][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6292][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6299][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6306][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6313][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6320][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6327][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6335][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6342][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6349][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6356][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6363][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6370][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6377][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6384][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6391][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6398][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6405][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6412][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6419][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6427][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6434][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6441][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6448][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6455][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6462][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6469][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6476][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6483][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6490][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6497][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6504][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6511][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6519][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6526][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6533][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6540][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6547][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6554][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6561][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6568][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6575][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6582][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6589][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6596][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6603][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6610][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6618][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6625][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6632][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6639][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6646][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6653][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6660][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6667][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6674][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6681][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6688][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6695][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6702][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6710][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6717][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6724][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6731][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6738][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6745][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6752][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6759][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6766][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6773][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6780][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6787][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6794][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6802][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6809][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6816][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6823][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6830][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6837][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6844][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6851][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6858][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6865][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6872][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6879][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6886][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6893][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6901][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6908][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6915][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6922][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6929][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6936][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6943][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6950][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6957][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6964][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6971][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6978][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6985][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  6993][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7000][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7007][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7014][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7021][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7028][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7035][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7042][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7049][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7056][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7063][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7070][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7077][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7085][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7092][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7099][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7106][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7113][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7120][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7127][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7134][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7141][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7148][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7155][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7162][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7169][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7176][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7184][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7191][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7198][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7205][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7212][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7219][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7226][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7233][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7240][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7247][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7254][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7261][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7268][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7276][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7283][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7290][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7297][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7304][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7311][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7318][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7325][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7332][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7339][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7346][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7353][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7360][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7368][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7375][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7382][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7389][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7396][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7403][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7410][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7417][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7424][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7431][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7438][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7445][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7452][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7459][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7467][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7474][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7481][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7488][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7495][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7502][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7509][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7516][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7523][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7530][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7537][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7544][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7551][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7559][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7566][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7573][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7580][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7587][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7594][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7601][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7608][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7615][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7622][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7629][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7636][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7643][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7651][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7658][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7665][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7672][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7679][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7686][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7693][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7700][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7707][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7714][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7721][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7728][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7735][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7742][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7750][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7757][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7764][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7771][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7778][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7785][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7792][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7799][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7806][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7813][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7820][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7827][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7834][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7842][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7849][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7856][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7863][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7870][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7877][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7884][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7891][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7898][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7905][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7912][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7919][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7926][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7934][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7941][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7948][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7955][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7962][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7969][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7976][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7983][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7990][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  7997][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8004][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8011][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8018][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8025][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8033][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8040][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8047][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8054][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8061][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8068][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8075][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8082][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8089][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8096][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8103][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8110][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8117][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8125][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8132][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8139][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8146][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8153][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8160][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8167][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8174][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8181][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8188][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8195][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8202][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8209][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8217][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8224][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8231][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8238][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8245][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8252][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8259][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8266][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8273][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8280][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8287][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8294][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8301][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8308][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8316][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8323][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8330][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8337][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8344][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8351][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8358][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8365][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8372][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8379][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8386][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8393][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8400][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8408][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8415][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8422][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8429][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8436][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8443][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8450][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8457][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8464][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8471][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8478][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8485][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8492][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8500][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8507][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8514][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8521][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8528][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8535][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8542][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8549][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8556][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8563][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8570][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8577][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8584][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8591][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8599][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8606][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8613][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8620][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8627][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8634][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8641][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8648][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8655][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8662][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8669][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8676][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8683][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8691][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8698][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8705][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8712][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8719][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8726][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8733][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8740][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8747][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8754][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8761][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8768][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8775][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8783][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8790][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8797][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8804][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8811][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8818][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8825][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8832][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8839][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8846][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8853][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8860][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8867][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8874][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8882][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8889][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8896][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8903][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8910][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8917][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8924][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8931][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8938][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8945][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8952][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8959][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8966][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8974][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8981][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8988][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  8995][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9002][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9009][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9016][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9023][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9030][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9037][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9044][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9051][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9058][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9066][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9073][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9080][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9087][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9094][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9101][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9108][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9115][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9122][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9129][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9136][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9143][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9150][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9157][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9165][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9172][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9179][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9186][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9193][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9200][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9207][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9214][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9221][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9228][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9235][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9242][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9249][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9257][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9264][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9271][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9278][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9285][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9292][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9299][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9306][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9313][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9320][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9327][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9334][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9341][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9349][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9356][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9363][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9370][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9377][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9384][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9391][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9398][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9405][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9412][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9419][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9426][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9433][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9440][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9448][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9455][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9462][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9469][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9476][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9483][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9490][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9497][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9504][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9511][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9518][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9525][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9532][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9540][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9547][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9554][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9561][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9568][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9575][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9582][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9589][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9596][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9603][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9610][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9617][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9624][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9632][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9639][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9646][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9653][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9660][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9667][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9674][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9681][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9688][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9695][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9702][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9709][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9716][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9723][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9731][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9738][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9745][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9752][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9759][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9766][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9773][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9780][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9787][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9794][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9801][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9808][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9815][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9823][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9830][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9837][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9844][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9851][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9858][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9865][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9872][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9879][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9886][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9893][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9900][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9907][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9915][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9922][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9929][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9936][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9943][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9950][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9957][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9964][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9971][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9978][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9985][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9992][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[  9999][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10006][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10014][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10021][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10028][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10035][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10042][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10049][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10056][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10063][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10070][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10077][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10084][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10091][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10098][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10106][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10113][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10120][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10127][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10134][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10141][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10148][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10155][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10162][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10169][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10176][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10183][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10190][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10198][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10205][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10212][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10219][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10226][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10233][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10240][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10247][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10254][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10261][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10268][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10275][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10282][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10290][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10297][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10304][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10311][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10318][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10325][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10332][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10339][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10346][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10353][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10360][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10367][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10374][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10382][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10389][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10396][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10403][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10410][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10417][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10424][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10431][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10438][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10445][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10452][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10459][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10466][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10474][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10481][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10488][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10495][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10502][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10509][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10516][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10523][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10530][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10537][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10544][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10551][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10558][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10566][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10573][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10580][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10587][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10594][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10601][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10608][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10615][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10622][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10629][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10636][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10643][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10650][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10658][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10665][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10672][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10679][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10686][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10693][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10700][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10707][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10714][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10721][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10728][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10735][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10742][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10750][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10757][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10764][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10771][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10778][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10785][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10792][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10799][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10806][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10813][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10820][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10827][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10834][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10842][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10849][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10856][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10863][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10870][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10877][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10884][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10891][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10898][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10905][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10912][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10919][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10926][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10934][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10941][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10948][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10955][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10962][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10969][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10976][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10983][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10990][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 10997][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11004][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11011][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11018][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11026][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11033][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11040][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11047][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11054][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11061][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11068][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11075][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11082][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11089][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11096][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11103][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11110][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11118][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11125][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11132][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11139][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11146][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11153][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11160][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11167][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11174][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11181][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11188][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11195][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11202][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11210][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11217][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11224][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11231][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11238][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11245][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11252][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11259][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11266][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11273][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11280][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11287][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11294][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11302][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11309][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11316][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11323][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11330][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11337][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11344][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11351][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11358][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11365][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11372][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11379][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11386][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11394][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11401][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11408][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11415][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11422][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11429][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11436][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11443][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11450][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11457][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11464][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11471][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11478][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11486][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11493][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11500][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11507][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11514][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11521][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11528][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11535][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11542][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11549][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11556][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11563][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11570][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11578][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11585][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11592][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11599][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11606][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11613][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11620][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11627][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11634][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11641][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11648][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11655][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11662][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11670][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11677][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11684][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11691][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11698][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11705][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11712][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11719][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11726][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11733][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11740][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11747][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11754][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11762][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11769][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11776][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11783][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11790][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11797][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11804][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11811][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11818][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11825][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11832][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11839][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11846][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11854][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11861][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11868][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11875][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11882][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11889][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11896][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11903][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11910][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11917][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11924][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11931][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11938][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11946][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11953][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11960][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11967][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11974][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11981][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11988][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 11995][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12002][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12009][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12016][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12023][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12030][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12038][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12045][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12052][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12059][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12066][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12073][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12080][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12087][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12094][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12101][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12108][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12115][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12122][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12130][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12137][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12144][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12151][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12158][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12165][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12172][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12179][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12186][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12193][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12200][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12207][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12214][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12222][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12229][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12236][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12243][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12250][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12257][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12264][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12271][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12278][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12285][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12292][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12299][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12306][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12314][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12321][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12328][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12335][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12342][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12349][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12356][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12363][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12370][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12377][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12384][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12391][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12398][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12406][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12413][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12420][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12427][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12434][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12441][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12448][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12455][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12462][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12469][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12476][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12483][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12490][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12498][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12505][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12512][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12519][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12526][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12533][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12540][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12547][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12554][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12561][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12568][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12575][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12582][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12590][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12597][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12604][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12611][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12618][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12625][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12632][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12639][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12646][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12653][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12660][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12667][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12674][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12682][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12689][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12696][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12703][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12710][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12717][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12724][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12731][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12738][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12745][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12752][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12759][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12766][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12774][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12781][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12788][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12795][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12802][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12809][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12816][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12823][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12830][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12837][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12844][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12851][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12858][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12866][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12873][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12880][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12887][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12894][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12901][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12908][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12915][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12922][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12929][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12936][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12943][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12950][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12958][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12965][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12972][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12979][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12986][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 12993][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13000][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13007][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13014][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13021][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13028][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13035][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13042][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13050][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13057][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13064][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13071][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13078][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13085][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13092][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13099][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13106][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13113][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13120][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13127][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13134][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13142][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13149][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13156][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13163][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13170][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13177][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13184][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13191][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13198][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13205][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13212][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13219][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13226][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13234][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13241][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13248][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13255][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13262][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13269][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13276][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13283][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13290][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13297][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13304][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13311][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13318][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13326][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13333][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13340][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13347][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13354][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13361][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13368][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13375][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13382][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13389][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13396][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13403][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13410][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13418][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13425][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13432][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13439][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13446][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13453][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13460][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13467][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13474][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13481][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13488][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13495][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13502][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13510][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13517][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13524][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13531][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13538][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13545][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13552][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13559][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13566][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13573][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13580][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13587][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13594][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13602][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13609][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13616][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13623][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13630][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13637][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13644][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13651][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13658][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13665][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13672][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13679][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13686][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13694][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13701][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13708][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13715][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13722][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13729][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13736][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13743][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13750][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13757][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13764][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13771][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13778][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13786][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13793][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13800][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13807][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13814][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13821][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13828][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13835][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13842][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13849][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13856][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13863][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13870][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13878][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13885][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13892][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13899][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13906][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13913][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13920][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13927][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13934][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13941][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13948][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13955][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13962][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13970][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13977][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13984][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13991][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 13998][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14005][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14012][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14019][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14026][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14033][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14040][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14047][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14054][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14062][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14069][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14076][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14083][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14090][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14097][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14104][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14111][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14118][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14125][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14132][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14139][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14146][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14154][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14161][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14168][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14175][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14182][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14189][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14196][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14203][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14210][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14217][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14224][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14231][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14238][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14246][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14253][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14260][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14267][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14274][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14281][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14288][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14295][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14302][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14309][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14316][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14323][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14330][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14338][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14345][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14352][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14359][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14366][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14373][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14380][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14387][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14394][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14401][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14408][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14415][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14422][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14430][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14437][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14444][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14451][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14458][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14465][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14472][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14479][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14486][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14493][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14500][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14507][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14514][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14522][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14529][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14536][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14543][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14550][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14557][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14564][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14571][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14578][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14585][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14592][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14599][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14606][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14614][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14621][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14628][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14635][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14642][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14649][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14656][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14663][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14670][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14677][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14684][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14691][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14698][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14706][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14713][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14720][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14727][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14734][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14741][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14748][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14755][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14762][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14769][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14776][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14783][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14790][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14798][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14805][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14812][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14819][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14826][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14833][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14840][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14847][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14854][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14861][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14868][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14875][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14882][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14890][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14897][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14904][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14911][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14918][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14925][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14932][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14939][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14946][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14953][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14960][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14967][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14974][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14982][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14989][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 14996][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15003][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15010][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15017][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15024][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15031][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15038][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15045][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15052][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15059][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15066][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15074][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15081][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15088][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15095][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15102][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15109][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15116][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15123][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15130][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15137][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15144][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15151][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15158][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15166][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15173][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15180][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15187][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15194][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15201][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15208][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15215][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15222][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15229][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15236][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15243][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15250][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15258][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15265][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15272][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15279][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15286][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15293][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15300][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15307][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15314][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15321][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15328][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15335][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15342][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15350][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15357][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15364][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15371][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15378][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15385][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15392][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15399][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15406][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15413][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15420][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15427][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15434][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15442][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15449][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15456][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15463][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15470][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15477][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15484][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15491][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15498][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15505][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15512][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15519][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15526][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15534][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15541][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15548][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15555][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15562][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15569][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15576][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15583][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15590][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15597][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15604][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15611][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15618][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15626][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15633][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15640][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15647][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15654][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15661][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15668][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15675][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15682][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15689][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15696][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15703][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15710][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15718][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15725][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15732][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15739][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15746][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15753][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15760][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15767][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15774][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15781][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15788][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15795][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15802][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15810][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15817][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15824][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15831][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15838][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15845][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15852][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15859][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15866][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15873][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15880][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15887][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15894][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15902][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15909][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15916][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15923][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15930][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15937][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15944][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15951][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15958][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15965][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15972][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15979][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15986][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 15994][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16001][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16008][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16015][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16022][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16029][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16036][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16043][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16050][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16057][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16064][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16071][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16078][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16086][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16093][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16100][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16107][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16114][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16121][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16128][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16135][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16142][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16149][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16156][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16163][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16170][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16178][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16185][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16192][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16199][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16206][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16213][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16220][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16227][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16234][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16241][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16248][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16255][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16262][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16270][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16277][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16284][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16291][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16298][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16305][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16312][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16319][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16326][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16333][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16340][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16347][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16354][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16362][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16369][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16376][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16383][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16390][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16397][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16404][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16411][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16418][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16425][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16432][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16439][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16446][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16454][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16461][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16468][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16475][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16482][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16489][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16496][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16503][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16510][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16517][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16524][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16531][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16538][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16546][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16553][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16560][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16567][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16574][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16581][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16588][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16595][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16602][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16609][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16616][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16623][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16630][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16638][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16645][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16652][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16659][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16666][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16673][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16680][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16687][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16694][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16701][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16708][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16715][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16722][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16730][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16737][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16744][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16751][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16758][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16765][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16772][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16779][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16786][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16793][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16800][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16807][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16814][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16822][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16829][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16836][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16843][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16850][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16857][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16864][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16871][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16878][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16885][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16892][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16899][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16906][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16914][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16921][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16928][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16935][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16942][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16949][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16956][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16963][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16970][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16977][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16984][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16991][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 16998][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17006][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17013][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17020][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17027][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17034][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17041][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17048][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17055][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17062][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17069][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17076][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17083][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17090][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17098][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17105][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17112][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17119][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17126][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17133][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17140][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17147][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17154][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17161][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17168][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17175][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17182][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17190][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17197][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17204][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17211][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17218][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17225][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17232][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17239][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17246][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17253][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17260][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17267][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17274][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17282][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17289][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17296][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17303][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17310][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17317][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17324][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17331][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17338][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17345][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17352][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17359][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17366][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17374][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17381][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17388][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17395][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17402][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17409][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17416][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17423][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17430][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17437][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17444][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17451][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17458][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17466][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17473][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17480][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17487][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17494][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17501][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17508][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17515][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17522][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17529][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17536][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17543][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17550][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17558][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17565][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17572][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17579][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17586][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17593][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17600][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17607][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17614][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17621][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17628][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17635][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17642][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17650][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17657][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17664][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17671][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17678][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17685][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17692][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17699][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17706][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17713][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17720][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17727][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17734][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17742][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17749][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17756][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17763][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17770][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17777][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17784][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17791][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17798][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17805][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17812][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17819][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17826][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17834][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17841][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17848][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17855][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17862][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17869][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17876][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17883][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17890][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17897][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17904][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17911][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17918][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17926][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17933][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17940][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17947][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17954][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17961][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17968][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17975][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17982][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17989][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 17996][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18003][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18010][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18018][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18025][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18032][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18039][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18046][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18053][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18060][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18067][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18074][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18081][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18088][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18095][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18102][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18110][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18117][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18124][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18131][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18138][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18145][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18152][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18159][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18166][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18173][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18180][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18187][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18194][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18202][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18209][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18216][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18223][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18230][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18237][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18244][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18251][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18258][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18265][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18272][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18279][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18286][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18294][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18301][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18308][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18315][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18322][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18329][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18336][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18343][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18350][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18357][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18364][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18371][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18378][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18386][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18393][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18400][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18407][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18414][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18421][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18428][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18435][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18442][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18449][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18456][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18463][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18470][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18478][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18485][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18492][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18499][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18506][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18513][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18520][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916
+[ 18527][I][ak09916.cpp:56] read_register_ak09916(): Reading from ak09916

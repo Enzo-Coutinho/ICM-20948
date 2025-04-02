@@ -1,0 +1,1484 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    20][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   339660 B ( 331.7 KB)
+  Allocated Bytes   :    32808 B (  32.0 KB)
+  Minimum Free Bytes:   334404 B ( 326.6 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   531][I][i2c_driver.cpp:20] i2c_initialize(): Init I2C bus with code: 0
+[   538][I][i2c_driver.cpp:22] i2c_initialize(): Add device to I2C bus with code 0
+Starting 261
+E (527) i2c.master: I2C hardware NACK detected
+E (528) i2c.master: I2C transaction unexpected nack detected
+E (528) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (534) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[   559][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (559) i2c.master: I2C hardware NACK detected
+E (559) i2c.master: I2C transaction unexpected nack detected
+E (559) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (564) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[   589][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (690) i2c.master: I2C hardware NACK detected
+E (690) i2c.master: I2C transaction unexpected nack detected
+E (690) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (696) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[   721][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (721) i2c.master: I2C hardware NACK detected
+E (721) i2c.master: I2C transaction unexpected nack detected
+E (721) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (727) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[   752][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (852) i2c.master: I2C hardware NACK detected
+E (852) i2c.master: I2C transaction unexpected nack detected
+E (852) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (858) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[   883][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (883) i2c.master: I2C hardware NACK detected
+E (883) i2c.master: I2C transaction unexpected nack detected
+E (883) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (889) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[   914][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (1014) i2c.master: I2C hardware NACK detected
+E (1014) i2c.master: I2C transaction unexpected nack detected
+E (1014) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1020) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1046][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1045) i2c.master: I2C hardware NACK detected
+E (1046) i2c.master: I2C transaction unexpected nack detected
+E (1046) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1051) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1076][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (1177) i2c.master: I2C hardware NACK detected
+E (1177) i2c.master: I2C transaction unexpected nack detected
+E (1177) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1183) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1209][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1208) i2c.master: I2C hardware NACK detected
+E (1209) i2c.master: I2C transaction unexpected nack detected
+E (1209) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1214) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1239][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (1340) i2c.master: I2C hardware NACK detected
+E (1340) i2c.master: I2C transaction unexpected nack detected
+E (1340) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1346) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1372][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1371) i2c.master: I2C hardware NACK detected
+E (1372) i2c.master: I2C transaction unexpected nack detected
+E (1372) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1377) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1402][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (1503) i2c.master: I2C hardware NACK detected
+E (1503) i2c.master: I2C transaction unexpected nack detected
+E (1503) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1509) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1535][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1534) i2c.master: I2C hardware NACK detected
+E (1535) i2c.master: I2C transaction unexpected nack detected
+E (1535) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1540) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1565][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (1666) i2c.master: I2C hardware NACK detected
+E (1666) i2c.master: I2C transaction unexpected nack detected
+E (1666) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1672) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1698][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1697) i2c.master: I2C hardware NACK detected
+E (1698) i2c.master: I2C transaction unexpected nack detected
+E (1698) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1703) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1728][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (1829) i2c.master: I2C hardware NACK detected
+E (1829) i2c.master: I2C transaction unexpected nack detected
+E (1829) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1835) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1861][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (1860) i2c.master: I2C hardware NACK detected
+E (1861) i2c.master: I2C transaction unexpected nack detected
+E (1861) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1866) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1891][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (1992) i2c.master: I2C hardware NACK detected
+E (1992) i2c.master: I2C transaction unexpected nack detected
+E (1992) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1998) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2024][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (2023) i2c.master: I2C hardware NACK detected
+E (2024) i2c.master: I2C transaction unexpected nack detected
+E (2024) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2029) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2054][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (2155) i2c.master: I2C hardware NACK detected
+E (2155) i2c.master: I2C transaction unexpected nack detected
+E (2155) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2161) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2187][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (2186) i2c.master: I2C hardware NACK detected
+E (2187) i2c.master: I2C transaction unexpected nack detected
+E (2187) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2192) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2217][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (2318) i2c.master: I2C hardware NACK detected
+E (2318) i2c.master: I2C transaction unexpected nack detected
+E (2318) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2324) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2350][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (2349) i2c.master: I2C hardware NACK detected
+E (2350) i2c.master: I2C transaction unexpected nack detected
+E (2350) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2355) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2380][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (2481) i2c.master: I2C hardware NACK detected
+E (2481) i2c.master: I2C transaction unexpected nack detected
+E (2481) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2487) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2513][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (2512) i2c.master: I2C hardware NACK detected
+E (2513) i2c.master: I2C transaction unexpected nack detected
+E (2513) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2518) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2543][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (2644) i2c.master: I2C hardware NACK detected
+E (2644) i2c.master: I2C transaction unexpected nack detected
+E (2644) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2650) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2676][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (2675) i2c.master: I2C hardware NACK detected
+E (2676) i2c.master: I2C transaction unexpected nack detected
+E (2676) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2681) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2706][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (2807) i2c.master: I2C hardware NACK detected
+E (2807) i2c.master: I2C transaction unexpected nack detected
+E (2807) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2813) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2839][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (2838) i2c.master: I2C hardware NACK detected
+E (2839) i2c.master: I2C transaction unexpected nack detected
+E (2839) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2844) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2869][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (2970) i2c.master: I2C hardware NACK detected
+E (2970) i2c.master: I2C transaction unexpected nack detected
+E (2970) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2976) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3002][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (3001) i2c.master: I2C hardware NACK detected
+E (3002) i2c.master: I2C transaction unexpected nack detected
+E (3002) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3007) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3032][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (3133) i2c.master: I2C hardware NACK detected
+E (3133) i2c.master: I2C transaction unexpected nack detected
+E (3133) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3139) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3165][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (3164) i2c.master: I2C hardware NACK detected
+E (3165) i2c.master: I2C transaction unexpected nack detected
+E (3165) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3170) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3195][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (3296) i2c.master: I2C hardware NACK detected
+E (3296) i2c.master: I2C transaction unexpected nack detected
+E (3296) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3302) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3328][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (3327) i2c.master: I2C hardware NACK detected
+E (3328) i2c.master: I2C transaction unexpected nack detected
+E (3328) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3333) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3358][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (3459) i2c.master: I2C hardware NACK detected
+E (3459) i2c.master: I2C transaction unexpected nack detected
+E (3459) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3465) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3491][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (3490) i2c.master: I2C hardware NACK detected
+E (3491) i2c.master: I2C transaction unexpected nack detected
+E (3491) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3496) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3521][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (3622) i2c.master: I2C hardware NACK detected
+E (3622) i2c.master: I2C transaction unexpected nack detected
+E (3622) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3628) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3654][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (3653) i2c.master: I2C hardware NACK detected
+E (3654) i2c.master: I2C transaction unexpected nack detected
+E (3654) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3659) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3684][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (3785) i2c.master: I2C hardware NACK detected
+E (3785) i2c.master: I2C transaction unexpected nack detected
+E (3785) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3791) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3817][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (3816) i2c.master: I2C hardware NACK detected
+E (3817) i2c.master: I2C transaction unexpected nack detected
+E (3817) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3822) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3847][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (3948) i2c.master: I2C hardware NACK detected
+E (3948) i2c.master: I2C transaction unexpected nack detected
+E (3948) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3954) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3980][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (3979) i2c.master: I2C hardware NACK detected
+E (3980) i2c.master: I2C transaction unexpected nack detected
+E (3980) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3985) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4010][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (4111) i2c.master: I2C hardware NACK detected
+E (4111) i2c.master: I2C transaction unexpected nack detected
+E (4111) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4117) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4143][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (4142) i2c.master: I2C hardware NACK detected
+E (4143) i2c.master: I2C transaction unexpected nack detected
+E (4143) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4148) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4173][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (4274) i2c.master: I2C hardware NACK detected
+E (4274) i2c.master: I2C transaction unexpected nack detected
+E (4274) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4280) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4306][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (4305) i2c.master: I2C hardware NACK detected
+E (4306) i2c.master: I2C transaction unexpected nack detected
+E (4306) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4311) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4336][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (4437) i2c.master: I2C hardware NACK detected
+E (4437) i2c.master: I2C transaction unexpected nack detected
+E (4437) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4443) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4469][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (4468) i2c.master: I2C hardware NACK detected
+E (4469) i2c.master: I2C transaction unexpected nack detected
+E (4469) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4474) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4499][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (4600) i2c.master: I2C hardware NACK detected
+E (4600) i2c.master: I2C transaction unexpected nack detected
+E (4600) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4606) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4632][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (4631) i2c.master: I2C hardware NACK detected
+E (4632) i2c.master: I2C transaction unexpected nack detected
+E (4632) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4637) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4662][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (4763) i2c.master: I2C hardware NACK detected
+E (4763) i2c.master: I2C transaction unexpected nack detected
+E (4763) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4769) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4795][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (4794) i2c.master: I2C hardware NACK detected
+E (4795) i2c.master: I2C transaction unexpected nack detected
+E (4795) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4800) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4825][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (4926) i2c.master: I2C hardware NACK detected
+E (4926) i2c.master: I2C transaction unexpected nack detected
+E (4926) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4932) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4958][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (4957) i2c.master: I2C hardware NACK detected
+E (4958) i2c.master: I2C transaction unexpected nack detected
+E (4958) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4963) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4988][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (5089) i2c.master: I2C hardware NACK detected
+E (5089) i2c.master: I2C transaction unexpected nack detected
+E (5089) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5095) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5121][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (5120) i2c.master: I2C hardware NACK detected
+E (5121) i2c.master: I2C transaction unexpected nack detected
+E (5121) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5126) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5151][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (5252) i2c.master: I2C hardware NACK detected
+E (5252) i2c.master: I2C transaction unexpected nack detected
+E (5252) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5258) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5284][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (5283) i2c.master: I2C hardware NACK detected
+E (5284) i2c.master: I2C transaction unexpected nack detected
+E (5284) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5289) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5314][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (5415) i2c.master: I2C hardware NACK detected
+E (5415) i2c.master: I2C transaction unexpected nack detected
+E (5415) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5421) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5447][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (5446) i2c.master: I2C hardware NACK detected
+E (5447) i2c.master: I2C transaction unexpected nack detected
+E (5447) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5452) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5477][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (5578) i2c.master: I2C hardware NACK detected
+E (5578) i2c.master: I2C transaction unexpected nack detected
+E (5578) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5584) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5610][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (5609) i2c.master: I2C hardware NACK detected
+E (5610) i2c.master: I2C transaction unexpected nack detected
+E (5610) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5615) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5640][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (5741) i2c.master: I2C hardware NACK detected
+E (5741) i2c.master: I2C transaction unexpected nack detected
+E (5741) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5747) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5773][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (5772) i2c.master: I2C hardware NACK detected
+E (5773) i2c.master: I2C transaction unexpected nack detected
+E (5773) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5778) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5803][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (5904) i2c.master: I2C hardware NACK detected
+E (5904) i2c.master: I2C transaction unexpected nack detected
+E (5904) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5910) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5936][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (5935) i2c.master: I2C hardware NACK detected
+E (5936) i2c.master: I2C transaction unexpected nack detected
+E (5936) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5941) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5966][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (6067) i2c.master: I2C hardware NACK detected
+E (6067) i2c.master: I2C transaction unexpected nack detected
+E (6067) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (6073) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  6099][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (6098) i2c.master: I2C hardware NACK detected
+E (6099) i2c.master: I2C transaction unexpected nack detected
+E (6099) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (6104) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  6129][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (6230) i2c.master: I2C hardware NACK detected
+E (6230) i2c.master: I2C transaction unexpected nack detected
+E (6230) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (6236) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  6262][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (6261) i2c.master: I2C hardware NACK detected
+E (6262) i2c.master: I2C transaction unexpected nack detected
+E (6262) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (6267) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  6292][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (6393) i2c.master: I2C hardware NACK detected
+E (6393) i2c.master: I2C transaction unexpected nack detected
+E (6393) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (6399) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  6425][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (6424) i2c.master: I2C hardware NACK detected
+E (6425) i2c.master: I2C transaction unexpected nack detected
+E (6425) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (6430) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  6455][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (6556) i2c.master: I2C hardware NACK detected
+E (6556) i2c.master: I2C transaction unexpected nack detected
+E (6556) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (6562) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  6588][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (6587) i2c.master: I2C hardware NACK detected
+E (6588) i2c.master: I2C transaction unexpected nack detected
+E (6588) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (6593) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  6618][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (6719) i2c.master: I2C hardware NACK detected
+E (6719) i2c.master: I2C transaction unexpected nack detected
+E (6719) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (6725) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  6751][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (6750) i2c.master: I2C hardware NACK detected
+E (6751) i2c.master: I2C transaction unexpected nack detected
+E (6751) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (6756) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  6781][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (6882) i2c.master: I2C hardware NACK detected
+E (6882) i2c.master: I2C transaction unexpected nack detected
+E (6882) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (6888) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  6914][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (6913) i2c.master: I2C hardware NACK detected
+E (6914) i2c.master: I2C transaction unexpected nack detected
+E (6914) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (6919) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  6944][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Starting 261
+E (7045) i2c.master: I2C hardware NACK detected
+E (7045) i2c.master: I2C transaction unexpected nack detected
+E (7045) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (7051) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  7077][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (7076) i2c.master: I2C hardware NACK detected
+E (7077) i2c.master: I2C transaction unexpected nack detected
+E (7077) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (7082) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  7107][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+=========== After Setup Start ============
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   335724 B ( 327.9 KB)
+  Allocated Bytes   :    36248 B (  35.4 KB)
+  Minimum Free Bytes:   330360 B ( 322.6 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+GPIO Info:
+------------------------------------------
+  GPIO : BUS_TYPE[bus/unit][chan]
+  --------------------------------------  
+     1 : UART_TX[0]
+     3 : UART_RX[0]
+============ After Setup End =============
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+E (7492) i2c.master: I2C hardware NACK detected
+E (7493) i2c.master: I2C transaction unexpected nack detected
+E (7493) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (7498) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  7524][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (7523) i2c.master: I2C hardware NACK detected
+E (7523) i2c.master: I2C transaction unexpected nack detected
+E (7524) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (7529) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  7555][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (7555) i2c.master: I2C hardware NACK detected
+E (7555) i2c.master: I2C transaction unexpected nack detected
+E (7555) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (7561) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  7586][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (7586) i2c.master: I2C hardware NACK detected
+E (7586) i2c.master: I2C transaction unexpected nack detected
+E (7586) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (7592) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  7617][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (7617) i2c.master: I2C hardware NACK detected
+E (7617) i2c.master: I2C transaction unexpected nack detected
+E (7617) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (7623) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  7648][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (7648) i2c.master: I2C hardware NACK detected
+E (7648) i2c.master: I2C transaction unexpected nack detected
+E (7648) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (7654) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  7679][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (7779) i2c.master: I2C hardware NACK detected
+E (7780) i2c.master: I2C transaction unexpected nack detected
+E (7780) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (7785) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  7810][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (7810) i2c.master: I2C hardware NACK detected
+E (7810) i2c.master: I2C transaction unexpected nack detected
+E (7810) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (7816) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  7842][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (7841) i2c.master: I2C hardware NACK detected
+E (7842) i2c.master: I2C transaction unexpected nack detected
+E (7842) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (7848) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  7873][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (7873) i2c.master: I2C hardware NACK detected
+E (7873) i2c.master: I2C transaction unexpected nack detected
+E (7873) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (7879) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  7904][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (7904) i2c.master: I2C hardware NACK detected
+E (7904) i2c.master: I2C transaction unexpected nack detected
+E (7904) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (7910) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  7935][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (7935) i2c.master: I2C hardware NACK detected
+E (7935) i2c.master: I2C transaction unexpected nack detected
+E (7935) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (7940) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  7966][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (8066) i2c.master: I2C hardware NACK detected
+E (8067) i2c.master: I2C transaction unexpected nack detected
+E (8067) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8072) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  8097][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (8097) i2c.master: I2C hardware NACK detected
+E (8097) i2c.master: I2C transaction unexpected nack detected
+E (8097) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8103) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  8129][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (8128) i2c.master: I2C hardware NACK detected
+E (8129) i2c.master: I2C transaction unexpected nack detected
+E (8129) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8135) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  8160][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (8160) i2c.master: I2C hardware NACK detected
+E (8160) i2c.master: I2C transaction unexpected nack detected
+E (8160) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8166) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  8191][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (8191) i2c.master: I2C hardware NACK detected
+E (8191) i2c.master: I2C transaction unexpected nack detected
+E (8191) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8197) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  8222][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (8222) i2c.master: I2C hardware NACK detected
+E (8222) i2c.master: I2C transaction unexpected nack detected
+E (8222) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8227) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  8253][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (8353) i2c.master: I2C hardware NACK detected
+E (8354) i2c.master: I2C transaction unexpected nack detected
+E (8354) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8359) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  8384][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (8384) i2c.master: I2C hardware NACK detected
+E (8384) i2c.master: I2C transaction unexpected nack detected
+E (8384) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8390) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  8416][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (8415) i2c.master: I2C hardware NACK detected
+E (8416) i2c.master: I2C transaction unexpected nack detected
+E (8416) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8422) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  8447][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (8447) i2c.master: I2C hardware NACK detected
+E (8447) i2c.master: I2C transaction unexpected nack detected
+E (8447) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8453) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  8478][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (8478) i2c.master: I2C hardware NACK detected
+E (8478) i2c.master: I2C transaction unexpected nack detected
+E (8478) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8484) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  8509][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (8509) i2c.master: I2C hardware NACK detected
+E (8509) i2c.master: I2C transaction unexpected nack detected
+E (8509) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8514) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  8540][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (8640) i2c.master: I2C hardware NACK detected
+E (8641) i2c.master: I2C transaction unexpected nack detected
+E (8641) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8646) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  8671][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (8671) i2c.master: I2C hardware NACK detected
+E (8671) i2c.master: I2C transaction unexpected nack detected
+E (8671) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8677) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  8703][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (8702) i2c.master: I2C hardware NACK detected
+E (8703) i2c.master: I2C transaction unexpected nack detected
+E (8703) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8709) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  8734][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (8734) i2c.master: I2C hardware NACK detected
+E (8734) i2c.master: I2C transaction unexpected nack detected
+E (8734) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8740) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  8765][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (8765) i2c.master: I2C hardware NACK detected
+E (8765) i2c.master: I2C transaction unexpected nack detected
+E (8765) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8771) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  8796][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (8796) i2c.master: I2C hardware NACK detected
+E (8796) i2c.master: I2C transaction unexpected nack detected
+E (8796) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8801) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  8827][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (8927) i2c.master: I2C hardware NACK detected
+E (8928) i2c.master: I2C transaction unexpected nack detected
+E (8928) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8933) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  8958][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (8958) i2c.master: I2C hardware NACK detected
+E (8958) i2c.master: I2C transaction unexpected nack detected
+E (8958) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8964) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  8990][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (8989) i2c.master: I2C hardware NACK detected
+E (8990) i2c.master: I2C transaction unexpected nack detected
+E (8990) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8996) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  9021][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (9021) i2c.master: I2C hardware NACK detected
+E (9021) i2c.master: I2C transaction unexpected nack detected
+E (9021) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9027) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  9052][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (9052) i2c.master: I2C hardware NACK detected
+E (9052) i2c.master: I2C transaction unexpected nack detected
+E (9052) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9058) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  9083][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (9083) i2c.master: I2C hardware NACK detected
+E (9083) i2c.master: I2C transaction unexpected nack detected
+E (9083) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9088) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  9114][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (9214) i2c.master: I2C hardware NACK detected
+E (9215) i2c.master: I2C transaction unexpected nack detected
+E (9215) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9220) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  9245][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (9245) i2c.master: I2C hardware NACK detected
+E (9245) i2c.master: I2C transaction unexpected nack detected
+E (9245) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9251) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  9277][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (9276) i2c.master: I2C hardware NACK detected
+E (9277) i2c.master: I2C transaction unexpected nack detected
+E (9277) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9283) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  9308][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (9308) i2c.master: I2C hardware NACK detected
+E (9308) i2c.master: I2C transaction unexpected nack detected
+E (9308) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9314) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  9339][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (9339) i2c.master: I2C hardware NACK detected
+E (9339) i2c.master: I2C transaction unexpected nack detected
+E (9339) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9345) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  9370][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (9370) i2c.master: I2C hardware NACK detected
+E (9370) i2c.master: I2C transaction unexpected nack detected
+E (9370) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9375) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  9401][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (9501) i2c.master: I2C hardware NACK detected
+E (9502) i2c.master: I2C transaction unexpected nack detected
+E (9502) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9507) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  9532][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (9532) i2c.master: I2C hardware NACK detected
+E (9532) i2c.master: I2C transaction unexpected nack detected
+E (9532) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9538) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  9564][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (9563) i2c.master: I2C hardware NACK detected
+E (9564) i2c.master: I2C transaction unexpected nack detected
+E (9564) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9570) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  9595][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (9595) i2c.master: I2C hardware NACK detected
+E (9595) i2c.master: I2C transaction unexpected nack detected
+E (9595) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9601) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  9626][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (9626) i2c.master: I2C hardware NACK detected
+E (9626) i2c.master: I2C transaction unexpected nack detected
+E (9626) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9632) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  9657][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (9657) i2c.master: I2C hardware NACK detected
+E (9657) i2c.master: I2C transaction unexpected nack detected
+E (9657) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9662) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  9688][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (9788) i2c.master: I2C hardware NACK detected
+E (9789) i2c.master: I2C transaction unexpected nack detected
+E (9789) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9794) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  9819][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (9819) i2c.master: I2C hardware NACK detected
+E (9819) i2c.master: I2C transaction unexpected nack detected
+E (9819) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9825) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  9851][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (9850) i2c.master: I2C hardware NACK detected
+E (9851) i2c.master: I2C transaction unexpected nack detected
+E (9851) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9857) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  9882][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (9882) i2c.master: I2C hardware NACK detected
+E (9882) i2c.master: I2C transaction unexpected nack detected
+E (9882) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9888) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  9913][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (9913) i2c.master: I2C hardware NACK detected
+E (9913) i2c.master: I2C transaction unexpected nack detected
+E (9913) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9919) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  9944][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (9944) i2c.master: I2C hardware NACK detected
+E (9944) i2c.master: I2C transaction unexpected nack detected
+E (9944) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9949) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  9975][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (10075) i2c.master: I2C hardware NACK detected
+E (10076) i2c.master: I2C transaction unexpected nack detected
+E (10076) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (10081) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 10107][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+E (12475) i2c.master: I2C hardware NACK detected
+E (12476) i2c.master: I2C transaction unexpected nack detected
+E (12476) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (12481) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 12507][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (12507) i2c.master: I2C hardware NACK detected
+E (12507) i2c.master: I2C transaction unexpected nack detected
+E (12507) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (12513) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 12539][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (12538) i2c.master: I2C hardware NACK detected
+E (12538) i2c.master: I2C transaction unexpected nack detected
+E (12538) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (12545) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 12570][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (12570) i2c.master: I2C hardware NACK detected
+E (12570) i2c.master: I2C transaction unexpected nack detected
+E (12570) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (12576) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 12601][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (12601) i2c.master: I2C hardware NACK detected
+E (12601) i2c.master: I2C transaction unexpected nack detected
+E (12601) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (12607) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 12632][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (12632) i2c.master: I2C hardware NACK detected
+E (12632) i2c.master: I2C transaction unexpected nack detected
+E (12633) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (12638) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 12664][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+E (27905) i2c.master: I2C hardware NACK detected
+E (27905) i2c.master: I2C transaction unexpected nack detected
+E (27906) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (27911) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 27937][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (27937) i2c.master: I2C hardware NACK detected
+E (27937) i2c.master: I2C transaction unexpected nack detected
+E (27937) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (27943) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 27969][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (27968) i2c.master: I2C hardware NACK detected
+E (27968) i2c.master: I2C transaction unexpected nack detected
+E (27968) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (27975) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 28000][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (28000) i2c.master: I2C hardware NACK detected
+E (28000) i2c.master: I2C transaction unexpected nack detected
+E (28000) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (28006) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 28031][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (28031) i2c.master: I2C hardware NACK detected
+E (28031) i2c.master: I2C transaction unexpected nack detected
+E (28031) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (28037) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 28062][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (28062) i2c.master: I2C hardware NACK detected
+E (28062) i2c.master: I2C transaction unexpected nack detected
+E (28063) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (28068) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 28094][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (28194) i2c.master: I2C hardware NACK detected
+E (28195) i2c.master: I2C transaction unexpected nack detected
+E (28195) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (28200) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 28226][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (28226) i2c.master: I2C hardware NACK detected
+E (28226) i2c.master: I2C transaction unexpected nack detected
+E (28226) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (28232) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 28258][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0

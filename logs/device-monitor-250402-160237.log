@@ -1,0 +1,3100 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[     6][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   510][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   517][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   525][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   533][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Guru Meditation Error: Core  1 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  1 register dump:
+PC      : 0x40086414  PS      : 0x00060530  A0      : 0x800ed485  A1      : 0x3ffb1d70  
+A2      : 0x00000105  A3      : 0x00000101  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x6b6e5500  A9      : 0x007b914c  
+A10     : 0x003fffff  A11     : 0x00060d23  A12     : 0x00060d20  A13     : 0x3f40c4e8  
+A14     : 0x00000002  A15     : 0x00000000  SAR     : 0x00000000  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000105  LBEG    : 0x40086435  LEND    : 0x40086445  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x40086411:0x3ffb1d70 0x400ed482:0x3ffb1d80 0x400e82c9:0x3ffb20a0 0x400e8306:0x3ffb2130 0x400d22d6:0x3ffb2170 0x400d2357:0x3ffb21f0 0x400d1ba4:0x3ffb2240 0x400d3c4b:0x3ffb2270 0x40088ebd:0x3ffb2290
+  #0  0x40086411 in strlen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/machine/xtensa/strlen.S:43
+  #1  0x400ed482 in _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+  #2  0x400e82c9 in _vsnprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:70
+  #3  0x400e8306 in vsnprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vsnprintf.c:40 (discriminator 1)
+  #4  0x400d22d6 in Print::vprintf(char const*, __va_list_tag) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:51
+  #5  0x400d2357 in Print::printf(char const*, ...) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/Print.cpp:85
+  #6  0x400d1ba4 in setup() at src/main.cpp:10 (discriminator 1)
+  #7  0x400d3c4b in loopTask(void*) at C:/Users/enzo/.platformio/packages/framework-arduinoespressif32@src-702d0f93023d86e22d8ef62aa333f0b7/cores/esp32/main.cpp:59
+  #8  0x40088ebd in vPortTaskWrapper at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+
+
+
+
+
+ELF file SHA256: 9e5cf44cf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    21][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   340368 B ( 332.4 KB)
+  Allocated Bytes   :    32212 B (  31.5 KB)
+  Minimum Free Bytes:   334828 B ( 327.0 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============

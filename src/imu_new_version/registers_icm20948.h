@@ -4,7 +4,7 @@
 // Use this function to desloc BIT_POSEs
 #define BIT_POSE(x) (1UL << x)
 
-#define ICM_20948_DEVICE_ADDRESS 0x68
+#define ICM_20948_DEVICE_ADDRESS 0x69
 
 #define __REG_BANK_SEL 0x7F
 #define __USER_BANK_0_ADDR 0
@@ -380,11 +380,11 @@ namespace __USER_BANK_3
         __I2C_SLV3_REG = 0x10,
         __I2C_SLV3_CTRL = 0x11,
         __I2C_SLV3_DO = 0x12,
-        __I2C_SLV4_ADDR = 0x13,
-        __I2C_SLV4_REG = 0x14,
-        __I2C_SLV4_CTRL = 0x15,
-        __I2C_SLV4_DO = 0x16,
-        __I2C_SLV4_DI = 0x17,
+       // __I2C_SLV4_ADDR = 0x13,
+       // __I2C_SLV4_REG = 0x14,
+       // __I2C_SLV4_CTRL = 0x15,
+       // __I2C_SLV4_DO = 0x16,
+       // __I2C_SLV4_DI = 0x17,
     };
 
     typedef struct

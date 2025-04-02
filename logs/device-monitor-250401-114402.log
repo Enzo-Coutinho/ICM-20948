@@ -1,0 +1,1227 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    20][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   339660 B ( 331.7 KB)
+  Allocated Bytes   :    32808 B (  32.0 KB)
+  Minimum Free Bytes:   334404 B ( 326.6 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   531][I][i2c_driver.cpp:20] i2c_initialize(): Init I2C bus with code: 0
+[   538][I][i2c_driver.cpp:22] i2c_initialize(): Add device to I2C bus with code 0
+=========== After Setup Start ============
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   335832 B ( 328.0 KB)
+  Allocated Bytes   :    36156 B (  35.3 KB)
+  Minimum Free Bytes:   330472 B ( 322.7 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+GPIO Info:
+------------------------------------------
+  GPIO : BUS_TYPE[bus/unit][chan]
+  --------------------------------------  
+     1 : UART_TX[0]
+     3 : UART_RX[0]
+============ After Setup End =============
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+E (3102) i2c.master: I2C hardware NACK detected
+E (3103) i2c.master: I2C transaction unexpected nack detected
+E (3103) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3109) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3134][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (3134) i2c.master: I2C hardware NACK detected
+E (3134) i2c.master: I2C transaction unexpected nack detected
+E (3134) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3139) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3165][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (3165) i2c.master: I2C hardware NACK detected
+E (3165) i2c.master: I2C transaction unexpected nack detected
+E (3165) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3171) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3197][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (3196) i2c.master: I2C hardware NACK detected
+E (3196) i2c.master: I2C transaction unexpected nack detected
+E (3197) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3202) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3227][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (3227) i2c.master: I2C hardware NACK detected
+E (3227) i2c.master: I2C transaction unexpected nack detected
+E (3227) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3233) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3258][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (3258) i2c.master: I2C hardware NACK detected
+E (3258) i2c.master: I2C transaction unexpected nack detected
+E (3258) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3264) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3289][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (3289) i2c.master: I2C hardware NACK detected
+E (3289) i2c.master: I2C transaction unexpected nack detected
+E (3289) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3295) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3321][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+E (3320) i2c.master: I2C hardware NACK detected
+E (3320) i2c.master: I2C transaction unexpected nack detected
+E (3320) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3326) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3352][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (3451) i2c.master: I2C hardware NACK detected
+E (3452) i2c.master: I2C transaction unexpected nack detected
+E (3452) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3457) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3482][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (3482) i2c.master: I2C hardware NACK detected
+E (3482) i2c.master: I2C transaction unexpected nack detected
+E (3482) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3488) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3514][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (3513) i2c.master: I2C hardware NACK detected
+E (3514) i2c.master: I2C transaction unexpected nack detected
+E (3514) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3520) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3545][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (3545) i2c.master: I2C hardware NACK detected
+E (3545) i2c.master: I2C transaction unexpected nack detected
+E (3545) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3551) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3576][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (3576) i2c.master: I2C hardware NACK detected
+E (3576) i2c.master: I2C transaction unexpected nack detected
+E (3576) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3582) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3607][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (3607) i2c.master: I2C hardware NACK detected
+E (3607) i2c.master: I2C transaction unexpected nack detected
+E (3607) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3612) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3638][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (3637) i2c.master: I2C hardware NACK detected
+E (3638) i2c.master: I2C transaction unexpected nack detected
+E (3638) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3643) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3669][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+E (3668) i2c.master: I2C hardware NACK detected
+E (3669) i2c.master: I2C transaction unexpected nack detected
+E (3669) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3674) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3700][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (3799) i2c.master: I2C hardware NACK detected
+E (3800) i2c.master: I2C transaction unexpected nack detected
+E (3800) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3805) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3830][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (3830) i2c.master: I2C hardware NACK detected
+E (3830) i2c.master: I2C transaction unexpected nack detected
+E (3830) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3836) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  3862][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (3861) i2c.master: I2C hardware NACK detected
+E (3862) i2c.master: I2C transaction unexpected nack detected
+E (3862) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3868) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3893][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (3893) i2c.master: I2C hardware NACK detected
+E (3893) i2c.master: I2C transaction unexpected nack detected
+E (3893) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3899) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3924][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (3924) i2c.master: I2C hardware NACK detected
+E (3924) i2c.master: I2C transaction unexpected nack detected
+E (3924) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3930) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3955][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (3955) i2c.master: I2C hardware NACK detected
+E (3955) i2c.master: I2C transaction unexpected nack detected
+E (3955) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3960) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3986][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (3985) i2c.master: I2C hardware NACK detected
+E (3986) i2c.master: I2C transaction unexpected nack detected
+E (3986) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3991) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4017][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+E (4016) i2c.master: I2C hardware NACK detected
+E (4017) i2c.master: I2C transaction unexpected nack detected
+E (4017) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4022) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4048][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (4147) i2c.master: I2C hardware NACK detected
+E (4148) i2c.master: I2C transaction unexpected nack detected
+E (4148) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4153) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4178][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (4178) i2c.master: I2C hardware NACK detected
+E (4178) i2c.master: I2C transaction unexpected nack detected
+E (4178) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4184) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4210][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (4209) i2c.master: I2C hardware NACK detected
+E (4210) i2c.master: I2C transaction unexpected nack detected
+E (4210) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4216) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4241][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (4241) i2c.master: I2C hardware NACK detected
+E (4241) i2c.master: I2C transaction unexpected nack detected
+E (4241) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4247) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4272][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (4272) i2c.master: I2C hardware NACK detected
+E (4272) i2c.master: I2C transaction unexpected nack detected
+E (4272) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4278) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4303][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (4303) i2c.master: I2C hardware NACK detected
+E (4303) i2c.master: I2C transaction unexpected nack detected
+E (4303) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4308) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4334][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (4333) i2c.master: I2C hardware NACK detected
+E (4334) i2c.master: I2C transaction unexpected nack detected
+E (4334) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4339) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4365][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+E (4364) i2c.master: I2C hardware NACK detected
+E (4365) i2c.master: I2C transaction unexpected nack detected
+E (4365) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4370) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4396][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (4495) i2c.master: I2C hardware NACK detected
+E (4496) i2c.master: I2C transaction unexpected nack detected
+E (4496) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4501) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4526][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (4526) i2c.master: I2C hardware NACK detected
+E (4526) i2c.master: I2C transaction unexpected nack detected
+E (4526) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4532) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4558][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (4557) i2c.master: I2C hardware NACK detected
+E (4558) i2c.master: I2C transaction unexpected nack detected
+E (4558) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4564) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4589][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (4589) i2c.master: I2C hardware NACK detected
+E (4589) i2c.master: I2C transaction unexpected nack detected
+E (4589) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4595) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4620][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (4620) i2c.master: I2C hardware NACK detected
+E (4620) i2c.master: I2C transaction unexpected nack detected
+E (4620) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4626) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4651][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (4651) i2c.master: I2C hardware NACK detected
+E (4651) i2c.master: I2C transaction unexpected nack detected
+E (4651) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4656) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4682][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (4681) i2c.master: I2C hardware NACK detected
+E (4682) i2c.master: I2C transaction unexpected nack detected
+E (4682) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4687) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4713][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+E (4712) i2c.master: I2C hardware NACK detected
+E (4713) i2c.master: I2C transaction unexpected nack detected
+E (4713) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4718) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4744][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (4843) i2c.master: I2C hardware NACK detected
+E (4844) i2c.master: I2C transaction unexpected nack detected
+E (4844) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4849) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4874][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (4874) i2c.master: I2C hardware NACK detected
+E (4874) i2c.master: I2C transaction unexpected nack detected
+E (4874) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4880) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  4906][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (4905) i2c.master: I2C hardware NACK detected
+E (4906) i2c.master: I2C transaction unexpected nack detected
+E (4906) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4912) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4937][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (4937) i2c.master: I2C hardware NACK detected
+E (4937) i2c.master: I2C transaction unexpected nack detected
+E (4937) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4943) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4968][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (4968) i2c.master: I2C hardware NACK detected
+E (4968) i2c.master: I2C transaction unexpected nack detected
+E (4968) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4974) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4999][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (4999) i2c.master: I2C hardware NACK detected
+E (4999) i2c.master: I2C transaction unexpected nack detected
+E (4999) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5004) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5030][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (5029) i2c.master: I2C hardware NACK detected
+E (5030) i2c.master: I2C transaction unexpected nack detected
+E (5030) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5035) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5061][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+E (5060) i2c.master: I2C hardware NACK detected
+E (5061) i2c.master: I2C transaction unexpected nack detected
+E (5061) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5066) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5092][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (5191) i2c.master: I2C hardware NACK detected
+E (5192) i2c.master: I2C transaction unexpected nack detected
+E (5192) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5197) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5222][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+Who i am: 0
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+E (5429) i2c.master: I2C hardware NACK detected
+E (5430) i2c.master: I2C transaction unexpected nack detected
+E (5430) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5435) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5460][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (5460) i2c.master: I2C hardware NACK detected
+E (5460) i2c.master: I2C transaction unexpected nack detected
+E (5460) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5466) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5492][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (5491) i2c.master: I2C hardware NACK detected
+E (5492) i2c.master: I2C transaction unexpected nack detected
+E (5492) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5498) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5523][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (5523) i2c.master: I2C hardware NACK detected
+E (5523) i2c.master: I2C transaction unexpected nack detected
+E (5523) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5529) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5554][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (5554) i2c.master: I2C hardware NACK detected
+E (5554) i2c.master: I2C transaction unexpected nack detected
+E (5554) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5560) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5585][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (5585) i2c.master: I2C hardware NACK detected
+E (5585) i2c.master: I2C transaction unexpected nack detected
+E (5585) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5590) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5616][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (5615) i2c.master: I2C hardware NACK detected
+E (5615) i2c.master: I2C transaction unexpected nack detected
+E (5616) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5621) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5647][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+E (5646) i2c.master: I2C hardware NACK detected
+E (5647) i2c.master: I2C transaction unexpected nack detected
+E (5647) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5652) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5678][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (5777) i2c.master: I2C hardware NACK detected
+E (5778) i2c.master: I2C transaction unexpected nack detected
+E (5778) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5783) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5808][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (5808) i2c.master: I2C hardware NACK detected
+E (5808) i2c.master: I2C transaction unexpected nack detected
+E (5808) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5814) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5840][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+E (5839) i2c.master: I2C hardware NACK detected
+E (5840) i2c.master: I2C transaction unexpected nack detected
+E (5840) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5846) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5871][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (5871) i2c.master: I2C hardware NACK detected
+E (5871) i2c.master: I2C transaction unexpected nack detected
+E (5871) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5877) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5902][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (5902) i2c.master: I2C hardware NACK detected
+E (5902) i2c.master: I2C transaction unexpected nack detected
+E (5902) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5908) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5933][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (5933) i2c.master: I2C hardware NACK detected
+E (5933) i2c.master: I2C transaction unexpected nack detected
+E (5933) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5938) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5964][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (5963) i2c.master: I2C hardware NACK detected
+E (5964) i2c.master: I2C transaction unexpected nack detected
+E (5964) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5969) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  5995][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+E (5994) i2c.master: I2C hardware NACK detected
+E (5995) i2c.master: I2C transaction unexpected nack detected
+E (5995) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (6000) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  6026][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am mag: 0
+E (6125) i2c.master: I2C hardware NACK detected
+E (6126) i2c.master: I2C transaction unexpected nack detected
+E (6126) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (6131) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  6156][E][i2c_driver.cpp:30] i2c_write_register(): I2C transmit failed with code: 259
+E (6156) i2c.master: I2C hardware NACK detected
+E (6156) i2c.master: I2C transaction unexpected nack detected
+E (6156) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (6162) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  6188][E][i2c_driver.cpp:37] i2c_read_register(): I2C read failed with code: 259
+Who i am: 0
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 0

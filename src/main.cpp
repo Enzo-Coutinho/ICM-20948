@@ -2,18 +2,21 @@
 
 #include "imu_new_version/ICM20948.h"
 
-uint8_t addr = 0;
-
 void setup() {
     Serial.begin(115200);
-    initialize();
+    start();
+    while(deviceIsConnected() != ESP_OK)
+    {
+        Serial.printf("Starting %s\n", esp_err_to_name(deviceIsConnected()));
+        restart_icm20948();
+        delay(500);
+    }
     default_init();
 }
 
 void loop() {
-    esp_err_t ok = deviceIsConnected();
-    read_register(__USER_BANK_3::REGISTERS::__I2C_SLV0_ADDR, 1, &addr);
-    Serial.printf("Device is Connected: %d\n", ok);
-    Serial.printf("Magnetometer addres: %d\n", addr);
-    delay(100);
+    Serial.printf("Who i am: %d\n", getWhoIAm());
+    Serial.printf("Who i am mag: %d\n", getWhoIAm_Mag());
+    //Serial.printf("Status 1: %d\n", getST_1());
+    delay(500);
 }
