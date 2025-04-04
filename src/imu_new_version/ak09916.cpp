@@ -33,25 +33,26 @@ void reset_ak09916()
 
 void write_register_ak09916(uint8_t reg, uint8_t data)
 {
-    i2c_write_register(__I2C_SLV4_ADDR, AK_09916_DEVICE_ADDRESS, dev_handle);
-    i2c_write_register(__I2C_SLV4_DO, data, dev_handle);
-    i2c_write_register(__I2C_SLV4_REG, reg, dev_handle);
-    i2c_write_register(__I2C_SLV4_CTRL, 0x80, dev_handle);
+
+    i2c_write_register(__USER_BANK_3::REGISTERS::__I2C_SLV4_ADDR, AK_09916_DEVICE_ADDRESS, dev_handle);
+    i2c_write_register(__USER_BANK_3::REGISTERS::__I2C_SLV4_DO, data, dev_handle);
+    i2c_write_register(__USER_BANK_3::REGISTERS::__I2C_SLV4_REG, reg, dev_handle);
+    i2c_write_register(__USER_BANK_3::REGISTERS::__I2C_SLV4_CTRL, 0x80, dev_handle);
     uint8_t ready = 0;
     while(ready & 0x80)
     {
-        i2c_read_register(__I2C_SLV4_CTRL, &ready, dev_handle);
+        i2c_read_register(__USER_BANK_3::REGISTERS::__I2C_SLV4_CTRL, &ready, dev_handle);
     }
 }
 
 uint8_t read_register_ak09916(uint8_t reg)
 {
-    i2c_write_register(__I2C_SLV4_ADDR, AK_09916_DEVICE_ADDRESS | 0x80, dev_handle);
-    i2c_write_register(__I2C_SLV4_REG, reg, dev_handle);
-    i2c_write_register(__I2C_SLV4_CTRL, 0x80, dev_handle);
+    i2c_write_register(__USER_BANK_3::REGISTERS::__I2C_SLV4_ADDR, AK_09916_DEVICE_ADDRESS | 0x80, dev_handle);
+    i2c_write_register(__USER_BANK_3::REGISTERS::__I2C_SLV4_REG, reg, dev_handle);
+    i2c_write_register(__USER_BANK_3::REGISTERS::__I2C_SLV4_CTRL, 0x80, dev_handle);
     uint8_t ready = 0;
-    i2c_read_register(__I2C_SLV4_CTRL, &ready, dev_handle);
+    i2c_read_register(__USER_BANK_3::REGISTERS::__I2C_SLV4_CTRL, &ready, dev_handle);
     uint8_t data = 0;
-    i2c_read_register(__I2C_SLV4_DI, &data, dev_handle);
+    i2c_read_register(__USER_BANK_3::REGISTERS::__I2C_SLV4_DI, &data, dev_handle);
     return data;
 }

@@ -2,14 +2,9 @@
 #define registers_ak09916_h
 
 #include <stdint.h>
+#include "registers_icm20948.h"
 
 #define AK_09916_DEVICE_ADDRESS 0x0C
-
-#define __I2C_SLV4_ADDR 0x13
-#define __I2C_SLV4_REG 0x14
-#define __I2C_SLV4_CTRL 0x15
-#define __I2C_SLV4_DO 0x16
-#define __I2C_SLV4_DI 0x17
 
 namespace _AK_09916
 {

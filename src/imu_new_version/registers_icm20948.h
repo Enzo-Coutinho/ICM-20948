@@ -1,8 +1,6 @@
-#ifndef registers_icmp20948_h
-#define registers_icmp20948_h
-
+#pragma once
 // Use this function to desloc BIT_POSEs
-#define BIT_POSE(x) (1UL << x)
+#define BIT_POSE(x) (1U << x)
 
 #define ICM_20948_DEVICE_ADDRESS 0x69
 
@@ -11,6 +9,8 @@
 #define __USER_BANK_1_ADDR 1
 #define __USER_BANK_2_ADDR 2
 #define __USER_BANK_3_ADDR 3
+
+typedef uint8_t u8;
 
 namespace __USER_BANK_0
 {
@@ -83,105 +83,173 @@ namespace __USER_BANK_0
         __FIFO_CFG = 0x76,
     };
 
-    enum USER_CTRL
+    typedef struct
     {
-        __I2C_MST_RST = BIT_POSE(1),
-        __SRAM_RST = BIT_POSE(2),
-        __DMP_RST = BIT_POSE(3),
-        __I2C_IF_DIS = BIT_POSE(4),
-        __I2C_MST_EN = BIT_POSE(5),
-        __FIFO_EN = BIT_POSE(6),
-        __DMP_EN = BIT_POSE(7),
-    };
+        u8 : 1;
+        u8 __I2C_MST_RST : 1;
+        u8 __SRAM_RST : 1;
+        u8 __DMP_RST : 1;
+        u8 __I2C_IF_DIS : 1;
+        u8 __I2C_MST_EN : 1;
+        u8 __FIFO_EN : 1;
+        u8 __DMP_EN : 1;
+    } user_ctrl_bitmap_t;
 
-    enum LP_CONFIG
+    union USER_CTRL
     {
-        __GYRO_CICLE = BIT_POSE(4),
-        __ACCEL_CYCLE = BIT_POSE(5),
-        __I2C_MST_CYCLE = BIT_POSE(6),
-    };
-
-    enum PWR_MGMT_1
+        u8 user_ctrl_u8;
+        user_ctrl_bitmap_t user_ctrl_bitmap;
+    } user_ctrl = {.user_ctrl_u8 = 0x00};
+    
+    typedef struct
     {
-        __CLKSEL_INTERNAL_OSCI = 0x00,
-        __CLKSEL_CLK_1 = 0x01,
-        __CLKSEL_CLK_2 = 0x02,
-        __CLKSEL_CLK_3 = 0x03,
-        __CLKSEL_CLK_4 = 0x04,
-        __CLKSEL_CLK_5 = 0x05,
-        __CLKSEL_INTERNAL_OSCI_1 = 0x06,
-        __CLKSEL_STOP_CLK = 0x07,
-        __TEMP_DIS = BIT_POSE(3),
-        __LP_EN = BIT_POSE(5),
-        __SLEEP = BIT_POSE(6),
-        __DEVICE_RESET = BIT_POSE(7)
-    };
+        u8 : 4;
+        u8 __GYRO_CICLE : 1;
+        u8 __ACCEL_CYCLE : 1;
+        u8 __I2C_MST_CYCLE : 1;
+        u8 : 1;
+    } lp_config_bitmap_t;
 
-    enum PWR_MGMT_2
+    union LP_CONFIG
     {
-        __DISABLE_GYRO_ALL_AXES = 0x07,
-        __ENABLE_GYRO_ALL_AXES = 0x00,
-        __DISABLE_ACCEL_ALL_AXES = 0x38,
-        __ENABLE_ACCEL_ALL_AXES = 0x00,
-    };
+        u8 lp_config_u8;
+        lp_config_bitmap_t lp_config_bitmap;
 
-    enum INT_PIN_CFG
+    } lp_config = {.lp_config_u8 = 0x40};
+
+    typedef struct
     {
-        __BYPASS_EN = BIT_POSE(1),
-        __FSYNC_INT_MODE_EN = BIT_POSE(2),
-        __ACTL_FSYNC = BIT_POSE(3),
-        __INT_ANYRD_2CLEAR = BIT_POSE(4),
-        __INT1_LATCH_EN = BIT_POSE(5),
-        __INT1_OPEN = BIT_POSE(6),
-        __INT1_ACTL = BIT_POSE(7),
-    };
+        u8 __CLKSEL : 3;
+        u8 __TEMP_DIS : 1;
+        u8 : 1;
+        u8 __LP_EN : 1;
+        u8 __SLEEP : 1;
+        u8 __DEVICE_RESET : 1;
+    } pwr_mgmt_1_bitmap_t;
 
-    enum INT_ENABLE
+    union PWR_MGMT_1
     {
-        __I2C_MST_INT_EN = BIT_POSE(0),
-        __DMP_INT1_EN = BIT_POSE(1),
-        __PLL_RDY_EN = BIT_POSE(2),
-        __WOM_INT_EN = BIT_POSE(3),
-        __REG_WOF_EN = BIT_POSE(7),
-    };
+        u8 pwr_mgmt_1_u8;
+        pwr_mgmt_1_bitmap_t pwr_mgmt_1_bitmap;
+    } pwr_mgmt_1 = {.pwr_mgmt_1_u8 = 0x41};
 
-    enum INT_ENABLE_1
+    typedef struct
     {
-        __RAW_DATA_0_RDY_EN = BIT_POSE(0),
-    };
+        u8 __DISABLE_GYRO : 3;
+        u8 __DISABLE_ACCEL : 3;
+        u8 : 2;
+    } pwr_mgmt_2_bitmap_t;
 
-    enum INT_ENABLE_2
+    union PWR_MGMT_2
     {
-        __FIFO_OVERFLOW_DIS = 0x00,
-        __FIFO_OVERFLOW_EN = BIT_POSE(0),
-    };
+        u8 pwr_mgmt_2_u8;
+        pwr_mgmt_2_bitmap_t pwr_mgmt_2_bitmap;
+    } pwr_mgmt_2 = {.pwr_mgmt_2_u8 = 0x00};
 
-    enum INT_ENABLE_3
+    typedef struct
     {
-        __FIFO_WM_DIS = 0x00,
-        __FIFO_WM_EN = BIT_POSE(0),
-    };
+        u8 : 1;
+        u8 __BY_PASS : 1;
+        u8 __FSYNC_INT_MODE_EN : 1;
+        u8 __ACTL_FSYNC : 1;
+        u8 __INT_ANYRD_2CLEAR : 1;
+        u8 __INT1_LATCH_EN : 1;
+        u8 __INT1_OPEN : 1;
+        u8 __INT1_ACTL : 1;
+    } int_pin_cgf_bitmap_t;
 
-    enum I2C_MST_STATUS
+    union INT_PIN_CFG
     {
-        __I2C_SLV0_NACK = BIT_POSE(0),
-        __I2C_SLV1_NACK = BIT_POSE(1),
-        __I2C_SLV2_NACK = BIT_POSE(2),
-        __I2C_SLV3_NACK = BIT_POSE(3),
-        __I2C_SLV4_NACK = BIT_POSE(4),
-        __I2C_LOST_ARB = BIT_POSE(5),
-        __I2C_SLV4_DONE = BIT_POSE(6),
-        __PASS_THROUGH = BIT_POSE(7),
-    };
+        u8 int_pin_cfg_u8;
+        int_pin_cgf_bitmap_t int_pin_cfg_bitmap;
+    } int_pin_cfg = {.int_pin_cfg_u8 = 0x00};
 
-    enum INT_STATUS
+    typedef struct
     {
-        __I2C_MST_INT = BIT_POSE(0),
-        __DMP_INT1 = BIT_POSE(1),
-        __PLL_RDY_INT = BIT_POSE(2),
-        __WOM_INT = BIT_POSE(3),
-    };
+        u8 __I2C_MST_INT_EN : 1;
+        u8 __DMP_INT1_EN : 1;
+        u8 __PLL_RDY_EN : 1;
+        u8 __WOM_INT_EN : 1;
+        u8 : 3;
+        u8 __REG_WOF_EN : 1;
+    } int_enable_bitmap_t;
 
+    union INT_ENABLE
+    {
+        u8 int_enable_u8;
+        int_enable_bitmap_t int_enable_bitmap;
+    } int_enable = {.int_enable_u8 = 0x00};
+
+    typedef struct
+    {
+        u8 __RAW_DATA_0_RDY_EN : 1;
+        u8 : 7;
+    } int_enable_1_bitmap_t;
+
+    union INT_ENABLE_1
+    {
+        u8 int_enable_1_u8;
+        int_enable_1_bitmap_t int_enable_1_bitmap;
+    } int_enable_1 = {.int_enable_1_u8 = 0x00};
+
+    typedef struct
+    {
+        u8 __FIFO_OVERFLOW_EN : 5;
+        u8 : 3;
+    } int_enable_2_bitmap_t;
+
+    union INT_ENABLE_2
+    {
+        u8 int_enable_2_u8;
+        int_enable_2_bitmap_t int_enable_2_bitmap;
+    } int_enable_2 = {.int_enable_2_u8 = 0x00};
+
+    typedef struct
+    {
+        u8 __FIFO_WM_EN : 5;
+        u8 : 3;
+    } int_enable_3_bitmap_t;
+
+    union INT_ENABLE_3
+    {
+        u8 int_enable_3_u8;
+        int_enable_3_bitmap_t int_enable_3_bitmap;
+    } int_enable_3 = {.int_enable_3_u8 = 0x00};
+
+    typedef struct
+    {
+        u8 __I2C_SLV0_NACK : 1;
+        u8 __I2C_SLV1_NACK : 1;
+        u8 __I2C_SLV2_NACK : 1;
+        u8 __I2C_SLV3_NACK : 1;
+        u8 __I2C_SLV4_NACK : 1;
+        u8 __I2C_LOST_ARB : 1;
+        u8 __I2C_SLV4_DONE : 1;
+        u8 __PASS_THROUGH : 1;
+    } i2c_mst_status_bitmap_t;
+
+    union I2C_MST_STATUS
+    {
+        u8 i2c_mst_status_u8;
+        i2c_mst_status_bitmap_t i2c_mst_status_bitmap;
+    } i2c_mst_status = {.i2c_mst_status_u8 = 0x00};
+
+    typedef struct 
+    {
+        u8 __I2C_MST_INT : 1;
+        u8 __DMP_INT1 : 1;
+        u8 __PLL_RDY_INT : 1;
+        u8 __WOM_INT : 1;
+        u8 : 4;
+    } int_status_bitmap_t;
+
+    union INT_STATUS
+    {
+        u8 int_status_u8;
+        int_status_bitmap_t int_status_bitmap;
+    } int_status = {.int_status_u8 = 0x00};
+
+    /*
     enum INT_STATUS_1
     {
         __RAW_DATA_0_RDY_INT = BIT_POSE(0),
@@ -196,44 +264,85 @@ namespace __USER_BANK_0
     {
         __FIFO_WM_INT = BIT_POSE(0),
     };
+    */
 
-    enum FIFO_EN_1
+    typedef struct
     {
-        __SLV_0_FIFO_EN = BIT_POSE(0),
-        __SLV_1_FIFO_EN = BIT_POSE(1),
-        __SLV_2_FIFO_EN = BIT_POSE(2),
-        __SLV_3_FIFO_EN = BIT_POSE(3),
-    };
+        u8 SLV_0_FIFO_EN : 1;
+        u8 SLV_1_FIFO_EN : 1;
+        u8 SLV_2_FIFO_EN : 1;
+        u8 SLV_3_FIFO_EN : 1;
+        u8 : 4;
+    } fifo_en_1_bitmap_t;
 
-    enum FIFO_EN_2
+    union FIFO_EN_1
     {
-        __TEMP_FIFO_EN = BIT_POSE(0),
-        __GYRO_X_FIFO_EN = BIT_POSE(1),
-        __GYRO_Y_FIFO_EN = BIT_POSE(2),
-        __GYRO_Z_FIFO_EN = BIT_POSE(3),
-        __ACCEL_FIFO_EN = BIT_POSE(4)
-    };
+        u8 fifo_en_1_u8;
+        fifo_en_1_bitmap_t fifo_en_1_bitmap;
+    } fifo_en_1 = {.fifo_en_1_u8 = 0x00};
 
-    enum FIFO_RST
+    typedef struct
     {
-        __FIFO_RESET = BIT_POSE(0), 
-    };
+        u8 __TEMP_FIFO_EN : 1;
+        u8 __GYRO_X_FIFO_EN : 1;
+        u8 __GYRO_Y_FIFO_EN : 1;
+        u8 __GYRO_Z_FIFO_EN : 1;
+        u8 __ACCEL_FIFO_EN : 1;
+        u8 : 3;
+    } fifo_en_2_bitmap_t;
 
-    enum FIFO_MODE
+    union FIFO_EN_2
     {
-        __STREAM = 0x00,
-        __SNAPSHOT = 0x01,
-    };
+        u8 fifo_en_2_u8;
+        fifo_en_2_bitmap_t fifo_en_2_bitmap;
+    } fifo_en_2 = {.fifo_en_2_u8 = 0x00};
 
-    enum FIFO_R_W
+    typedef struct
     {
-        // create all write bytes late
-    };
+        u8 __FIFO_RESET : 5;
+        u8 : 3;
+    } fifo_rst_bitmap_t;
 
-    enum FIFO_CFG
+    union FIFO_RST
     {
-        __FIFO_CFG_INTERRUPT = 0x01,
-    };
+        u8 fifo_rst_u8;
+        fifo_rst_bitmap_t fifo_rst_bitmap;
+    } fifo_rst = {.fifo_rst_u8 = 0x00};
+
+    typedef struct
+    {
+        u8 __FIFO_MODE : 5;
+        u8 : 3;
+    } fifo_mode_bitmap_t;
+
+    union FIFO_MODE
+    {
+        u8 fifo_mode_u8;
+        fifo_mode_bitmap_t fifo_mode_bitmap;
+    } fifo_mode = {.fifo_mode_u8 = 0x00};
+
+    typedef struct
+    {
+        u8 FIFO_R_W : 8;
+    } fifo_r_w_bitmap_t;
+
+    union FIFO_R_W
+    {
+        fifo_r_w_bitmap_t fifo_r_w_bitmap;
+        u8 fifo_r_w_u8;
+
+    } fifo_r_w = {.fifo_r_w_u8 = 0x00};
+
+    typedef struct
+    {
+        u8 __FIFO_CFG : 8;
+    } fifo_cfg_bitmap_t;
+
+    union FIFO_CFG
+    {
+        fifo_cfg_bitmap_t fifo_cfg_bitmap;
+        u8 fifo_cfg_u8;
+    } fifo_cfg = {.fifo_cfg_u8 = 0x00};
 }
 
 namespace __USER_BANK_1
@@ -281,35 +390,39 @@ namespace __USER_BANK_2
         __MOD_CTRL_USR = 0x54,
     };
 
-    enum GYRO_CONFIG_1
+    typedef struct
     {
-        __GYRO_FCHOICE_DISABLE = 0x00,
-        __GYRO_FCHOICE_ENABLE = 0x01,
-        __GYRO_FS_SEL_250DPS = 0x00,
-        __GYRO_FS_SEL_500DPS = 0x02,
-        __GYRO_FS_SEL_1000DPS = 0x04,
-        __GYRO_FS_SEL_2000DPS = 0x06,
-        __GYRO_DLPCFG_0 = 0x00,
-        __GYRO_DLPCFG_1 = 0x08,
-        __GYRO_DLPCFG_2 = 0x10,
-        __GYRO_DLPCFG_3 = 0x18,
-        __GYRO_DLPCFG_4 = 0x20,
-        __GYRO_DLPCFG_5 = 0x28,
-        __GYRO_DLPCFG_6 = 0x30,
-        __GYRO_DLPCFG_7 = 0x38,
-    };
+        u8 __GYRO_SMPLRT_DIV : 8;
+    } gyro_smplrt_div_bitmap_t;
 
-    enum GYRO_CONFIG_2
+    union GYRO_SMPLRT_DIV
     {
-        __GYRO_AVGCFG_1X = 0x00,
-        __GYRO_AVGCFG_2X = 0x01,
-        __GYRO_AVGCFG_4X = 0x02,
-        __GYRO_AVGCFG_8X = 0x03,
-        __GYRO_AVGCFG_16X = 0x04,
-        __GYRO_AVGCFG_32X = 0x05,
-        __GYRO_AVGCFG_64X = 0x06,
-        __GYRO_AVGCFG_128X = 0x07,
-    };
+        u8 gyro_smplrt_div_u8;
+        gyro_smplrt_div_bitmap_t gyro_smplrt_div_bitmap;
+    } gyro_smplrt_div = {.gyro_smplrt_div_u8 = 0x00};
+
+    typedef struct
+    {
+        u8 __GYRO_FCHOICE : 1;
+        u8 __GYRO_FS_SEL : 2;
+        u8 __GYRO_DLPFCFG : 3;
+        u8 : 2;
+    } gyro_config_1_bitmap_t;
+
+    union GYRO_CONFIG_1
+    {
+        u8 gyro_config_1_u8;
+        gyro_config_1_bitmap_t gyro_config_1_bitmap;
+    } gyro_config_1 = {.gyro_config_1_u8 = 0x01};
+
+    typedef struct
+    {
+        u8 __GYRO_AVGCFG : 3;
+        u8 __ZGYRO_CTEN : 1;
+        u8 __YGYRO_CTEN : 1;
+        u8 __XGYRO_CTEN : 1;
+        u8 : 2;
+    } gyro_config_2_bitmap_t;
 
     enum ACCEL_INTEL_CTRL
     {
@@ -355,6 +468,18 @@ namespace __USER_BANK_2
     {
         __REG_LP_DMP_EN = BIT_POSE(0),
     };
+
+    typedef struct
+    {
+        u8 __ODR_ALIGN_EN : 1;
+        u8 : 7;
+    } odr_align_en_bitmap_t;
+
+    union ODR_ALIGN_EN
+    {
+        u8 odr_align_en_u8;
+        odr_align_en_bitmap_t odr_align_en_bitmap;
+    } odr_align_en = {.odr_align_en_u8 = 0x00};
 }
 
 namespace __USER_BANK_3
@@ -380,44 +505,24 @@ namespace __USER_BANK_3
         __I2C_SLV3_REG = 0x10,
         __I2C_SLV3_CTRL = 0x11,
         __I2C_SLV3_DO = 0x12,
-       // __I2C_SLV4_ADDR = 0x13,
-       // __I2C_SLV4_REG = 0x14,
-       // __I2C_SLV4_CTRL = 0x15,
-       // __I2C_SLV4_DO = 0x16,
-       // __I2C_SLV4_DI = 0x17,
+        __I2C_SLV4_ADDR = 0x13,
+        __I2C_SLV4_REG = 0x14,
+        __I2C_SLV4_CTRL = 0x15,
+        __I2C_SLV4_DO = 0x16,
+        __I2C_SLV4_DI = 0x17,
     };
 
     typedef struct
     {
-        uint8_t I2C_MST_CLK : 4;
-        uint8_t I2C_MST_P_NSR : 1;
-        uint8_t : 2;
-        uint8_t MULT_MST_EN : 1;
-    } _i2c_mst_ctrl;
+        u8 __I2C_MST_CLK : 4;
+        u8 __I2C_MST_P_NSR : 1;
+        u8 : 2;
+        u8 __MULT_MST_EN : 1;
+    } i2c_mst_ctrl_bitmap_t;
 
-    enum I2C_MST_CTRL
+    union I2C_MST_CTRL
     {
-        //
-        //
-        I2C_MST_CLK_0 = 0x00,
-        I2C_MST_CLK_1 = 0x01,
-        I2C_MST_CLK_2 = 0x02,
-        I2C_MST_CLK_3 = 0x03,
-        I2C_MST_CLK_4 = 0x04,
-        I2C_MST_CLK_5 = 0x05,
-        I2C_MST_CLK_6 = 0x06,
-        I2C_MST_CLK_7 = 0x07,
-        I2C_MST_CLK_8 = 0x08,
-        I2C_MST_CLK_9 = 0x09,
-        I2C_MST_CLK_10 = 0x0A,
-        I2C_MST_CLK_11 = 0x0B,
-        I2C_MST_CLK_12 = 0x0C,
-        I2C_MST_CLK_13 = 0x0D,
-        I2C_MST_CLK_14 = 0x0E,
-        I2C_MST_CLK_15 = 0x0F,
-        I2C_MST_P_NSR = 0x10,
-        MULT_MST_EN = 0x80
-    };
+        u8 i2c_mst_ctrl_u8;
+        i2c_mst_ctrl_bitmap_t i2c_mst_ctrl_bitmap;
+    } i2c_mst_ctrl = {.i2c_mst_ctrl_u8 = 0x00};
 }
-
-#endif

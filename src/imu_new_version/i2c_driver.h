@@ -4,7 +4,6 @@
 #include "driver/i2c_master.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
-#include "registers_icm20948.h"
 #include "esp32-hal-log.h"
 
 extern gpio_num_t i2c_sda_port;

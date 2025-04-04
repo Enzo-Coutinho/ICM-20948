@@ -1,0 +1,546 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    32][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   339948 B ( 332.0 KB)
+  Allocated Bytes   :    32552 B (  31.8 KB)
+  Minimum Free Bytes:   334532 B ( 326.7 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   543][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   550][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Starting ESP_ERR_NOT_FOUND
+E (527) i2c.master: I2C hardware NACK detected
+E (528) i2c.master: I2C transaction unexpected nack detected
+E (528) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (535) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[   572][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (561) i2c.master: I2C hardware NACK detected
+E (561) i2c.master: I2C transaction unexpected nack detected
+E (561) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (567) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[   604][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (1094) i2c.master: I2C hardware NACK detected
+E (1094) i2c.master: I2C transaction unexpected nack detected
+E (1094) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1102) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1139][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (1629) i2c.master: I2C hardware NACK detected
+E (1629) i2c.master: I2C transaction unexpected nack detected
+E (1629) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1637) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1674][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (2164) i2c.master: I2C hardware NACK detected
+E (2164) i2c.master: I2C transaction unexpected nack detected
+E (2164) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2172) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2209][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (2699) i2c.master: I2C hardware NACK detected
+E (2699) i2c.master: I2C transaction unexpected nack detected
+E (2699) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2707) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2744][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (3234) i2c.master: I2C hardware NACK detected
+E (3234) i2c.master: I2C transaction unexpected nack detected
+E (3234) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3242) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3279][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (3769) i2c.master: I2C hardware NACK detected
+E (3769) i2c.master: I2C transaction unexpected nack detected
+E (3769) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3777) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3814][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (4304) i2c.master: I2C hardware NACK detected
+E (4304) i2c.master: I2C transaction unexpected nack detected
+E (4304) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4312) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4349][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (4839) i2c.master: I2C hardware NACK detected
+E (4839) i2c.master: I2C transaction unexpected nack detected
+E (4839) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4847) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4884][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (5374) i2c.master: I2C hardware NACK detected
+E (5374) i2c.master: I2C transaction unexpected nack detected
+E (5374) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5382) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5419][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (5909) i2c.master: I2C hardware NACK detected
+E (5909) i2c.master: I2C transaction unexpected nack detected
+E (5909) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5917) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5954][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+=========== After Setup Start ============
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   336012 B ( 328.1 KB)
+  Allocated Bytes   :    35992 B (  35.1 KB)
+  Minimum Free Bytes:   330472 B ( 322.7 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+GPIO Info:
+------------------------------------------
+  GPIO : BUS_TYPE[bus/unit][chan]
+  --------------------------------------  
+     1 : UART_TX[0]
+     3 : UART_RX[0]
+============ After Setup End =============
+Who i am: 234
+Who i am mag: 9
+Who i am: 234
+Who i am mag: 9
+E (7529) i2c.master: I2C hardware NACK detected
+E (7530) i2c.master: I2C transaction unexpected nack detected
+E (7530) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (7535) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  7573][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (7562) i2c.master: I2C hardware NACK detected
+E (7562) i2c.master: I2C transaction unexpected nack detected
+E (7562) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (7568) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  7606][E][i2c_driver.cpp:42] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_STATE
+Who i am: 0
+E (7595) i2c.master: I2C hardware NACK detected
+E (7595) i2c.master: I2C transaction unexpected nack detected
+E (7595) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (7601) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  7639][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (7628) i2c.master: I2C hardware NACK detected
+E (7628) i2c.master: I2C transaction unexpected nack detected
+E (7628) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (7633) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  7671][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Who i am mag: 9
+E (8162) i2c.master: I2C hardware NACK detected
+E (8163) i2c.master: I2C transaction unexpected nack detected
+E (8163) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8168) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  8206][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (8195) i2c.master: I2C hardware NACK detected
+E (8195) i2c.master: I2C transaction unexpected nack detected
+E (8195) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8201) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  8239][E][i2c_driver.cpp:42] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_STATE
+Who i am: 0
+E (8228) i2c.master: I2C hardware NACK detected
+E (8228) i2c.master: I2C transaction unexpected nack detected
+E (8228) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8234) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  8272][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (8261) i2c.master: I2C hardware NACK detected
+E (8261) i2c.master: I2C transaction unexpected nack detected
+E (8261) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8266) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  8304][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (8293) i2c.master: I2C hardware NACK detected
+E (8293) i2c.master: I2C transaction unexpected nack detected
+E (8293) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8299) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  8336][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (8325) i2c.master: I2C hardware NACK detected
+E (8325) i2c.master: I2C transaction unexpected nack detected
+E (8326) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8331) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  8369][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (8358) i2c.master: I2C hardware NACK detected
+E (8358) i2c.master: I2C transaction unexpected nack detected
+E (8358) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8363) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  8402][E][i2c_driver.cpp:42] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_STATE
+E (8390) i2c.master: I2C hardware NACK detected
+E (8390) i2c.master: I2C transaction unexpected nack detected
+E (8391) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8396) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  8434][E][i2c_driver.cpp:42] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_STATE
+Who i am mag: 0
+Who i am: 234
+Who i am mag: 9
+E (9427) i2c.master: I2C hardware NACK detected
+E (9428) i2c.master: I2C transaction unexpected nack detected
+E (9428) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9433) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  9471][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (9460) i2c.master: I2C hardware NACK detected
+E (9460) i2c.master: I2C transaction unexpected nack detected
+E (9460) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9466) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  9504][E][i2c_driver.cpp:42] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_STATE
+Who i am: 0
+E (9492) i2c.master: I2C hardware NACK detected
+E (9493) i2c.master: I2C transaction unexpected nack detected
+E (9493) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9499) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  9536][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (9526) i2c.master: I2C hardware NACK detected
+E (9526) i2c.master: I2C transaction unexpected nack detected
+E (9526) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9531) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  9569][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (9558) i2c.master: I2C hardware NACK detected
+E (9558) i2c.master: I2C transaction unexpected nack detected
+E (9558) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9564) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  9601][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (9590) i2c.master: I2C hardware NACK detected
+E (9590) i2c.master: I2C transaction unexpected nack detected
+E (9591) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9596) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  9634][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (9623) i2c.master: I2C hardware NACK detected
+E (9623) i2c.master: I2C transaction unexpected nack detected
+E (9623) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9628) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  9667][E][i2c_driver.cpp:42] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_STATE
+E (9655) i2c.master: I2C hardware NACK detected
+E (9655) i2c.master: I2C transaction unexpected nack detected
+E (9656) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9661) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[  9699][E][i2c_driver.cpp:42] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_STATE
+Who i am mag: 0
+E (10188) i2c.master: I2C hardware NACK detected
+E (10189) i2c.master: I2C transaction unexpected nack detected
+E (10189) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (10194) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 10232][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (10221) i2c.master: I2C hardware NACK detected
+E (10221) i2c.master: I2C transaction unexpected nack detected
+E (10221) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (10227) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 10265][E][i2c_driver.cpp:42] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_STATE
+Who i am: 0
+E (10254) i2c.master: I2C hardware NACK detected
+E (10254) i2c.master: I2C transaction unexpected nack detected
+E (10255) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (10261) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 10299][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (10288) i2c.master: I2C hardware NACK detected
+E (10288) i2c.master: I2C transaction unexpected nack detected
+E (10288) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (10294) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 10331][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (10320) i2c.master: I2C hardware NACK detected
+E (10321) i2c.master: I2C transaction unexpected nack detected
+E (10321) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (10326) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 10364][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (10353) i2c.master: I2C hardware NACK detected
+E (10353) i2c.master: I2C transaction unexpected nack detected
+E (10353) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (10359) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 10397][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (10386) i2c.master: I2C hardware NACK detected
+E (10386) i2c.master: I2C transaction unexpected nack detected
+E (10386) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (10392) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 10430][E][i2c_driver.cpp:42] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_STATE
+E (10419) i2c.master: I2C hardware NACK detected
+E (10419) i2c.master: I2C transaction unexpected nack detected
+E (10419) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (10425) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 10463][E][i2c_driver.cpp:42] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_STATE
+Who i am mag: 0
+E (10952) i2c.master: I2C hardware NACK detected
+E (10953) i2c.master: I2C transaction unexpected nack detected
+E (10953) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (10958) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 10996][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (10985) i2c.master: I2C hardware NACK detected
+E (10985) i2c.master: I2C transaction unexpected nack detected
+E (10985) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (10991) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 11029][E][i2c_driver.cpp:42] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_STATE
+Who i am: 0
+E (11018) i2c.master: I2C hardware NACK detected
+E (11018) i2c.master: I2C transaction unexpected nack detected
+E (11019) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (11025) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 11063][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (11052) i2c.master: I2C hardware NACK detected
+E (11052) i2c.master: I2C transaction unexpected nack detected
+E (11052) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (11058) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 11095][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (11084) i2c.master: I2C hardware NACK detected
+E (11085) i2c.master: I2C transaction unexpected nack detected
+E (11085) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (11090) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 11128][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (11117) i2c.master: I2C hardware NACK detected
+E (11117) i2c.master: I2C transaction unexpected nack detected
+E (11117) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (11123) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 11161][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (11150) i2c.master: I2C hardware NACK detected
+E (11150) i2c.master: I2C transaction unexpected nack detected
+E (11150) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (11156) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 11194][E][i2c_driver.cpp:42] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_STATE
+E (11183) i2c.master: I2C hardware NACK detected
+E (11183) i2c.master: I2C transaction unexpected nack detected
+E (11183) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (11189) i2c.master: i2c_master_transmit_receive(1156): I2C transaction failed
+[ 11227][E][i2c_driver.cpp:42] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_STATE
+Who i am mag: 0
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4688
+load:0x40078000,len:15504
+load:0x40080400,len:4
+load:0x40080404,len:3196
+entry 0x400805a4
+[    32][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379768 B ( 370.9 KB)
+  Free Bytes        :   339948 B ( 332.0 KB)
+  Allocated Bytes   :    32552 B (  31.8 KB)
+  Minimum Free Bytes:   334532 B ( 326.7 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr  1 2025 07:50:01
+  ESP-IDF Version   : v5.3.2-584-g489d7a2b3a-dirty
+  Arduino Version   : 3.1.3
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   543][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   550][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+Starting ESP_ERR_NOT_FOUND
+E (527) i2c.master: I2C hardware NACK detected
+E (528) i2c.master: I2C transaction unexpected nack detected
+E (528) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (535) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[   572][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+E (561) i2c.master: I2C hardware NACK detected
+E (561) i2c.master: I2C transaction unexpected nack detected
+E (561) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (567) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[   604][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (1094) i2c.master: I2C hardware NACK detected
+E (1094) i2c.master: I2C transaction unexpected nack detected
+E (1094) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1102) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1139][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (1629) i2c.master: I2C hardware NACK detected
+E (1629) i2c.master: I2C transaction unexpected nack detected
+E (1629) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (1637) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  1674][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (2164) i2c.master: I2C hardware NACK detected
+E (2164) i2c.master: I2C transaction unexpected nack detected
+E (2164) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2172) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2209][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (2699) i2c.master: I2C hardware NACK detected
+E (2699) i2c.master: I2C transaction unexpected nack detected
+E (2699) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (2707) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  2744][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (3234) i2c.master: I2C hardware NACK detected
+E (3234) i2c.master: I2C transaction unexpected nack detected
+E (3234) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3242) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3279][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (3769) i2c.master: I2C hardware NACK detected
+E (3769) i2c.master: I2C transaction unexpected nack detected
+E (3769) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (3777) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  3814][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (4304) i2c.master: I2C hardware NACK detected
+E (4304) i2c.master: I2C transaction unexpected nack detected
+E (4304) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4312) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4349][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (4839) i2c.master: I2C hardware NACK detected
+E (4839) i2c.master: I2C transaction unexpected nack detected
+E (4839) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (4847) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  4884][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (5374) i2c.master: I2C hardware NACK detected
+E (5374) i2c.master: I2C transaction unexpected nack detected
+E (5374) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5382) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5419][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (5909) i2c.master: I2C hardware NACK detected
+E (5909) i2c.master: I2C transaction unexpected nack detected
+E (5909) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (5917) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  5954][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (6444) i2c.master: I2C hardware NACK detected
+E (6444) i2c.master: I2C transaction unexpected nack detected
+E (6444) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (6452) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  6489][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (6979) i2c.master: I2C hardware NACK detected
+E (6979) i2c.master: I2C transaction unexpected nack detected
+E (6979) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (6987) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  7024][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (7514) i2c.master: I2C hardware NACK detected
+E (7514) i2c.master: I2C transaction unexpected nack detected
+E (7514) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (7522) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  7559][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (8049) i2c.master: I2C hardware NACK detected
+E (8049) i2c.master: I2C transaction unexpected nack detected
+E (8049) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8057) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  8094][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (8584) i2c.master: I2C hardware NACK detected
+E (8584) i2c.master: I2C transaction unexpected nack detected
+E (8584) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (8592) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  8629][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (9119) i2c.master: I2C hardware NACK detected
+E (9119) i2c.master: I2C transaction unexpected nack detected
+E (9119) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9127) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  9164][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (9654) i2c.master: I2C hardware NACK detected
+E (9654) i2c.master: I2C transaction unexpected nack detected
+E (9654) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (9662) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[  9699][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE
+Starting ESP_ERR_NOT_FOUND
+E (10189) i2c.master: I2C hardware NACK detected
+E (10189) i2c.master: I2C transaction unexpected nack detected
+E (10190) i2c.master: s_i2c_synchronous_transaction(892): I2C transaction failed
+E (10197) i2c.master: i2c_master_transmit(1133): I2C transaction failed
+[ 10234][E][i2c_driver.cpp:35] i2c_write_register(): I2C transmit failed with code: ESP_ERR_INVALID_STATE

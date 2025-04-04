@@ -3,7 +3,6 @@
 
 #include "Arduino.h"
 #include "i2c_driver.h"
-#include "registers_icm20948.h"
 #include "ak09916.h"
 
 extern i2c_device_config_t icm20948_dev_cfg;
@@ -26,28 +25,31 @@ uint8_t getBank();
 
 uint8_t getWhoIAm();
 
-void setLP_CONFIG(uint8_t lp_config);
+void setUSER_CTRL(__USER_BANK_0::user_ctrl_bitmap_t user_ctrl_bitmap);
+uint8_t getUSER_CTRL();
+
+void setLP_CONFIG(__USER_BANK_0::lp_config_bitmap_t lp_config_bitmap);
 uint8_t getLP_CONFIG();
 
-void setPWR_MGMT_1(uint8_t pwr_mgmt_1);
+void setPWR_MGMT_1(__USER_BANK_0::pwr_mgmt_1_bitmap_t pwr_mgmt_1_bitmap);
 uint8_t getPWR_MGMT_1();
 
-void setPWR_MGMT_2(uint8_t pwr_mgmt_2);
+void setPWR_MGMT_2(__USER_BANK_0::pwr_mgmt_2_bitmap_t pwr_mgmt_2_bitmap);
 uint8_t getPWR_MGMT_2();
 
-void setINT_PIN_CFG(uint8_t int_pin_cfg);
+void setINT_PIN_CFG(__USER_BANK_0::int_pin_cgf_bitmap_t int_pin_cfg_bitmap);
 uint8_t getINT_PINCFG();
 
-void setINT_ENABLE(uint8_t int_enable);
+void setINT_ENABLE(__USER_BANK_0::int_enable_bitmap_t int_enable_bitmap);
 uint8_t getINT_ENABLE();
 
-void setINT_ENABLE_1(uint8_t int_enable_1);
+void setINT_ENABLE_1(__USER_BANK_0::int_enable_1_bitmap_t  int_enable_1_bitmap);
 uint8_t getINT_ENABLE_1();
 
-void setINT_ENABLE_2(uint8_t int_enable_2);
+void setINT_ENABLE_2(__USER_BANK_0::int_enable_2_bitmap_t int_enable_2_bitmap);
 uint8_t getINT_ENABLE_2();
 
-void setINT_ENABLE_3(uint8_t int_enable_3);
+void setINT_ENABLE_3(__USER_BANK_0::int_enable_3_bitmap_t int_enable_3_bitmap);
 uint8_t getINT_ENABLE_3();
 
 uint8_t getI2C_MST_STATUS();
@@ -141,7 +143,19 @@ uint8_t getSELF_TEST_Y_ACCEL();
 void setSELF_TEST_Z_ACCEL(uint8_t self_test_z_accel);
 uint8_t getSELF_TEST_Z_ACCEL();
 
-void setMST_CTRL(uint8_t ctrl);
+
+// ==================================================================
+//                          USER BANK 2
+// ==================================================================
+
+void setODR_ALIGN_EN(__USER_BANK_2::odr_align_en_bitmap_t odr_align_en_bitmap);
+
+
+// ==================================================================
+//                          USER BANK 3
+// ==================================================================
+
+void setMST_CTRL(__USER_BANK_3::i2c_mst_ctrl_bitmap_t i2c_mst_ctrl_bitmap);
 
 esp_err_t deviceIsConnected();
 
