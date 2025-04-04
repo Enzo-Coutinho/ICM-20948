@@ -95,11 +95,11 @@ namespace __USER_BANK_0
         u8 __DMP_EN : 1;
     } user_ctrl_bitmap_t;
 
-    union USER_CTRL
+    typedef union
     {
         u8 user_ctrl_u8;
         user_ctrl_bitmap_t user_ctrl_bitmap;
-    } user_ctrl = {.user_ctrl_u8 = 0x00};
+    } user_ctrl_t;
     
     typedef struct
     {
@@ -110,12 +110,12 @@ namespace __USER_BANK_0
         u8 : 1;
     } lp_config_bitmap_t;
 
-    union LP_CONFIG
+    typedef union
     {
         u8 lp_config_u8;
         lp_config_bitmap_t lp_config_bitmap;
 
-    } lp_config = {.lp_config_u8 = 0x40};
+    } lp_config_t;
 
     typedef struct
     {
@@ -127,11 +127,11 @@ namespace __USER_BANK_0
         u8 __DEVICE_RESET : 1;
     } pwr_mgmt_1_bitmap_t;
 
-    union PWR_MGMT_1
+    typedef union
     {
         u8 pwr_mgmt_1_u8;
         pwr_mgmt_1_bitmap_t pwr_mgmt_1_bitmap;
-    } pwr_mgmt_1 = {.pwr_mgmt_1_u8 = 0x41};
+    } pwr_mgmt_1_t;
 
     typedef struct
     {
@@ -140,11 +140,11 @@ namespace __USER_BANK_0
         u8 : 2;
     } pwr_mgmt_2_bitmap_t;
 
-    union PWR_MGMT_2
+    typedef union
     {
         u8 pwr_mgmt_2_u8;
         pwr_mgmt_2_bitmap_t pwr_mgmt_2_bitmap;
-    } pwr_mgmt_2 = {.pwr_mgmt_2_u8 = 0x00};
+    } pwr_mgmt_2_t;
 
     typedef struct
     {
@@ -158,11 +158,11 @@ namespace __USER_BANK_0
         u8 __INT1_ACTL : 1;
     } int_pin_cgf_bitmap_t;
 
-    union INT_PIN_CFG
+    typedef union
     {
         u8 int_pin_cfg_u8;
         int_pin_cgf_bitmap_t int_pin_cfg_bitmap;
-    } int_pin_cfg = {.int_pin_cfg_u8 = 0x00};
+    } int_pin_cfg_t;
 
     typedef struct
     {
@@ -174,11 +174,11 @@ namespace __USER_BANK_0
         u8 __REG_WOF_EN : 1;
     } int_enable_bitmap_t;
 
-    union INT_ENABLE
+    typedef union
     {
         u8 int_enable_u8;
         int_enable_bitmap_t int_enable_bitmap;
-    } int_enable = {.int_enable_u8 = 0x00};
+    } int_enable_t;
 
     typedef struct
     {
@@ -186,11 +186,11 @@ namespace __USER_BANK_0
         u8 : 7;
     } int_enable_1_bitmap_t;
 
-    union INT_ENABLE_1
+    typedef union
     {
         u8 int_enable_1_u8;
         int_enable_1_bitmap_t int_enable_1_bitmap;
-    } int_enable_1 = {.int_enable_1_u8 = 0x00};
+    } int_enable_1_t;
 
     typedef struct
     {
@@ -198,11 +198,11 @@ namespace __USER_BANK_0
         u8 : 3;
     } int_enable_2_bitmap_t;
 
-    union INT_ENABLE_2
+    typedef union
     {
         u8 int_enable_2_u8;
         int_enable_2_bitmap_t int_enable_2_bitmap;
-    } int_enable_2 = {.int_enable_2_u8 = 0x00};
+    } int_enable_2_t;
 
     typedef struct
     {
@@ -210,11 +210,11 @@ namespace __USER_BANK_0
         u8 : 3;
     } int_enable_3_bitmap_t;
 
-    union INT_ENABLE_3
+    typedef union
     {
         u8 int_enable_3_u8;
         int_enable_3_bitmap_t int_enable_3_bitmap;
-    } int_enable_3 = {.int_enable_3_u8 = 0x00};
+    } int_enable_3_t;
 
     typedef struct
     {
@@ -228,11 +228,11 @@ namespace __USER_BANK_0
         u8 __PASS_THROUGH : 1;
     } i2c_mst_status_bitmap_t;
 
-    union I2C_MST_STATUS
+    typedef union
     {
         u8 i2c_mst_status_u8;
         i2c_mst_status_bitmap_t i2c_mst_status_bitmap;
-    } i2c_mst_status = {.i2c_mst_status_u8 = 0x00};
+    } i2c_mst_status_t;
 
     typedef struct 
     {
@@ -243,11 +243,11 @@ namespace __USER_BANK_0
         u8 : 4;
     } int_status_bitmap_t;
 
-    union INT_STATUS
+    typedef union
     {
         u8 int_status_u8;
         int_status_bitmap_t int_status_bitmap;
-    } int_status = {.int_status_u8 = 0x00};
+    } int_status_t;
 
     /*
     enum INT_STATUS_1
@@ -275,11 +275,11 @@ namespace __USER_BANK_0
         u8 : 4;
     } fifo_en_1_bitmap_t;
 
-    union FIFO_EN_1
+    typedef union
     {
         u8 fifo_en_1_u8;
         fifo_en_1_bitmap_t fifo_en_1_bitmap;
-    } fifo_en_1 = {.fifo_en_1_u8 = 0x00};
+    } fifo_en_1_t;
 
     typedef struct
     {
@@ -291,11 +291,11 @@ namespace __USER_BANK_0
         u8 : 3;
     } fifo_en_2_bitmap_t;
 
-    union FIFO_EN_2
+    typedef union
     {
         u8 fifo_en_2_u8;
         fifo_en_2_bitmap_t fifo_en_2_bitmap;
-    } fifo_en_2 = {.fifo_en_2_u8 = 0x00};
+    } fifo_en_2_t;
 
     typedef struct
     {
@@ -303,11 +303,11 @@ namespace __USER_BANK_0
         u8 : 3;
     } fifo_rst_bitmap_t;
 
-    union FIFO_RST
+    typedef union
     {
         u8 fifo_rst_u8;
         fifo_rst_bitmap_t fifo_rst_bitmap;
-    } fifo_rst = {.fifo_rst_u8 = 0x00};
+    } fifo_rst_t;
 
     typedef struct
     {
@@ -315,34 +315,34 @@ namespace __USER_BANK_0
         u8 : 3;
     } fifo_mode_bitmap_t;
 
-    union FIFO_MODE
+    typedef union
     {
         u8 fifo_mode_u8;
         fifo_mode_bitmap_t fifo_mode_bitmap;
-    } fifo_mode = {.fifo_mode_u8 = 0x00};
+    } fifo_mode_t;
 
     typedef struct
     {
         u8 FIFO_R_W : 8;
     } fifo_r_w_bitmap_t;
 
-    union FIFO_R_W
+    typedef union
     {
         fifo_r_w_bitmap_t fifo_r_w_bitmap;
         u8 fifo_r_w_u8;
 
-    } fifo_r_w = {.fifo_r_w_u8 = 0x00};
+    } fifo_r_w_t;
 
     typedef struct
     {
         u8 __FIFO_CFG : 8;
     } fifo_cfg_bitmap_t;
 
-    union FIFO_CFG
+    typedef union
     {
         fifo_cfg_bitmap_t fifo_cfg_bitmap;
         u8 fifo_cfg_u8;
-    } fifo_cfg = {.fifo_cfg_u8 = 0x00};
+    } fifo_cfg_t;
 }
 
 namespace __USER_BANK_1
@@ -395,11 +395,11 @@ namespace __USER_BANK_2
         u8 __GYRO_SMPLRT_DIV : 8;
     } gyro_smplrt_div_bitmap_t;
 
-    union GYRO_SMPLRT_DIV
+    typedef union
     {
         u8 gyro_smplrt_div_u8;
         gyro_smplrt_div_bitmap_t gyro_smplrt_div_bitmap;
-    } gyro_smplrt_div = {.gyro_smplrt_div_u8 = 0x00};
+    } gyro_smplrt_div_t;
 
     typedef struct
     {
@@ -409,11 +409,11 @@ namespace __USER_BANK_2
         u8 : 2;
     } gyro_config_1_bitmap_t;
 
-    union GYRO_CONFIG_1
+    typedef union
     {
         u8 gyro_config_1_u8;
         gyro_config_1_bitmap_t gyro_config_1_bitmap;
-    } gyro_config_1 = {.gyro_config_1_u8 = 0x01};
+    } gyro_config_1_t;
 
     typedef struct
     {
@@ -475,11 +475,11 @@ namespace __USER_BANK_2
         u8 : 7;
     } odr_align_en_bitmap_t;
 
-    union ODR_ALIGN_EN
+    typedef union
     {
         u8 odr_align_en_u8;
         odr_align_en_bitmap_t odr_align_en_bitmap;
-    } odr_align_en = {.odr_align_en_u8 = 0x00};
+    } odr_align_en_t;
 }
 
 namespace __USER_BANK_3
@@ -520,9 +520,9 @@ namespace __USER_BANK_3
         u8 __MULT_MST_EN : 1;
     } i2c_mst_ctrl_bitmap_t;
 
-    union I2C_MST_CTRL
+    typedef union
     {
         u8 i2c_mst_ctrl_u8;
         i2c_mst_ctrl_bitmap_t i2c_mst_ctrl_bitmap;
-    } i2c_mst_ctrl = {.i2c_mst_ctrl_u8 = 0x00};
+    } i2c_mst_ctrl_t;
 }
