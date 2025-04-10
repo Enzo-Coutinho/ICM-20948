@@ -83,265 +83,430 @@ namespace __USER_BANK_0
         __FIFO_CFG = 0x76,
     };
 
-    typedef struct
-    {
-        u8 : 1;
-        u8 __I2C_MST_RST : 1;
-        u8 __SRAM_RST : 1;
-        u8 __DMP_RST : 1;
-        u8 __I2C_IF_DIS : 1;
-        u8 __I2C_MST_EN : 1;
-        u8 __FIFO_EN : 1;
-        u8 __DMP_EN : 1;
-    } user_ctrl_bitmap_t;
-
     typedef union
     {
         u8 user_ctrl_u8;
-        user_ctrl_bitmap_t user_ctrl_bitmap;
+        struct user_ctrl_bitmap_t
+        {
+            u8 : 1;
+            u8 __I2C_MST_RST : 1;
+            u8 __SRAM_RST : 1;
+            u8 __DMP_RST : 1;
+            u8 __I2C_IF_DIS : 1;
+            u8 __I2C_MST_EN : 1;
+            u8 __FIFO_EN : 1;
+            u8 __DMP_EN : 1;
+        } user_ctrl_bitmap;
     } user_ctrl_t;
-    
-    typedef struct
-    {
-        u8 : 4;
-        u8 __GYRO_CICLE : 1;
-        u8 __ACCEL_CYCLE : 1;
-        u8 __I2C_MST_CYCLE : 1;
-        u8 : 1;
-    } lp_config_bitmap_t;
 
     typedef union
     {
         u8 lp_config_u8;
-        lp_config_bitmap_t lp_config_bitmap;
-
+        struct lp_config_bitmap_t
+        {
+            u8 : 4;
+            u8 __GYRO_CICLE : 1;
+            u8 __ACCEL_CYCLE : 1;
+            u8 __I2C_MST_CYCLE : 1;
+            u8 : 1;
+        } lp_config_bitmap;
     } lp_config_t;
-
-    typedef struct
-    {
-        u8 __CLKSEL : 3;
-        u8 __TEMP_DIS : 1;
-        u8 : 1;
-        u8 __LP_EN : 1;
-        u8 __SLEEP : 1;
-        u8 __DEVICE_RESET : 1;
-    } pwr_mgmt_1_bitmap_t;
 
     typedef union
     {
         u8 pwr_mgmt_1_u8;
-        pwr_mgmt_1_bitmap_t pwr_mgmt_1_bitmap;
+        struct pwr_mgmt_1_bitmap_t
+        {
+            u8 __CLKSEL : 3;
+            u8 __TEMP_DIS : 1;
+            u8 : 1;
+            u8 __LP_EN : 1;
+            u8 __SLEEP : 1;
+            u8 __DEVICE_RESET : 1;
+        } pwr_mgmt_1_bitmap;
     } pwr_mgmt_1_t;
-
-    typedef struct
-    {
-        u8 __DISABLE_GYRO : 3;
-        u8 __DISABLE_ACCEL : 3;
-        u8 : 2;
-    } pwr_mgmt_2_bitmap_t;
 
     typedef union
     {
         u8 pwr_mgmt_2_u8;
-        pwr_mgmt_2_bitmap_t pwr_mgmt_2_bitmap;
+        struct pwr_mgmt_2_bitmap_t
+        {
+            u8 __DISABLE_GYRO : 3;
+            u8 __DISABLE_ACCEL : 3;
+            u8 : 2;
+        } pwr_mgmt_2_bitmap;
     } pwr_mgmt_2_t;
-
-    typedef struct
-    {
-        u8 : 1;
-        u8 __BY_PASS : 1;
-        u8 __FSYNC_INT_MODE_EN : 1;
-        u8 __ACTL_FSYNC : 1;
-        u8 __INT_ANYRD_2CLEAR : 1;
-        u8 __INT1_LATCH_EN : 1;
-        u8 __INT1_OPEN : 1;
-        u8 __INT1_ACTL : 1;
-    } int_pin_cgf_bitmap_t;
 
     typedef union
     {
         u8 int_pin_cfg_u8;
-        int_pin_cgf_bitmap_t int_pin_cfg_bitmap;
+        struct int_pin_cgf_bitmap_t
+        {
+            u8 : 1;
+            u8 __BY_PASS : 1;
+            u8 __FSYNC_INT_MODE_EN : 1;
+            u8 __ACTL_FSYNC : 1;
+            u8 __INT_ANYRD_2CLEAR : 1;
+            u8 __INT1_LATCH_EN : 1;
+            u8 __INT1_OPEN : 1;
+            u8 __INT1_ACTL : 1;
+        } int_pin_cgf_bitmap;
     } int_pin_cfg_t;
-
-    typedef struct
-    {
-        u8 __I2C_MST_INT_EN : 1;
-        u8 __DMP_INT1_EN : 1;
-        u8 __PLL_RDY_EN : 1;
-        u8 __WOM_INT_EN : 1;
-        u8 : 3;
-        u8 __REG_WOF_EN : 1;
-    } int_enable_bitmap_t;
 
     typedef union
     {
         u8 int_enable_u8;
-        int_enable_bitmap_t int_enable_bitmap;
+        struct int_enable_bitmap_t
+        {
+            u8 __I2C_MST_INT_EN : 1;
+            u8 __DMP_INT1_EN : 1;
+            u8 __PLL_RDY_EN : 1;
+            u8 __WOM_INT_EN : 1;
+            u8 : 3;
+            u8 __REG_WOF_EN : 1;
+        } int_enable_bitmap;
     } int_enable_t;
-
-    typedef struct
-    {
-        u8 __RAW_DATA_0_RDY_EN : 1;
-        u8 : 7;
-    } int_enable_1_bitmap_t;
 
     typedef union
     {
         u8 int_enable_1_u8;
-        int_enable_1_bitmap_t int_enable_1_bitmap;
+        struct int_enable_1_bitmap_t
+        {
+            u8 __RAW_DATA_0_RDY_EN : 1;
+            u8 : 7;
+        } int_enable_1_bitmap;
     } int_enable_1_t;
-
-    typedef struct
-    {
-        u8 __FIFO_OVERFLOW_EN : 5;
-        u8 : 3;
-    } int_enable_2_bitmap_t;
 
     typedef union
     {
         u8 int_enable_2_u8;
-        int_enable_2_bitmap_t int_enable_2_bitmap;
+        struct int_enable_2_bitmap_t
+        {
+            u8 __FIFO_OVERFLOW_EN : 5;
+            u8 : 3;
+        } int_enable_2_bitmap;
     } int_enable_2_t;
-
-    typedef struct
-    {
-        u8 __FIFO_WM_EN : 5;
-        u8 : 3;
-    } int_enable_3_bitmap_t;
 
     typedef union
     {
         u8 int_enable_3_u8;
-        int_enable_3_bitmap_t int_enable_3_bitmap;
+        struct int_enable_3_bitmap_t
+        {
+            u8 __FIFO_WM_EN : 5;
+            u8 : 3;
+        } int_enable_3_bitmap;
     } int_enable_3_t;
-
-    typedef struct
-    {
-        u8 __I2C_SLV0_NACK : 1;
-        u8 __I2C_SLV1_NACK : 1;
-        u8 __I2C_SLV2_NACK : 1;
-        u8 __I2C_SLV3_NACK : 1;
-        u8 __I2C_SLV4_NACK : 1;
-        u8 __I2C_LOST_ARB : 1;
-        u8 __I2C_SLV4_DONE : 1;
-        u8 __PASS_THROUGH : 1;
-    } i2c_mst_status_bitmap_t;
 
     typedef union
     {
         u8 i2c_mst_status_u8;
-        i2c_mst_status_bitmap_t i2c_mst_status_bitmap;
+        struct i2c_mst_status_bitmap_t
+        {
+            u8 __I2C_SLV0_NACK : 1;
+            u8 __I2C_SLV1_NACK : 1;
+            u8 __I2C_SLV2_NACK : 1;
+            u8 __I2C_SLV3_NACK : 1;
+            u8 __I2C_SLV4_NACK : 1;
+            u8 __I2C_LOST_ARB : 1;
+            u8 __I2C_SLV4_DONE : 1;
+            u8 __PASS_THROUGH : 1;
+        } i2c_mst_status_bitmap;
     } i2c_mst_status_t;
-
-    typedef struct 
-    {
-        u8 __I2C_MST_INT : 1;
-        u8 __DMP_INT1 : 1;
-        u8 __PLL_RDY_INT : 1;
-        u8 __WOM_INT : 1;
-        u8 : 4;
-    } int_status_bitmap_t;
 
     typedef union
     {
         u8 int_status_u8;
-        int_status_bitmap_t int_status_bitmap;
+        struct int_status_bitmap_t 
+        {
+            u8 __I2C_MST_INT : 1;
+            u8 __DMP_INT1 : 1;
+            u8 __PLL_RDY_INT : 1;
+            u8 __WOM_INT : 1;
+            u8 : 4;
+        } int_status_bitmap;;
     } int_status_t;
 
-    /*
-    enum INT_STATUS_1
+    typedef union 
     {
-        __RAW_DATA_0_RDY_INT = BIT_POSE(0),
-    };
+        u8 int_status_1_u8;
+        struct int_status_1_bitmap_t
+        {
+            u8 __RAW_DATA_0_RDY_INT : 1;
+            u8 : 7;
+        };
+    } int_status_1_t;
 
-    enum INT_STATUS_2
+    typedef union 
     {
-        __FIFO_OVERFLOW_INT = BIT_POSE(0),
-    };
+        u8 int_status_2_u8;
+        struct int_status_2_bitmap_t
+        {
+            u8 __FIFO_OVERFLOW_INT : 5;
+            u8 : 3;
+        };
+    } int_status_2_t;
 
-    enum INT_STATUS_3
+    typedef union 
     {
-        __FIFO_WM_INT = BIT_POSE(0),
-    };
-    */
+        u8 int_status_3_u8;
+        struct int_status_3_bitmap_t
+        {
+            u8 __FIFO_WM_INT : 5;
+            u8 : 3;
+        };
+    } int_status_3_t;
+    
+    typedef union 
+    {
+        u8 delay_timeh_u8;
+        struct delay_timeh_bitmap_t
+        {
+            u8 __DELAY_TIMEH : 8;
+        } delay_timeh_bitmap;
+    } delay_timeh_t;
 
-    typedef struct
+    typedef union 
     {
-        u8 SLV_0_FIFO_EN : 1;
-        u8 SLV_1_FIFO_EN : 1;
-        u8 SLV_2_FIFO_EN : 1;
-        u8 SLV_3_FIFO_EN : 1;
-        u8 : 4;
-    } fifo_en_1_bitmap_t;
+        u8 delay_timel_u8;
+        struct delay_timeh_bitmap_t
+        {
+            u8 __DELAY_TIMEL : 8;
+        } delay_timel_bitmap;
+    } delay_timel_t;
+
+    typedef union 
+    {
+        u8 accel_xout_h_u8;
+        struct accel_xout_h_bitmap_t
+        {
+            u8 __ACCEL_XOUT_H : 8;
+        } accel_xout_h_bitmap;
+    } accel_xout_h_t;
+
+    typedef union 
+    {
+        u8 accel_xout_l_u8;
+        struct accel_xout_l_bitmap_t
+        {
+            u8 __ACCEL_XOUT_L : 8;
+        } accel_xout_l_bitmap;
+    } accel_xout_l_t;
+
+    typedef union 
+    {
+        u8 accel_yout_h_u8;
+        struct accel_xout_h_bitmap_t
+        {
+            u8 __ACCEL_YOUT_H : 8;
+        } accel_yout_h_bitmap;
+    } accel_yout_h_t;
+
+    typedef union 
+    {
+        u8 accel_yout_l_u8;
+        struct accel_yout_l_bitmap_t
+        {
+            u8 __ACCEL_YOUT_L : 8;
+        } accel_yout_l_bitmap;
+    } accel_yout_l_t;
+
+    typedef union 
+    {
+        u8 accel_zout_h_u8;
+        struct accel_zout_h_bitmap_t
+        {
+            u8 __ACCEL_ZOUT_H : 8;
+        } accel_zout_h_bitmap;
+    } accel_zout_h_t;
+
+    typedef union 
+    {
+        u8 accel_zout_l_u8;
+        struct accel_zout_l_bitmap_t
+        {
+            u8 __ACCEL_ZOUT_L : 8;
+        } accel_zout_l_bitmap;
+    } accel_zout_l_t;
+
+    typedef union 
+    {
+        u8 gyro_xout_h_u8;
+        struct gyro_xout_h_bitmap_t
+        {
+            u8 __GYRO_XOUT_H : 8;
+        } gyro_xout_h_bitmap;
+    } gyro_xout_h_t;
+
+    typedef union 
+    {
+        u8 gyro_xout_l_u8;
+        struct gyro_xout_l_bitmap_t
+        {
+            u8 __GYRO_XOUT_L : 8;
+        } gyro_xout_l_bitmap;
+    } gyro_xout_l_t;
+
+    typedef union 
+    {
+        u8 gyro_yout_h_u8;
+        struct gyro_yout_h_bitmap_t
+        {
+            u8 __GYRO_YOUT_H : 8;
+        } gyro_yout_h_bitmap;
+    } gyro_yout_h_t;
+
+    typedef union 
+    {
+        u8 gyro_yout_l_u8;
+        struct gyro_yout_l_bitmap_t
+        {
+            u8 __GYRO_YOUT_L : 8;
+        } gyro_yout_l_bitmap;
+    } gyro_yout_l_t;
+
+    typedef union 
+    {
+        u8 gyro_zout_h_u8;
+        struct gyro_zout_h_bitmap_t
+        {
+            u8 __GYRO_ZOUT_H : 8;
+        } gyro_zout_h_bitmap;
+    } gyro_zout_h_t;
+
+    typedef union 
+    {
+        u8 gyro_zout_l_u8;
+        struct gyro_zout_l_bitmap_t
+        {
+            u8 __GYRO_YOUT_L : 8;
+        } gyro_zout_l_bitmap;
+    } gyro_zout_l_t;
+
+    typedef union 
+    {
+        u8 temp_out_h_u8;
+        struct temp_out_h_bitmap_t
+        {
+            u8 __TEMP_OUT_H : 8;
+        } temp_out_h_bitmap;
+    } temp_out_h_t;
+
+    typedef union 
+    {
+        u8 temp_out_l_u8;
+        struct temp_out_l_bitmap_t
+        {
+            u8 __TEMP_OUT_L : 8;
+        } temp_out_l_bitmap;
+    } temp_out_l_t;
+
 
     typedef union
     {
-        u8 fifo_en_1_u8;
-        fifo_en_1_bitmap_t fifo_en_1_bitmap;
-    } fifo_en_1_t;
-
-    typedef struct
+        u8 ext_slv_sens_data_xx_u8;
+        struct ext_slv_sens_data_xx_bitmap_t
+        {
+            u8 __EXT_SLV_SENS_DATA_XX : 8;
+        } ext_slv_sens_data_xx_bitmap;
+    } ext_slv_sens_data_xx_t;
+    
+    
+    typedef union
     {
-        u8 __TEMP_FIFO_EN : 1;
-        u8 __GYRO_X_FIFO_EN : 1;
-        u8 __GYRO_Y_FIFO_EN : 1;
-        u8 __GYRO_Z_FIFO_EN : 1;
-        u8 __ACCEL_FIFO_EN : 1;
-        u8 : 3;
-    } fifo_en_2_bitmap_t;
+        u8 fifo_en_1_u8;
+        struct fifo_en_1_bitmap_t
+        {
+            u8 SLV_0_FIFO_EN : 1;
+            u8 SLV_1_FIFO_EN : 1;
+            u8 SLV_2_FIFO_EN : 1;
+            u8 SLV_3_FIFO_EN : 1;
+            u8 : 4;
+        } fifo_en_1_bitmap;
+    } fifo_en_1_t;
+    
 
     typedef union
     {
         u8 fifo_en_2_u8;
-        fifo_en_2_bitmap_t fifo_en_2_bitmap;
+        struct fifo_en_2_bitmap_t
+        {
+            u8 __TEMP_FIFO_EN : 1;
+            u8 __GYRO_X_FIFO_EN : 1;
+            u8 __GYRO_Y_FIFO_EN : 1;
+            u8 __GYRO_Z_FIFO_EN : 1;
+            u8 __ACCEL_FIFO_EN : 1;
+            u8 : 3;
+        } fifo_en_2_bitmap;
     } fifo_en_2_t;
-
-    typedef struct
-    {
-        u8 __FIFO_RESET : 5;
-        u8 : 3;
-    } fifo_rst_bitmap_t;
 
     typedef union
     {
         u8 fifo_rst_u8;
-        fifo_rst_bitmap_t fifo_rst_bitmap;
+        struct fifo_rst_bitmap_t
+        {
+            u8 __FIFO_RESET : 5;
+            u8 : 3;
+        } fifo_rst_bitmap;
     } fifo_rst_t;
-
-    typedef struct
-    {
-        u8 __FIFO_MODE : 5;
-        u8 : 3;
-    } fifo_mode_bitmap_t;
 
     typedef union
     {
         u8 fifo_mode_u8;
-        fifo_mode_bitmap_t fifo_mode_bitmap;
+        struct fifo_mode_bitmap_t
+        {
+            u8 __FIFO_MODE : 5;
+            u8 : 3;
+        } fifo_mode_bitmap;
     } fifo_mode_t;
 
-    typedef struct
+    typedef union
     {
-        u8 FIFO_R_W : 8;
-    } fifo_r_w_bitmap_t;
+        u8 fifo_count_h_u8;
+        struct fifo_count_h_bitmap_t
+        {
+            u8 __FIFO_CNT : 5;
+            u8 : 3;
+        } fifo_count_h_bitmap;
+    } fifo_count_h_t;
+    
+    typedef union
+    {
+        u8 fifo_count_l_u8;
+        struct fifo_count_l_bitmap_t
+        {
+            u8 __FIFO_CNT : 5;
+            u8 : 3;
+        } fifo_count_l_bitmap;
+    } fifo_count_l_t;
 
     typedef union
     {
-        fifo_r_w_bitmap_t fifo_r_w_bitmap;
         u8 fifo_r_w_u8;
-
+        struct fifo_r_w_bitmap_t
+        {
+            u8 FIFO_R_W : 8;
+        } fifo_r_w_bitmap;
     } fifo_r_w_t;
 
-    typedef struct
+    typedef union
     {
-        u8 __FIFO_CFG : 8;
-    } fifo_cfg_bitmap_t;
+        u8 data_rdy_status_u8;
+        struct data_rdy_status_bitmap_t
+        {
+            u8 __RAW_DATA_RDY : 4;
+            u8 : 3;
+            u8 __WOF_STATUS : 1;
+        };
+    } data_rdy_status_t;
+    
 
     typedef union
     {
-        fifo_cfg_bitmap_t fifo_cfg_bitmap;
         u8 fifo_cfg_u8;
+        struct fifo_cfg_bitmap_t
+        {
+            u8 __FIFO_CFG : 8;
+        } fifo_cfg_bitmap;
     } fifo_cfg_t;
 }
 
@@ -363,6 +528,60 @@ namespace __USER_BANK_1
         __ZA_OFFS_L = 0x1B,
         __TIMEBASE_CORRECTION_PLL = 0x28,
     };
+
+    typedef union 
+    {
+        u8 self_test_x_gyro_u8;
+        struct self_test_x_gyro_bitmap_t
+        {
+            u8 __XG_ST_DATA : 8;
+        } self_test_x_gyro_bitmap;
+    } self_test_x_gyro_t;
+
+    typedef union 
+    {
+        u8 self_test_y_gyro_u8;
+        struct self_test_y_gyro_bitmap_t
+        {
+            u8 __YG_ST_DATA : 8;
+        } self_test_y_gyro_bitmap;
+    } self_test_y_gyro_t;
+
+    typedef union 
+    {
+        u8 self_test_z_gyro_u8;
+        struct self_test_z_gyro_bitmap_t
+        {
+            u8 __ZG_ST_DATA : 8;
+        } self_test_z_gyro_bitmap;
+    } self_test_z_gyro_t;
+
+    typedef union 
+    {
+        u8 self_test_x_accel_u8;
+        struct self_test_x_accel_bitmap_t
+        {
+            u8 __XA_ST_DATA : 8;
+        } self_test_x_accel_bitmap;
+    } self_test_x_accel_t;
+
+    typedef union 
+    {
+        u8 self_test_y_accel_u8;
+        struct self_test_y_accel_bitmap_t
+        {
+            u8 __YA_ST_DATA : 8;
+        } self_test_y_accel_bitmap;
+    } self_test_y_accel_t;
+
+    typedef union 
+    {
+        u8 self_test_z_accel_u8;
+        struct self_test_z_accel_bitmap_t
+        {
+            u8 __ZA_ST_DATA : 8;
+        } self_test_z_accel_bitmap;
+    } self_test_z_accel_t;
 }
 
 namespace __USER_BANK_2
@@ -390,39 +609,36 @@ namespace __USER_BANK_2
         __MOD_CTRL_USR = 0x54,
     };
 
-    typedef struct
-    {
-        u8 __GYRO_SMPLRT_DIV : 8;
-    } gyro_smplrt_div_bitmap_t;
-
     typedef union
     {
         u8 gyro_smplrt_div_u8;
-        gyro_smplrt_div_bitmap_t gyro_smplrt_div_bitmap;
+        struct gyro_smplrt_div_bitmap_t
+        {
+            u8 __GYRO_SMPLRT_DIV : 8;
+        } gyro_smplrt_div_bitmap;
     } gyro_smplrt_div_t;
 
-    typedef struct
-    {
-        u8 __GYRO_FCHOICE : 1;
-        u8 __GYRO_FS_SEL : 2;
-        u8 __GYRO_DLPFCFG : 3;
-        u8 : 2;
-    } gyro_config_1_bitmap_t;
 
     typedef union
     {
         u8 gyro_config_1_u8;
-        gyro_config_1_bitmap_t gyro_config_1_bitmap;
+        struct gyro_config_1_bitmap_t
+        {
+            u8 __GYRO_FCHOICE : 1;
+            u8 __GYRO_FS_SEL : 2;
+            u8 __GYRO_DLPFCFG : 3;
+            u8 : 2;
+        } gyro_config_1_bitmap;
     } gyro_config_1_t;
 
-    typedef struct
+    struct gyro_config_2_bitmap_t
     {
         u8 __GYRO_AVGCFG : 3;
         u8 __ZGYRO_CTEN : 1;
         u8 __YGYRO_CTEN : 1;
         u8 __XGYRO_CTEN : 1;
         u8 : 2;
-    } gyro_config_2_bitmap_t;
+    };
 
     enum ACCEL_INTEL_CTRL
     {
@@ -469,16 +685,14 @@ namespace __USER_BANK_2
         __REG_LP_DMP_EN = BIT_POSE(0),
     };
 
-    typedef struct
-    {
-        u8 __ODR_ALIGN_EN : 1;
-        u8 : 7;
-    } odr_align_en_bitmap_t;
-
     typedef union
     {
         u8 odr_align_en_u8;
-        odr_align_en_bitmap_t odr_align_en_bitmap;
+        struct odr_align_en_bitmap_t
+        {
+            u8 __ODR_ALIGN_EN : 1;
+            u8 : 7;
+        } odr_align_en_bitmap;
     } odr_align_en_t;
 }
 
@@ -512,17 +726,15 @@ namespace __USER_BANK_3
         __I2C_SLV4_DI = 0x17,
     };
 
-    typedef struct
-    {
-        u8 __I2C_MST_CLK : 4;
-        u8 __I2C_MST_P_NSR : 1;
-        u8 : 2;
-        u8 __MULT_MST_EN : 1;
-    } i2c_mst_ctrl_bitmap_t;
-
     typedef union
     {
         u8 i2c_mst_ctrl_u8;
-        i2c_mst_ctrl_bitmap_t i2c_mst_ctrl_bitmap;
+        struct i2c_mst_ctrl_bitmap_t
+        {
+            u8 __I2C_MST_CLK : 4;
+            u8 __I2C_MST_P_NSR : 1;
+            u8 : 2;
+            u8 __MULT_MST_EN : 1;
+        } i2c_mst_ctrl_bitmap;
     } i2c_mst_ctrl_t;
 }

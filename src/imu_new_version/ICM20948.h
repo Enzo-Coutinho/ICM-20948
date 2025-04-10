@@ -13,11 +13,9 @@ extern i2c_master_dev_handle_t icm20948_dev_handle;
 //                          GENERAL
 // ==================================================================
 
-void start();
-void restart_icm20948();
-
 void setBank(uint8_t bank);
 uint8_t getBank();
+esp_err_t deviceIsConnected();
 
 // ==================================================================
 //                          USER BANK 0
@@ -25,36 +23,36 @@ uint8_t getBank();
 
 uint8_t getWhoIAm();
 
-void setUSER_CTRL(__USER_BANK_0::user_ctrl_bitmap_t user_ctrl_bitmap);
-uint8_t getUSER_CTRL();
+void setUSER_CTRL(__USER_BANK_0::user_ctrl_t user_ctrl);
+__USER_BANK_0::user_ctrl_t getUSER_CTRL();
 
-void setLP_CONFIG(__USER_BANK_0::lp_config_bitmap_t lp_config_bitmap);
-uint8_t getLP_CONFIG();
+void setLP_CONFIG(__USER_BANK_0::lp_config_t lp_config);
+__USER_BANK_0::lp_config_t getLP_CONFIG();
 
-void setPWR_MGMT_1(__USER_BANK_0::pwr_mgmt_1_bitmap_t pwr_mgmt_1_bitmap);
-uint8_t getPWR_MGMT_1();
+void setPWR_MGMT_1(__USER_BANK_0::pwr_mgmt_1_t pwr_mgmt_1_bitmap);
+__USER_BANK_0::pwr_mgmt_1_t getPWR_MGMT_1();
 
-void setPWR_MGMT_2(__USER_BANK_0::pwr_mgmt_2_bitmap_t pwr_mgmt_2_bitmap);
-uint8_t getPWR_MGMT_2();
+void setPWR_MGMT_2(__USER_BANK_0::pwr_mgmt_2_t pwr_mgmt_2_bitmap);
+__USER_BANK_0::pwr_mgmt_2_t getPWR_MGMT_2();
 
-void setINT_PIN_CFG(__USER_BANK_0::int_pin_cgf_bitmap_t int_pin_cfg_bitmap);
-uint8_t getINT_PINCFG();
+void setINT_PIN_CFG(__USER_BANK_0::int_pin_cfg_t int_pin_cfg_bitmap);
+__USER_BANK_0::int_pin_cfg_t getINT_PINCFG();
 
-void setINT_ENABLE(__USER_BANK_0::int_enable_bitmap_t int_enable_bitmap);
-uint8_t getINT_ENABLE();
+void setINT_ENABLE(__USER_BANK_0::int_enable_t int_enable_bitmap);
+__USER_BANK_0::int_enable_t getINT_ENABLE();
 
-void setINT_ENABLE_1(__USER_BANK_0::int_enable_1_bitmap_t  int_enable_1_bitmap);
-uint8_t getINT_ENABLE_1();
+void setINT_ENABLE_1(__USER_BANK_0::int_enable_1_t  int_enable_1_bitmap);
+__USER_BANK_0::int_enable_1_t getINT_ENABLE_1();
 
-void setINT_ENABLE_2(__USER_BANK_0::int_enable_2_bitmap_t int_enable_2_bitmap);
-uint8_t getINT_ENABLE_2();
+void setINT_ENABLE_2(__USER_BANK_0::int_enable_2_t int_enable_2_bitmap);
+__USER_BANK_0::int_enable_2_t getINT_ENABLE_2();
 
-void setINT_ENABLE_3(__USER_BANK_0::int_enable_3_bitmap_t int_enable_3_bitmap);
-uint8_t getINT_ENABLE_3();
+void setINT_ENABLE_3(__USER_BANK_0::int_enable_3_t int_enable_3_bitmap);
+__USER_BANK_0::int_enable_3_t getINT_ENABLE_3();
 
-uint8_t getI2C_MST_STATUS();
+__USER_BANK_0::i2c_mst_status_t getI2C_MST_STATUS();
 
-uint8_t getINT_STATUS();
+__USER_BANK_0::int_status_t getINT_STATUS();
 uint8_t getINT_STATUS_1();
 uint8_t getINT_STATUS_2();
 uint8_t getINT_STATUS_3();
@@ -148,18 +146,19 @@ uint8_t getSELF_TEST_Z_ACCEL();
 //                          USER BANK 2
 // ==================================================================
 
-void setODR_ALIGN_EN(__USER_BANK_2::odr_align_en_bitmap_t odr_align_en_bitmap);
+void setODR_ALIGN_EN(__USER_BANK_2::odr_align_en_t odr_align_en);
 
 
 // ==================================================================
 //                          USER BANK 3
 // ==================================================================
 
-void setMST_CTRL(__USER_BANK_3::i2c_mst_ctrl_bitmap_t i2c_mst_ctrl_bitmap);
+void setMST_CTRL(__USER_BANK_3::i2c_mst_ctrl_t i2c_mst_ctrl);
 
-esp_err_t deviceIsConnected();
+// ==================================================================
+//                          MAG (sub of bank 3)
+// ==================================================================
 
-void default_init();
 
 uint8_t getWhoIAm_Mag();
 
