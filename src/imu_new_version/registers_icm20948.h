@@ -908,6 +908,16 @@ namespace __USER_BANK_3
         __I2C_SLV4_DI = 0x17,
     };
 
+    typedef union 
+    {
+        u8 i2c_mst_odr_config_u8;
+        struct i2c_mst_odr_config_bitmap_t
+        {
+            u8 i2c_mst_odr_config : 4;
+            u8 : 4;
+        } i2c_mst_odr_config_bitmap;
+    } i2c_mst_odr_config_t;
+    
     typedef union
     {
         u8 i2c_mst_ctrl_u8;
@@ -919,4 +929,20 @@ namespace __USER_BANK_3
             u8 __MULT_MST_EN : 1;
         } i2c_mst_ctrl_bitmap;
     } i2c_mst_ctrl_t;
+
+    typedef union 
+    {
+        u8 i2c_mst_delay_ctrl_u8;
+        struct i2c_mst_delay_ctrl_bitmap_t
+        {
+            u8 __I2C_SLV0_DELAY_EN : 1;
+            u8 __I2C_SLV1_DELAY_EN : 1;
+            u8 __I2C_SLV2_DELAY_EN : 1;
+            u8 __I2C_SLV3_DELAY_EN : 1;
+            u8 __I2C_SLV4_DELAY_EN : 1;
+            u8 : 2;
+            u8 __DELAY_ES_SHADOW : 1;
+        } i2c_mst_delay_ctrl_bitmap;
+    } i2c_mst_delay_ctrl_t;
+    
 }
