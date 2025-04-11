@@ -117,6 +117,14 @@ void setFIFO_PRIORITY_SEL(uint8_t fifoPrior)
     i2c_write_register(38, fifoPrior, &icm20948_dev_handle);
 }
 
+__USER_BANK_1::timebase_correction_pll_t getTIMEBASE_CORRECTION_PLL()
+{
+    setBank(__USER_BANK_1_ADDR);
+    __USER_BANK_1::timebase_correction_pll_t pll = {.time_base_correction_pll_u8=0x00};
+    i2c_read_register(__USER_BANK_1::REGISTERS::__TIMEBASE_CORRECTION_PLL, &pll.time_base_correction_pll_u8, &icm20948_dev_handle);
+    return pll;
+}
+
 void setGYRO_SMPLRT_DIV(__USER_BANK_2::gyro_smplrt_div_t gyro_smplrt_div)
 {
     setBank(__USER_BANK_2_ADDR);

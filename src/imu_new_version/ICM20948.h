@@ -121,6 +121,8 @@ uint8_t getSELF_TEST_Y_ACCEL();
 void setSELF_TEST_Z_ACCEL(uint8_t self_test_z_accel);
 uint8_t getSELF_TEST_Z_ACCEL();
 
+void setTIMEBASE_CORRECTION_PLL(__USER_BANK_1::timebase_correction_pll_t tbc_pll);
+__USER_BANK_1::timebase_correction_pll_t getTIMEBASE_CORRECTION_PLL();
 
 // ==================================================================
 //                          USER BANK 2
