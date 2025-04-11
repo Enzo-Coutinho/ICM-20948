@@ -585,6 +585,69 @@ namespace __USER_BANK_1
             u8 __ZA_ST_DATA : 8;
         } self_test_z_accel_bitmap;
     } self_test_z_accel_t;
+
+    typedef union
+    {
+        u8 xa_offs_h_u8;
+        struct xa_offs_h_bitmap_t
+        {
+            u8 __XA_OFFS_H : 8;
+        } xa_offs_h_bitmap;
+    } xa_offs_h_t;
+
+    typedef union
+    {
+        u8 xa_offs_l_u8;
+        struct xa_offs_l_bitmap_t
+        {
+            u8 __XA_OFFS_L : 8;
+        } xa_offs_l_bitmap;
+    } xa_offs_l_t;
+
+    typedef union
+    {
+        u8 ya_offs_h_u8;
+        struct ya_offs_h_bitmap_t
+        {
+            u8 __YA_OFFS_H : 8;
+        } ya_offs_h_bitmap;
+    } ya_offs_h_t;
+
+    typedef union
+    {
+        u8 ya_offs_l_u8;
+        struct ya_offs_l_bitmap_t
+        {
+            u8 __YA_OFFS_L : 8;
+        } ya_offs_l_bitmap;
+    } ya_offs_l_t;
+
+    typedef union
+    {
+        u8 za_offs_h_u8;
+        struct za_offs_h_bitmap_t
+        {
+            u8 __ZA_OFFS_H : 8;
+        } za_offs_h_bitmap;
+    } za_offs_h_t;
+
+    typedef union
+    {
+        u8 za_offs_l_u8;
+        struct za_offs_l_bitmap_t
+        {
+            u8 __ZA_OFFS_L : 8;
+        } za_offs_l_bitmap;
+    } za_offs_l_t;
+
+    typedef union
+    {
+        u8 time_base_correction_pll_u8;
+        struct time_base_correction_pll_bitmap_t
+        {
+            u8 __TIME_BASE_CORRECTION_PLL : 8;
+        } time_base_correction_pll_bitmap;
+    } timebase_correction_pll_t;
 }
 
 namespace __USER_BANK_2

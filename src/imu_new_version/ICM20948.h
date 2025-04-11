@@ -53,75 +53,52 @@ __USER_BANK_0::int_enable_3_t getINT_ENABLE_3();
 __USER_BANK_0::i2c_mst_status_t getI2C_MST_STATUS();
 
 __USER_BANK_0::int_status_t getINT_STATUS();
-uint8_t getINT_STATUS_1();
-uint8_t getINT_STATUS_2();
-uint8_t getINT_STATUS_3();
+__USER_BANK_0::int_status_1_t getINT_STATUS_1();
+__USER_BANK_0::int_status_2_t getINT_STATUS_2();
+__USER_BANK_0::int_status_3_t getINT_STATUS_3();
 
-uint8_t getDELAY_TIMEH();
-uint8_t getDELAY_TIMEL();
+__USER_BANK_0::delay_timeh_t getDELAY_TIMEH();
+__USER_BANK_0::delay_timel_t getDELAY_TIMEL();
 
-uint8_t getACCEL_XOUT_H();
-uint8_t getACCEL_XOUT_L();
-uint8_t getACCEL_YOUT_H();
-uint8_t getACCEL_YOUT_L();
-uint8_t getACCEL_ZOUT_H();
-uint8_t getACCEL_ZOUT_L();
+__USER_BANK_0::accel_xout_h_t getACCEL_XOUT_H();
+__USER_BANK_0::accel_xout_l_t getACCEL_XOUT_L();
+__USER_BANK_0::accel_yout_h_t getACCEL_YOUT_H();
+__USER_BANK_0::accel_yout_l_t getACCEL_YOUT_L();
+__USER_BANK_0::accel_zout_h_t getACCEL_ZOUT_H();
+__USER_BANK_0::accel_zout_l_t getACCEL_ZOUT_L();
 
-uint8_t getGYRO_XOUT_H();
-uint8_t getGYRO_XOUT_L();
-uint8_t getGYRO_YOUT_H();
-uint8_t getGYRO_YOUT_L();
-uint8_t getGYRO_ZOUT_H();
-uint8_t getGYRO_ZOUT_L();
+__USER_BANK_0::gyro_xout_h_t getGYRO_XOUT_H();
+__USER_BANK_0::gyro_xout_l_t getGYRO_XOUT_L();
+__USER_BANK_0::gyro_yout_h_t getGYRO_YOUT_H();
+__USER_BANK_0::gyro_yout_l_t getGYRO_YOUT_L();
+__USER_BANK_0::gyro_zout_h_t getGYRO_ZOUT_H();
+__USER_BANK_0::gyro_zout_l_t getGYRO_ZOUT_L();
 
-uint8_t getTEMP_OUT_H();
-uint8_t getTEMP_OUT_L();
+__USER_BANK_0::temp_out_h_t getTEMP_OUT_H();
+__USER_BANK_0::temp_out_l_t getTEMP_OUT_L();
 
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_00();
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_01();
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_02();
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_03();
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_04();
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_05();
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_06();
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_07();
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_08();
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_09();
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_10();
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_11();
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_12();
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_13();
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_14();
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_15();
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_16();
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_17();
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_18();
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_19();
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_20();
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_21();
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_22();
-__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_23();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_XX(uint8_t slvNumber);
 
 void setFIFO_EN_1(uint8_t fifo_en_1);
-uint8_t getFIFO_EN_1();
+__USER_BANK_0::fifo_en_1_t getFIFO_EN_1();
 
 void setFIFO_EN_2(uint8_t fifo_en_2);
-uint8_t getFIFO_EN_2();
+__USER_BANK_0::fifo_en_2_t getFIFO_EN_2();
 
 void setFIFO_RST(uint8_t fifo_rst);
-uint8_t getFIFO_RST();
+__USER_BANK_0::fifo_rst_t getFIFO_RST();
 
 void setFIFO_MODE();
-uint8_t getFIFO_MODE();
+__USER_BANK_0::fifo_mode_t getFIFO_MODE();
 
-uint8_t getFIFO_COUNTH();
-uint8_t getFIFO_COUNTL();
+__USER_BANK_0::fifo_count_h_t getFIFO_COUNTH();
+__USER_BANK_0::fifo_count_l_t getFIFO_COUNTL();
 
 void setFIFO_R_W();
-uint8_t getFIFO_R_W();
+__USER_BANK_0::fifo_r_w_t getFIFO_R_W();
 
-uint8_t DATA_RDY_STATUS();
-uint8_t FIFO_CFG();
+__USER_BANK_0::data_rdy_status_t getDATA_RDY_STATUS();
+__USER_BANK_0::fifo_cfg_t getFIFO_CFG();
 
 // ==================================================================
 //                          USER BANK 1

@@ -6,6 +6,7 @@
 void start();
 void restart_icm20948();
 void default_init();
+void enable_DMP();
 bool isConnected();
 bool isConnected_Mag();
 #endif
