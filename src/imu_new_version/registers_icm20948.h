@@ -600,7 +600,8 @@ namespace __USER_BANK_1
         u8 xa_offs_l_u8;
         struct xa_offs_l_bitmap_t
         {
-            u8 __XA_OFFS_L : 8;
+            u8 : 1;
+            u8 __XA_OFFS_L : 7;
         } xa_offs_l_bitmap;
     } xa_offs_l_t;
 
@@ -618,7 +619,8 @@ namespace __USER_BANK_1
         u8 ya_offs_l_u8;
         struct ya_offs_l_bitmap_t
         {
-            u8 __YA_OFFS_L : 8;
+            u8 : 1;
+            u8 __YA_OFFS_L : 7;
         } ya_offs_l_bitmap;
     } ya_offs_l_t;
 
@@ -636,7 +638,8 @@ namespace __USER_BANK_1
         u8 za_offs_l_u8;
         struct za_offs_l_bitmap_t
         {
-            u8 __ZA_OFFS_L : 8;
+            u8 : 1;
+            u8 __ZA_OFFS_L : 7;
         } za_offs_l_bitmap;
     } za_offs_l_t;
 
@@ -697,59 +700,72 @@ namespace __USER_BANK_2
         } gyro_config_1_bitmap;
     } gyro_config_1_t;
 
-    struct gyro_config_2_bitmap_t
+    typedef union
     {
-        u8 __GYRO_AVGCFG : 3;
-        u8 __ZGYRO_CTEN : 1;
-        u8 __YGYRO_CTEN : 1;
-        u8 __XGYRO_CTEN : 1;
-        u8 : 2;
-    };
+        u8 gyro_config_2_u8;
+        struct gyro_config_2_bitmap_t
+        {
+            u8 __GYRO_AVGCFG : 3;
+            u8 __ZGYRO_CTEN : 1;
+            u8 __YGYRO_CTEN : 1;
+            u8 __XGYRO_CTEN : 1;
+            u8 : 2;
+        } gyro_config_2_bitmap;
+    } gyro_config_2_t;
 
-    enum ACCEL_INTEL_CTRL
+    typedef union
     {
-        __ACCEL_INTEL_MODE_INT_INITA_SAMPLE_COMPARE = 0x00,
-        __ACCEL_INTEL_MODE_INT_PREVIOUS_SAMPLE = 0x01,
-        __ACCEL_INTEL_EN = 0x02
-    };
+        u8 xg_offs_usrh_u8;
+        struct xg_offs_usrh_bitmap_t
+        {
+            u8 __XG_OFFS_USRH : 8;
+        } xg_offs_usrh_bitmap;
+    } xg_offs_usrh_t;
 
-    enum ACCEL_CONFIG
+    typedef union
     {
-        __ACCEL_FCHOICE_BYPASS_DLPF = 0x00,
-        __ACCEL_FCHOICE_EN_ACCEL_DLPF = 0x01,
-        __ACCEL_FS_SEL_2G = 0x00,
-        __ACCEL_FS_SEL_4G = 0x02,
-        __ACCEL_FS_SEL_8G = 0x04,
-        __ACCEL_FS_SEL_16G = 0x06,
-    };
+        u8 xg_offs_usrl_u8;
+        struct xg_offs_usrl_bitmap_t
+        {
+            u8 __XG_OFFS_USRL : 8;
+        } xg_offs_usrl_bitmap;
+    } xg_offs_usrl_t;
 
-    enum ACCEL_CONFIG_2
+    typedef union
     {
-        __DEC3_CFG__AVG_1 = 0x00,
-        __DEC3_CFG_AVG_8 = 0x01,
-        __DEC3_CFG_AVG_16 = 0x02,
-        __DEC3_CFG_AVG_32 = 0x03,
-        __AZ_ST_EN_REG = BIT_POSE(2),
-        __AY_ST_EN_REG = BIT_POSE(3),
-        __AX_ST_EN_REG = BIT_POSE(4),
-    };
+        u8 yg_offs_usrh_u8;
+        struct yg_offs_usrh_bitmap_t
+        {
+            u8 __YG_OFFS_USRH : 8;
+        } yg_offs_usrh_bitmap;
+    } yg_offs_usrh_t;
 
-    enum TEMP_CONFIG
+    typedef union
     {
-        __TEMP_DLPFCFG_0 = 0x00,
-        __TEMP_DLPFCFG_1 = 0x01,
-        __TEMP_DLPFCFG_2 = 0x02,
-        __TEMP_DLPFCFG_3 = 0x03,
-        __TEMP_DLPFCFG_4 = 0x04,
-        __TEMP_DLPFCFG_5 = 0x05,
-        __TEMP_DLPFCFG_6 = 0x06,
-        __TEMP_DLPFCFG_7 = 0x07,
-    };
+        u8 yg_offs_usrl_u8;
+        struct yg_offs_usrl_bitmap_t
+        {
+            u8 __YG_OFFS_USRL : 8;
+        } yg_offs_usrl_bitmap;
+    } yg_offs_usrl_t;
 
-    enum MOD_CTRL_USR
+    typedef union
     {
-        __REG_LP_DMP_EN = BIT_POSE(0),
-    };
+        u8 zg_offs_usrh_u8;
+        struct zg_offs_usrh_bitmap_t
+        {
+            u8 __ZG_OFFS_USRH : 8;
+        } zg_offs_usrh_bitmap;
+    } zg_offs_usrh_t;
+
+    typedef union
+    {
+        u8 zg_offs_usrl_u8;
+        struct zg_offs_usrl_bitmap_t
+        {
+            u8 __ZG_OFFS_USRL : 8;
+        } zg_offs_usrl_bitmap;
+    } zg_offs_usrl_t;
 
     typedef union
     {
@@ -760,6 +776,106 @@ namespace __USER_BANK_2
             u8 : 7;
         } odr_align_en_bitmap;
     } odr_align_en_t;
+
+    typedef union 
+    {
+        u8 accel_smplrt_div_1_u8;
+        struct accel_smplrt_div_1_bitmap_t
+        {
+            u8 __ACCEL_SMPLRT_DIV : 4;
+            u8 : 4;
+        } accel_smplrt_div_1_bitmap;
+    } accel_smplrt_div_1_t;
+
+    typedef union 
+    {
+        u8 accel_smplrt_div_2_u8;
+        struct accel_smplrt_div_2_bitmap_t
+        {
+            u8 __ACCEL_SMPLRT_DIV : 8;
+        } accel_smplrt_div_2_bitmap;
+    } accel_smplrt_div_2_t;
+    
+
+    typedef union 
+    {
+        u8 accel_intel_ctrl_u8;
+        struct accel_intel_ctrl_bitmap_t
+        {
+            u8 __ACCEL_INTEL_MODE_INT : 1;
+            u8 __ACCEL_INTEL_EN : 1;
+            u8 : 6;
+        } accel_intel_ctrl_bitmap;
+    } accel_intel_ctrl_t;
+
+    typedef union 
+    {
+        u8 accel_wom_thr_u8;
+        struct accel_wom_thr_bitmap_t
+        {
+            u8 __WOM_THRESHOLD : 8;
+        } accel_wom_thr_bitmap;
+    } accel_wom_thr_t;
+    
+    typedef union 
+    {
+        u8 accel_config_u8;
+        struct accel_config_bitmap_t
+        {
+            u8 __ACCEL_FCHOICE : 1;
+            u8 __ACCEL_FS_SEL : 2;
+            u8 __ACCEL_DLPFCFG : 3;
+            u8 : 2;
+        } accel_config_bitmap;
+    } accel_config_t;
+    
+    typedef union 
+    {
+        u8 accel_config_2_u8;
+        struct accel_config_2_bitmap_t
+        {
+            u8 __DEC3_CFG : 2;
+            u8 __AZ_ST_EN_REG : 1;
+            u8 __AY_ST_EN_REG : 1;
+            u8 __AX_ST_EN_REG : 1;
+            u8 : 3;
+        } accel_config_2_bitmap;
+    } accel_config_2_t;
+
+    typedef union 
+    {
+        u8 fsync_config_u8;
+        struct fysync_config_bitmap_t
+        {
+            u8 __EXT_SYNC_SET : 4;
+            u8 __WOF_EDGE_INT : 1;
+            u8 __WOF_DEGLITCH_EN : 1;
+            u8 : 1;
+            u8 __DELAY_TIME_EN : 1;
+        } fysync_config_bitmap;
+    } fysync_config_t;
+    
+
+    typedef union 
+    {
+        u8 temp_config_u8;
+        struct temp_config_bitmap_t
+        {
+            u8 __TEMP_DLPFCFG : 3;
+        } temp_config_bitmap;
+    } temp_config_t;
+    
+
+    typedef union 
+    {
+        u8 mod_ctrl_usr_u8;
+        struct mod_ctrl_usr_bitmap_t
+        {
+            u8 __REG_LP_DMP_EN : 1;
+            u8 : 7;
+        } mod_ctrl_usr_bitmap;
+    } mod_ctrl_usr_t;
+    
 }
 
 namespace __USER_BANK_3
