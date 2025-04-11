@@ -25,15 +25,6 @@ namespace _AK_09916
         __TS_2 = 0x34, // DO NOT ACESS
     };
 
-    typedef struct
-    {
-        uint8_t mode0 : 1;
-        uint8_t mode1 : 1;
-        uint8_t mode2 : 1;
-        uint8_t mode3 : 1;
-        uint8_t mode4 : 1;
-    } _control_2;
-
     enum CNTL_2
     {
         PD_MODE = 0x00,
@@ -44,11 +35,6 @@ namespace _AK_09916
         CONT_MEAS_MODE_4 = 0x08,
         SELF_TEST_MODE = 0x10
     };
-
-    typedef struct
-    {
-        uint8_t srst : 1;
-    } _control_3;
 
     enum CNTL_3
     {
