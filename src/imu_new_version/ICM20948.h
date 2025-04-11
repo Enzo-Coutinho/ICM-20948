@@ -4,10 +4,13 @@
 #include "Arduino.h"
 #include "i2c_driver.h"
 #include "ak09916.h"
+#include "ICM_20948_DMP.h"
 
 extern i2c_device_config_t icm20948_dev_cfg;
 
 extern i2c_master_dev_handle_t icm20948_dev_handle;
+
+#define DMP_ENABLED
 
 // ==================================================================
 //                          GENERAL
@@ -79,13 +82,13 @@ __USER_BANK_0::temp_out_l_t getTEMP_OUT_L();
 
 __USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_XX(uint8_t slvNumber);
 
-void setFIFO_EN_1(uint8_t fifo_en_1);
+void setFIFO_EN_1(__USER_BANK_0::fifo_en_1_t fifo_en_1);
 __USER_BANK_0::fifo_en_1_t getFIFO_EN_1();
 
-void setFIFO_EN_2(uint8_t fifo_en_2);
+void setFIFO_EN_2(__USER_BANK_0::fifo_en_2_t fifo_en_2);
 __USER_BANK_0::fifo_en_2_t getFIFO_EN_2();
 
-void setFIFO_RST(uint8_t fifo_rst);
+void setFIFO_RST(__USER_BANK_0::fifo_rst_t fifo_rst);
 __USER_BANK_0::fifo_rst_t getFIFO_RST();
 
 void setFIFO_MODE();
@@ -123,21 +126,47 @@ uint8_t getSELF_TEST_Z_ACCEL();
 //                          USER BANK 2
 // ==================================================================
 
+void setGYRO_SMPLRT_DIV(__USER_BANK_2::gyro_smplrt_div_t gyro_smplrt_div);
 void setODR_ALIGN_EN(__USER_BANK_2::odr_align_en_t odr_align_en);
+void setGYRO_CONFIG_1(__USER_BANK_2::gyro_config_1_t gyro_config_1);
+void setACCEL_CONFIG(__USER_BANK_2::accel_config_t accel_config);
+void setACCEL_SMPLRT_DIV_2(__USER_BANK_2::accel_smplrt_div_2_t accel_smplrt_div_2);
 
+void setDMPStartAddress(uint16_t address=(uint16_t)4096U);
 
 // ==================================================================
 //                          USER BANK 3
 // ==================================================================
 
+void setMST_ODR_CONFIG(__USER_BANK_3::i2c_mst_odr_config_t i2c_mst_odr);
+
 void setMST_CTRL(__USER_BANK_3::i2c_mst_ctrl_t i2c_mst_ctrl);
+
+void setI2C_SLVX_ADDR(uint8_t slvNumber, __USER_BANK_3::i2c_slvx_addr_t);
+__USER_BANK_3::i2c_slvx_addr_t getI2C_SLVX_ADDR(uint8_t slvNumber);
+
+void setI2C_SLVX_REG(uint8_t slvNumber, uint8_t I2C_SLVX_REG);
+uint8_t getI2C_SLVX_REG(uint8_t slvNumber);
+
+void setI2C_SLVX_CTRL(uint8_t slvNumber, __USER_BANK_3::i2c_slvx_ctrl_t);
+__USER_BANK_3::i2c_slvx_ctrl_t getI2C_SLVX_CTRL(uint8_t slvNumber);
+
+void setI2C_SLVX_DO(uint8_t slvNumber, uint8_t data);
+uint8_t getI2C_SLVX_DO(uint8_t slvNumber);
 
 // ==================================================================
 //                          MAG (sub of bank 3)
 // ==================================================================
 
-
 uint8_t getWhoIAm_Mag();
 void reset_Mag();
+
+// ==================================================================
+//                          DMP (All banks)
+// ==================================================================
+
+void setHARDWARE_FIX(uint8_t fix);
+void setFIFO_PRIORITY_SEL(uint8_t fifoPrio);
+void setDMPmems(uint16_t reg, uint32_t len, const uint8_t * data);
 
 #endif

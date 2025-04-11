@@ -35,6 +35,22 @@ void i2c_write_register(uint8_t reg, uint8_t data, i2c_master_dev_handle_t *ret_
         log_e("I2C transmit failed with code: %s", esp_err_to_name(i2c_result));
 }
 
+void i2c_write_register_with_diff_buff(uint8_t reg, uint8_t data[2], i2c_master_dev_handle_t *ret_handle)
+{
+    uint8_t buff[3] = {reg, data[0], data[1]};
+    esp_err_t i2c_result = i2c_master_transmit(*ret_handle, buff, sizeof(buff), timeout);
+    if(i2c_result)
+        log_e("I2C transmit failed with code: %s", esp_err_to_name(i2c_result));
+}
+
+void i2c_write_register_with_specific_size(uint8_t reg, uint8_t data, i2c_master_dev_handle_t *ret_handle, uint32_t len)
+{
+    uint8_t buff[2] = {reg, data};
+    esp_err_t i2c_result = i2c_master_transmit(*ret_handle, buff, len, timeout);
+    if(i2c_result)
+        log_e("I2C transmit failed with code: %s", esp_err_to_name(i2c_result));
+}
+
 void i2c_read_register(uint8_t reg, uint8_t *data, i2c_master_dev_handle_t *ret_handle)
 {
     esp_err_t i2c_result = i2c_master_transmit_receive(*ret_handle, &reg, sizeof(reg), data, sizeof(*data), timeout);

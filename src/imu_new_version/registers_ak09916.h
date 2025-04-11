@@ -11,6 +11,8 @@ namespace _AK_09916
     enum REGISTERS
     {
         __WIA_2 = 0x01,
+        __RSV_1 = 0x02,
+        __RSV_2 = 0x03,
         __ST_1 = 0x10,
         __HXL = 0x11,
         __HXH = 0x12,

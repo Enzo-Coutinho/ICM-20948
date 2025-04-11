@@ -17,6 +17,8 @@ extern i2c_master_bus_handle_t i2c_bus_handle;
 void i2c_initialize(const i2c_device_config_t *dev_config, i2c_master_dev_handle_t *ret_handle); //
 
 void i2c_write_register(uint8_t reg, uint8_t data, i2c_master_dev_handle_t *ret_handle); //
+void i2c_write_register_with_diff_buff(uint8_t reg, uint8_t data[2], i2c_master_dev_handle_t *ret_handle);
+void i2c_write_register_with_specific_size(uint8_t reg, uint8_t data, i2c_master_dev_handle_t *ret_handle, uint32_t len);
 void i2c_read_register(uint8_t reg, uint8_t *data, i2c_master_dev_handle_t *ret_handle); //
 esp_err_t i2c_device_is_connected(uint16_t address);
 
