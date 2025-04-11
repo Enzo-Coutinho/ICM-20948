@@ -24,6 +24,24 @@ void restart_icm20948()
     setPWR_MGMT_1(pwr_mgmt_1);
 }
 
+bool isConnected()
+{
+    return getWhoIAm() == DEFAULT_VALUE_WIA_ICM;
+}
+
+bool isConnected_Mag()
+{
+    return getWhoIAm_Mag() == DEFAULT_VALUE_WIA_MAG;
+}
+
+void sleep(bool sleep)
+{
+    __USER_BANK_0::pwr_mgmt_1_t pwr = getPWR_MGMT_1();
+    pwr.pwr_mgmt_1_bitmap.__SLEEP = (uint8_t)sleep;
+    setPWR_MGMT_1(pwr);
+}
+
+
 void default_init()
 {
     i2c_mst_ctrl.i2c_mst_ctrl_bitmap.__I2C_MST_CLK = 7;
@@ -31,14 +49,13 @@ void default_init()
 
     user_ctrl.user_ctrl_bitmap.__I2C_MST_EN = 1;
     setUSER_CTRL(user_ctrl);
+
     set_dev_handle(&icm20948_dev_handle);
 
-    reset_ak09916();
+    reset_Mag();
 
     odr_align_en.odr_align_en_bitmap.__ODR_ALIGN_EN = 1;
     setODR_ALIGN_EN(odr_align_en);
 
-    uint8_t pwr = getPWR_MGMT_1().pwr_mgmt_1_u8 & ~0x40;
-    pwr_mgmt_1.pwr_mgmt_1_u8 = pwr;
-    setPWR_MGMT_1(pwr_mgmt_1);
+    sleep(false);
 }

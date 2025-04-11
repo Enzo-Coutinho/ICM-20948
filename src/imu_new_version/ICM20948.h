@@ -29,25 +29,25 @@ __USER_BANK_0::user_ctrl_t getUSER_CTRL();
 void setLP_CONFIG(__USER_BANK_0::lp_config_t lp_config);
 __USER_BANK_0::lp_config_t getLP_CONFIG();
 
-void setPWR_MGMT_1(__USER_BANK_0::pwr_mgmt_1_t pwr_mgmt_1_bitmap);
+void setPWR_MGMT_1(__USER_BANK_0::pwr_mgmt_1_t pwr_mgmt_1);
 __USER_BANK_0::pwr_mgmt_1_t getPWR_MGMT_1();
 
-void setPWR_MGMT_2(__USER_BANK_0::pwr_mgmt_2_t pwr_mgmt_2_bitmap);
+void setPWR_MGMT_2(__USER_BANK_0::pwr_mgmt_2_t pwr_mgmt_2);
 __USER_BANK_0::pwr_mgmt_2_t getPWR_MGMT_2();
 
-void setINT_PIN_CFG(__USER_BANK_0::int_pin_cfg_t int_pin_cfg_bitmap);
+void setINT_PIN_CFG(__USER_BANK_0::int_pin_cfg_t int_pin_cfg);
 __USER_BANK_0::int_pin_cfg_t getINT_PINCFG();
 
-void setINT_ENABLE(__USER_BANK_0::int_enable_t int_enable_bitmap);
+void setINT_ENABLE(__USER_BANK_0::int_enable_t int_enable);
 __USER_BANK_0::int_enable_t getINT_ENABLE();
 
-void setINT_ENABLE_1(__USER_BANK_0::int_enable_1_t  int_enable_1_bitmap);
+void setINT_ENABLE_1(__USER_BANK_0::int_enable_1_t  int_enable_1);
 __USER_BANK_0::int_enable_1_t getINT_ENABLE_1();
 
-void setINT_ENABLE_2(__USER_BANK_0::int_enable_2_t int_enable_2_bitmap);
+void setINT_ENABLE_2(__USER_BANK_0::int_enable_2_t int_enable_2);
 __USER_BANK_0::int_enable_2_t getINT_ENABLE_2();
 
-void setINT_ENABLE_3(__USER_BANK_0::int_enable_3_t int_enable_3_bitmap);
+void setINT_ENABLE_3(__USER_BANK_0::int_enable_3_t int_enable_3);
 __USER_BANK_0::int_enable_3_t getINT_ENABLE_3();
 
 __USER_BANK_0::i2c_mst_status_t getI2C_MST_STATUS();
@@ -77,30 +77,30 @@ uint8_t getGYRO_ZOUT_L();
 uint8_t getTEMP_OUT_H();
 uint8_t getTEMP_OUT_L();
 
-uint8_t getEXT_SLV_SENS_DATA_00();
-uint8_t getEXT_SLV_SENS_DATA_01();
-uint8_t getEXT_SLV_SENS_DATA_02();
-uint8_t getEXT_SLV_SENS_DATA_03();
-uint8_t getEXT_SLV_SENS_DATA_04();
-uint8_t getEXT_SLV_SENS_DATA_05();
-uint8_t getEXT_SLV_SENS_DATA_06();
-uint8_t getEXT_SLV_SENS_DATA_07();
-uint8_t getEXT_SLV_SENS_DATA_08();
-uint8_t getEXT_SLV_SENS_DATA_09();
-uint8_t getEXT_SLV_SENS_DATA_10();
-uint8_t getEXT_SLV_SENS_DATA_11();
-uint8_t getEXT_SLV_SENS_DATA_12();
-uint8_t getEXT_SLV_SENS_DATA_13();
-uint8_t getEXT_SLV_SENS_DATA_14();
-uint8_t getEXT_SLV_SENS_DATA_15();
-uint8_t getEXT_SLV_SENS_DATA_16();
-uint8_t getEXT_SLV_SENS_DATA_17();
-uint8_t getEXT_SLV_SENS_DATA_18();
-uint8_t getEXT_SLV_SENS_DATA_19();
-uint8_t getEXT_SLV_SENS_DATA_20();
-uint8_t getEXT_SLV_SENS_DATA_21();
-uint8_t getEXT_SLV_SENS_DATA_22();
-uint8_t getEXT_SLV_SENS_DATA_23();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_00();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_01();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_02();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_03();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_04();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_05();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_06();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_07();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_08();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_09();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_10();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_11();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_12();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_13();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_14();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_15();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_16();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_17();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_18();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_19();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_20();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_21();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_22();
+__USER_BANK_0::ext_slv_sens_data_xx_t getEXT_SLV_SENS_DATA_23();
 
 void setFIFO_EN_1(uint8_t fifo_en_1);
 uint8_t getFIFO_EN_1();
@@ -161,5 +161,6 @@ void setMST_CTRL(__USER_BANK_3::i2c_mst_ctrl_t i2c_mst_ctrl);
 
 
 uint8_t getWhoIAm_Mag();
+void reset_Mag();
 
 #endif

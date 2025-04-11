@@ -10,6 +10,9 @@
 #define __USER_BANK_2_ADDR 2
 #define __USER_BANK_3_ADDR 3
 
+#define DEFAULT_VALUE_WIA_ICM 0xEA
+#define DEFAULT_VALUE_WIA_MAG 0x09
+
 typedef uint8_t u8;
 
 namespace __USER_BANK_0

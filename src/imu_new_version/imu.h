@@ -6,5 +6,6 @@
 void start();
 void restart_icm20948();
 void default_init();
-
+bool isConnected();
+bool isConnected_Mag();
 #endif

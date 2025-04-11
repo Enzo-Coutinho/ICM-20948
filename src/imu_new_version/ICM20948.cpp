@@ -26,7 +26,7 @@ uint8_t getWhoIAm()
 
 void setBank(uint8_t bank)
 {
-    if((bank > 3) || lastBank == bank) return;
+    if((bank > 3) || (lastBank == bank)) return;
     uint8_t _bank = (bank << 4) & 0x30;
     i2c_write_register(__REG_BANK_SEL, _bank, &icm20948_dev_handle);
     lastBank = bank;
@@ -37,6 +37,12 @@ uint8_t getBank()
     uint8_t bank_value = 0;
     i2c_read_register(__REG_BANK_SEL, &bank_value, &icm20948_dev_handle);
     return bank_value;
+}
+
+void setUSER_CTRL(__USER_BANK_0::user_ctrl_t user_ctrl)
+{
+    setBank(__USER_BANK_0_ADDR);
+    i2c_write_register(__USER_BANK_0::REGISTERS::__USER_CTRL, user_ctrl.user_ctrl_u8, &icm20948_dev_handle);
 }
 
 void setPWR_MGMT_1(__USER_BANK_0::pwr_mgmt_1_t pwr_mgmt_1)
@@ -75,4 +81,9 @@ uint8_t getWhoIAm_Mag()
 {
     setBank(__USER_BANK_3_ADDR);
     return getWIA();
+}
+
+void reset_Mag()
+{
+    reset_ak09916();
 }
