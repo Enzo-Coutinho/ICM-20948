@@ -10,7 +10,8 @@ __USER_BANK_0::int_enable_1_t int_enable_1 = {.int_enable_1_u8 = 0x00};
 __USER_BANK_0::fifo_en_1_t fifo_en_1 = {.fifo_en_1_u8 = 0x00};
 __USER_BANK_0::fifo_en_2_t fifo_en_2 = {.fifo_en_2_u8 = 0x00};
 __USER_BANK_0::fifo_rst_t fifo_rst = {.fifo_rst_u8 = 0x00};
-
+__USER_BANK_0::fifo_count_h_t fifo_count_h = {.fifo_count_h_u8 = 0x00};
+__USER_BANK_0::fifo_count_l_t fifo_count_l = {.fifo_count_l_u8 = 0x00};
 
 __USER_BANK_2::odr_align_en_t odr_align_en = {.odr_align_en_u8 = 0x00};
 __USER_BANK_2::gyro_config_1_t gyro_config_1 = {.gyro_config_1_u8 = 0x01};
@@ -120,30 +121,31 @@ bool isConnected_Mag()
 void default_init()
 {
     i2c_mst_ctrl.i2c_mst_ctrl_bitmap.__I2C_MST_CLK = 7;
+    //i2c_mst_ctrl.i2c_mst_ctrl_bitmap.__I2C_MST_P_NSR = 1;
     setMST_CTRL(i2c_mst_ctrl);
+
 
     user_ctrl.user_ctrl_bitmap.__I2C_MST_EN = 1;
     setUSER_CTRL(user_ctrl);
-
     set_dev_handle(&icm20948_dev_handle);
 
+    sleep(false);
+    lowPowerMode(false);
     reset_Mag();
 
     odr_align_en.odr_align_en_bitmap.__ODR_ALIGN_EN = 1;
     setODR_ALIGN_EN(odr_align_en);
 
-    sleep(false);
-
     #ifdef DMP_ENABLED
-        enable_DMP();
+        configureDMP();
     #endif
 }
 
-void enable_DMP()
+void configureDMP()
 {
-    i2cConfigurePeripheral(__USER_BANK_3::REGISTERS::__I2C_SLV0_ADDR, AK_09916_DEVICE_ADDRESS, _AK_09916::REGISTERS::__RSV_2, 10, true, true, false, true, true, 0);
+    i2cConfigurePeripheral(0, AK_09916_DEVICE_ADDRESS, _AK_09916::REGISTERS::__RSV_2, 10, true, true, false, true, true, 0);
 
-    i2cConfigurePeripheral(__USER_BANK_3::REGISTERS::__I2C_SLV0_ADDR, AK_09916_DEVICE_ADDRESS, _AK_09916::REGISTERS::__CNTL_2, 1, true, true, false, true, true, 1);
+    i2cConfigurePeripheral(1, AK_09916_DEVICE_ADDRESS, _AK_09916::REGISTERS::__CNTL_2, 1, true, true, false, true, true, 1);
 
     i2c_mst_odr_config.i2c_mst_odr_config_bitmap.__I2C_MST_ODR_CONFIG = 4;
     setMST_ODR_CONFIG(i2c_mst_odr_config);
@@ -406,7 +408,116 @@ void enableDMPSensor(enum inv_icm20948_sensor sensor, bool enable)
     data_output_control_reg[1] = (unsigned char)(inv_event_control & 0xff);
 
     setDMPmems(MOTION_EVENT_CTL, 2, data_output_control_reg);
+
+    lowPowerMode(true);
+
+    uint16_t interval = 0;
+
+    const uint8_t odr_reg_val[2] = {(uint8_t)(interval >> 8), (uint8_t)(interval & 0xff)};
+  
+    const uint8_t odr_count_zero[2] = {0x00, 0x00};
+
+    sleep(false);
+
+    lowPowerMode(false);
+
+    switch (DMP_ODR_Reg_Quat6)
+    {
+    case DMP_ODR_Reg_Cpass_Calibr:
+    {
+        setDMPmems( ODR_CPASS_CALIBR, 2, odr_reg_val);
+        setDMPmems( ODR_CNTR_CPASS_CALIBR, 2, odr_count_zero);
+    }
+    break;
+    case DMP_ODR_Reg_Gyro_Calibr:
+    {
+        setDMPmems( ODR_GYRO_CALIBR, 2, odr_reg_val);
+        setDMPmems( ODR_CNTR_GYRO_CALIBR, 2, odr_count_zero);
+    }
+    break;
+    case DMP_ODR_Reg_Pressure:
+    {
+        setDMPmems( ODR_PRESSURE, 2, odr_reg_val);
+        setDMPmems( ODR_CNTR_PRESSURE, 2, odr_count_zero);
+    }
+    break;
+    case DMP_ODR_Reg_Geomag:
+    {
+        setDMPmems( ODR_GEOMAG, 2, odr_reg_val);
+        setDMPmems( ODR_CNTR_GEOMAG, 2, odr_count_zero);
+    }
+    break;
+    case DMP_ODR_Reg_PQuat6:
+    {
+        setDMPmems( ODR_PQUAT6, 2, odr_reg_val);
+        setDMPmems( ODR_CNTR_PQUAT6, 2, odr_count_zero);
+    }
+    break;
+    case DMP_ODR_Reg_Quat9:
+    {
+        setDMPmems( ODR_QUAT9, 2, odr_reg_val);
+        setDMPmems( ODR_CNTR_QUAT9, 2, odr_count_zero);
+    }
+    break;
+    case DMP_ODR_Reg_Quat6:
+    {
+      setDMPmems( ODR_QUAT6, 2, odr_reg_val);
+      setDMPmems( ODR_CNTR_QUAT6, 2, odr_count_zero);
+    }
+    break;
+    case DMP_ODR_Reg_ALS:
+    {
+      setDMPmems( ODR_ALS, 2, odr_reg_val);
+      setDMPmems( ODR_CNTR_ALS, 2, odr_count_zero);
+    }
+    break;
+    case DMP_ODR_Reg_Cpass:
+    {
+      setDMPmems( ODR_CPASS, 2, odr_reg_val);
+      setDMPmems( ODR_CNTR_CPASS, 2, odr_count_zero);
+    }
+    break;
+    case DMP_ODR_Reg_Gyro:
+    {
+      setDMPmems( ODR_GYRO, 2, odr_reg_val);
+      setDMPmems( ODR_CNTR_GYRO, 2, odr_count_zero);
+    }
+    break;
+    case DMP_ODR_Reg_Accel:
+    {
+      setDMPmems( ODR_ACCEL, 2, odr_reg_val);
+      setDMPmems( ODR_CNTR_ACCEL, 2, odr_count_zero);
+    }
+    break;
+    default:
+      log_e("Invalid DMP register");
+      break;
+    }
+
+    lowPowerMode(true);
+
+    enableFIFO(true);
+
+    enableDMP(true);
+
+    resetDMP();
+    
+    resetFIFO();
 }
+
+void resetDMP()
+{
+    user_ctrl = getUSER_CTRL();
+    user_ctrl.user_ctrl_bitmap.__DMP_RST = 1;
+    setUSER_CTRL(user_ctrl);
+}
+
+void resetFIFO()
+{
+    fifo_rst = getFIFO_RST();
+    fifo_rst.fifo_rst_bitmap.__FIFO_RESET = 1;
+    setFIFO_RST(fifo_rst);
+}   
 
 void sleep(bool sleep)
 {
@@ -425,7 +536,7 @@ void lowPowerMode(bool enable)
 void enableDMP(bool enable)
 {
     user_ctrl = getUSER_CTRL();
-    user_ctrl.user_ctrl_bitmap.__DMP_EN = enable;
+    user_ctrl.user_ctrl_bitmap.__DMP_EN = (uint8_t)enable;
     setUSER_CTRL(user_ctrl);
 }
 
@@ -439,17 +550,112 @@ void enableFIFO(bool enable)
 void i2cConfigurePeripheral(uint8_t slvNumber, uint8_t address, uint8_t reg, uint8_t len, bool rw, bool enable, bool data_only, bool grp, bool swap, uint8_t dataOut)
 {
     // PRECISA ADICIONAR UM SWITCH COM OS ENDERECOS CERTOS AQUI 
-    __USER_BANK_3::i2c_slvx_addr_t slvx_addr = {.i2c_slvx_addr_bitmap = {.__I2C_ID_X = address, .__I2C_SLVX_RNW=rw}};
+    __USER_BANK_3::i2c_slvx_addr_t slvx_addr = {.i2c_slvx_addr_bitmap = {.__I2C_ID_X = address, .__I2C_SLVX_RNW=(uint8_t)rw}};
 
-    setI2C_SLVX_ADDR(slvNumber, slvx_addr);
+    uint8_t slvx_address = -1;
+    uint8_t slvx_do = -1;
+    uint8_t slvx_reg = -1;
+    uint8_t slvx_ctrl_addr = -1;
+
+    switch(slvNumber)
+    {
+        case 0:
+            slvx_address = (uint8_t)__USER_BANK_3::REGISTERS::__I2C_SLV0_ADDR;
+            slvx_do = (uint8_t)__USER_BANK_3::REGISTERS::__I2C_SLV0_DO;
+            slvx_reg = (uint8_t)__USER_BANK_3::REGISTERS::__I2C_SLV0_REG;
+            slvx_ctrl_addr = (uint8_t)__USER_BANK_3::REGISTERS::__I2C_SLV0_CTRL;
+            break;
+        case 1:
+            slvx_address = (uint8_t)__USER_BANK_3::REGISTERS::__I2C_SLV1_ADDR;
+            slvx_do = (uint8_t)__USER_BANK_3::REGISTERS::__I2C_SLV1_DO;
+            slvx_reg = (uint8_t)__USER_BANK_3::REGISTERS::__I2C_SLV1_REG;
+            slvx_ctrl_addr = (uint8_t)__USER_BANK_3::REGISTERS::__I2C_SLV1_CTRL;
+            break;
+        case 2:
+            slvx_address = (uint8_t)__USER_BANK_3::REGISTERS::__I2C_SLV2_ADDR;
+            slvx_do = (uint8_t)__USER_BANK_3::REGISTERS::__I2C_SLV2_DO;
+            slvx_reg = (uint8_t)__USER_BANK_3::REGISTERS::__I2C_SLV2_REG;
+            slvx_ctrl_addr = (uint8_t)__USER_BANK_3::REGISTERS::__I2C_SLV2_CTRL;
+            break;
+        case 3:
+            slvx_address = (uint8_t)__USER_BANK_3::REGISTERS::__I2C_SLV3_ADDR;
+            slvx_do = (uint8_t)__USER_BANK_3::REGISTERS::__I2C_SLV3_DO;
+            slvx_reg = (uint8_t)__USER_BANK_3::REGISTERS::__I2C_SLV3_REG;
+            slvx_ctrl_addr = (uint8_t)__USER_BANK_3::REGISTERS::__I2C_SLV3_CTRL;
+            break;
+        case 4:
+            slvx_address = (uint8_t)__USER_BANK_3::REGISTERS::__I2C_SLV4_ADDR;
+            slvx_do = (uint8_t)__USER_BANK_3::REGISTERS::__I2C_SLV4_DO;
+            slvx_reg = (uint8_t)__USER_BANK_3::REGISTERS::__I2C_SLV4_REG;
+            slvx_ctrl_addr = (uint8_t)__USER_BANK_3::REGISTERS::__I2C_SLV4_CTRL;
+            break;
+        default:
+            log_e("The slave number %d doesn't exist", slvNumber);
+            return;
+    }
+
+    setI2C_SLVX_ADDR(slvx_address, slvx_addr);
 
     if(!rw)
-        setI2C_SLVX_DO(slvNumber, dataOut);
+        setI2C_SLVX_DO(slvx_do, dataOut);
 
-    setI2C_SLVX_REG(slvNumber, reg);
+    setI2C_SLVX_REG(slvx_reg, reg);
 
-    __USER_BANK_3::i2c_slvx_ctrl_t slvx_ctrl = {.i2c_slvx_ctrl_bitmap = {.__I2C_SLVX_LENG = len, .__I2C_SLVX_GRP=grp, .__I2C_SLVX_REG_DIS=data_only, .__I2C_SLVX_BYTE_SW=swap, .__I2C_SLVX_EN=enable}};
+    __USER_BANK_3::i2c_slvx_ctrl_t slvx_ctrl = {.i2c_slvx_ctrl_bitmap = {.__I2C_SLVX_LENG = len, 
+                                                                        .__I2C_SLVX_GRP=(uint8_t)grp, 
+                                                                        .__I2C_SLVX_REG_DIS=(uint8_t)data_only, 
+                                                                        .__I2C_SLVX_BYTE_SW=(uint8_t)swap, 
+                                                                        .__I2C_SLVX_EN=(uint8_t)enable}};
 
-    setI2C_SLVX_CTRL(slvNumber, slvx_ctrl);
+    setI2C_SLVX_CTRL(slvx_ctrl_addr, slvx_ctrl);
 }
 
+
+uint8_t sensor_type_2_android_sensor(enum inv_icm20948_sensor sensor)
+{
+  switch (sensor)
+  {
+  case INV_ICM20948_SENSOR_ACCELEROMETER:
+    return ANDROID_SENSOR_ACCELEROMETER; // 1
+  case INV_ICM20948_SENSOR_GYROSCOPE:
+    return ANDROID_SENSOR_GYROSCOPE; // 4
+  case INV_ICM20948_SENSOR_RAW_ACCELEROMETER:
+    return ANDROID_SENSOR_RAW_ACCELEROMETER; // 42
+  case INV_ICM20948_SENSOR_RAW_GYROSCOPE:
+    return ANDROID_SENSOR_RAW_GYROSCOPE; // 43
+  case INV_ICM20948_SENSOR_MAGNETIC_FIELD_UNCALIBRATED:
+    return ANDROID_SENSOR_MAGNETIC_FIELD_UNCALIBRATED; // 14
+  case INV_ICM20948_SENSOR_GYROSCOPE_UNCALIBRATED:
+    return ANDROID_SENSOR_GYROSCOPE_UNCALIBRATED; // 16
+  case INV_ICM20948_SENSOR_ACTIVITY_CLASSIFICATON:
+    return ANDROID_SENSOR_ACTIVITY_CLASSIFICATON; // 47
+  case INV_ICM20948_SENSOR_STEP_DETECTOR:
+    return ANDROID_SENSOR_STEP_DETECTOR; // 18
+  case INV_ICM20948_SENSOR_STEP_COUNTER:
+    return ANDROID_SENSOR_STEP_COUNTER; // 19
+  case INV_ICM20948_SENSOR_GAME_ROTATION_VECTOR:
+    return ANDROID_SENSOR_GAME_ROTATION_VECTOR; // 15
+  case INV_ICM20948_SENSOR_ROTATION_VECTOR:
+    return ANDROID_SENSOR_ROTATION_VECTOR; // 11
+  case INV_ICM20948_SENSOR_GEOMAGNETIC_ROTATION_VECTOR:
+    return ANDROID_SENSOR_GEOMAGNETIC_ROTATION_VECTOR; // 20
+  case INV_ICM20948_SENSOR_GEOMAGNETIC_FIELD:
+    return ANDROID_SENSOR_GEOMAGNETIC_FIELD; // 2
+  case INV_ICM20948_SENSOR_WAKEUP_SIGNIFICANT_MOTION:
+    return ANDROID_SENSOR_WAKEUP_SIGNIFICANT_MOTION; // 17
+  case INV_ICM20948_SENSOR_FLIP_PICKUP:
+    return ANDROID_SENSOR_FLIP_PICKUP; // 46
+  case INV_ICM20948_SENSOR_WAKEUP_TILT_DETECTOR:
+    return ANDROID_SENSOR_WAKEUP_TILT_DETECTOR; // 41
+  case INV_ICM20948_SENSOR_GRAVITY:
+    return ANDROID_SENSOR_GRAVITY; // 9
+  case INV_ICM20948_SENSOR_LINEAR_ACCELERATION:
+    return ANDROID_SENSOR_LINEAR_ACCELERATION; // 10
+  case INV_ICM20948_SENSOR_ORIENTATION:
+    return ANDROID_SENSOR_ORIENTATION; // 3
+  case INV_ICM20948_SENSOR_B2S:
+    return ANDROID_SENSOR_B2S; // 45
+  default:
+    return ANDROID_SENSOR_NUM_MAX;
+  }
+}

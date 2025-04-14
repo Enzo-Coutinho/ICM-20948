@@ -29,7 +29,7 @@ void i2c_initialize(const i2c_device_config_t *dev_config, i2c_master_dev_handle
 
 void i2c_write_register(uint8_t reg, uint8_t data, i2c_master_dev_handle_t *ret_handle)
 {
-    uint8_t buff[2] = {reg, data};
+    const uint8_t buff[2] = {reg, data};
     esp_err_t i2c_result = i2c_master_transmit(*ret_handle, buff, sizeof(buff), timeout);
     if(i2c_result)
         log_e("I2C transmit failed with code: %s", esp_err_to_name(i2c_result));

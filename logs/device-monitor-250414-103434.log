@@ -1,0 +1,2203 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:4660
+load:0x40078000,len:15568
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3152
+entry 0x400805a0
+[    20][D][esp32-hal-cpu.c:263] setCpuFrequencyMhz(): PLL: 480 / 2 = 240 Mhz, APB: 80000000 Hz
+=========== Before Setup Start ===========
+Chip Info:
+------------------------------------------
+  Model             : ESP32
+  Package           : D0WD-Q5
+  Revision          : 3.01
+  Cores             : 2
+  CPU Frequency     : 240 MHz
+  XTAL Frequency    : 40 MHz
+  Features Bitfield : 0x00000032
+  Embedded Flash    : No
+  Embedded PSRAM    : No
+  2.4GHz WiFi       : Yes
+  Classic BT        : Yes
+  BT Low Energy     : Yes
+  IEEE 802.15.4     : No
+------------------------------------------
+INTERNAL Memory Info:
+------------------------------------------
+  Total Size        :   379088 B ( 370.2 KB)
+  Free Bytes        :   337632 B ( 329.7 KB)
+  Allocated Bytes   :    34172 B (  33.4 KB)
+  Minimum Free Bytes:   332116 B ( 324.3 KB)
+  Largest Free Block:   110580 B ( 108.0 KB)
+------------------------------------------
+Flash Info:
+------------------------------------------
+  Chip Size         : 16777216 B (16 MB)
+  Block Size        :    65536 B (  64.0 KB)
+  Sector Size       :     4096 B (   4.0 KB)
+  Page Size         :      256 B (   0.2 KB)
+  Bus Speed         : 40 MHz
+  Bus Mode          : DIO
+------------------------------------------
+Partitions Info:
+------------------------------------------
+                nvs : addr: 0x00009000, size:    20.0 KB, type: DATA, subtype: NVS
+            otadata : addr: 0x0000E000, size:     8.0 KB, type: DATA, subtype: OTA
+               app0 : addr: 0x00010000, size:  6400.0 KB, type:  APP, subtype: OTA_0
+               app1 : addr: 0x00650000, size:  6400.0 KB, type:  APP, subtype: OTA_1
+             spiffs : addr: 0x00C90000, size:  3456.0 KB, type: DATA, subtype: SPIFFS
+           coredump : addr: 0x00FF0000, size:    64.0 KB, type: DATA, subtype: COREDUMP
+------------------------------------------
+Software Info:
+------------------------------------------
+  Compile Date/Time : Apr 14 2025 09:59:13
+  ESP-IDF Version   : v5.4.1-1-g2f7dcd862a-dirty
+  Arduino Version   : 3.2.0
+------------------------------------------
+Board Info:
+------------------------------------------
+  Arduino Board     : Espressif ESP32 Dev Module
+  Arduino Variant   : esp32
+  Core Debug Level  : 4
+  Arduino Runs Core : 1
+  Arduino Events on : 1
+  CDC On Boot       : 0
+============ Before Setup End ============
+[   531][I][i2c_driver.cpp:22] i2c_initialize(): Init I2C bus with code: ESP_OK
+[   538][I][i2c_driver.cpp:27] i2c_initialize(): Add device to I2C bus with code ESP_OK
+[   547][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (534) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[   554][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[   570][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (558) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[   577][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[   594][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (582) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[   601][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[   617][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (605) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[   624][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[   640][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (628) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[   647][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[   664][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (652) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[   671][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[   687][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (675) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[   694][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[   711][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (698) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[   717][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[   734][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (722) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[   741][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[   757][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (745) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[   764][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[   781][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (769) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[   788][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[   804][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (792) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[   811][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[   827][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (815) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[   834][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[   851][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (839) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[   858][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[   874][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (862) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[   881][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[   897][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (885) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[   904][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[   921][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (909) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[   928][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[   944][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (932) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[   951][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[   968][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (955) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[   975][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[   991][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (979) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[   998][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1014][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1002) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1021][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1038][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1026) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1045][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1061][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1049) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1068][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1085][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1073) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1092][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1108][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1096) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1115][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1132][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1120) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1139][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1155][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1143) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1162][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1179][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1166) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1185][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1202][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1190) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1209][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1225][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1213) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1232][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1249][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1237) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1256][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1272][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1260) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1279][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1296][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1284) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1303][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1319][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1307) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1326][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1343][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1331) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1350][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1366][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1354) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1373][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1390][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1378) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1397][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1413][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1401) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1420][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1437][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1424) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1443][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1460][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1448) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1467][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1483][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1471) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1490][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1507][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1495) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1514][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1530][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1518) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1537][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1554][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1542) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1561][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1577][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1565) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1584][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1601][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1589) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1608][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1624][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1612) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1631][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1648][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1636) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1655][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1671][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1659) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1678][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1695][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1682) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1702][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1718][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1706) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1725][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1742][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1729) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1748][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1765][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1753) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1772][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1788][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1776) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1795][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1812][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1800) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1819][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1835][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1823) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1842][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1859][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1847) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1866][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1882][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1870) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1889][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1906][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1894) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1913][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1929][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1917) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1936][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1953][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1941) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1960][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  1976][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1964) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  1983][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2000][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (1987) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2006][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2023][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2011) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2030][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2046][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2034) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2053][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2070][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2058) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2077][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2093][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2081) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2100][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2117][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2105) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2124][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2140][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2128) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2147][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2164][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2152) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2171][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2187][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2175) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2194][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2211][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2199) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2218][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2234][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2222) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2241][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2258][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2245) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2264][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2281][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2269) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2288][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2304][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2292) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2311][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2328][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2316) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2335][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2351][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2339) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2358][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2375][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2363) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2382][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2398][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2386) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2405][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2422][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2410) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2429][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2445][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2433) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2452][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2469][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2457) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2476][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2492][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2480) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2499][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2516][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2503) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2523][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2539][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2527) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2546][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2563][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2550) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2569][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2586][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2574) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2593][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2609][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2597) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2616][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2633][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2621) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2640][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2656][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2644) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2663][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2680][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2668) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2687][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2703][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2691) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2710][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2727][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2715) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2734][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2750][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2738) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2757][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2774][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2762) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2781][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2797][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2785) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2804][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2821][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2808) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2827][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2844][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2832) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2851][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2867][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2855) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2874][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2891][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2879) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2898][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2914][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2902) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2921][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2938][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2926) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2945][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2961][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2949) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2968][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  2985][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2973) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  2992][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3008][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (2996) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3015][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3032][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3020) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3039][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3055][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3043) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3062][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3079][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3066) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3086][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3102][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3090) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3109][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3126][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3113) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3132][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3149][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3137) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3156][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3172][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3160) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3179][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3196][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3184) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3203][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3219][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3207) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3226][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3243][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3231) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3250][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3266][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3254) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3273][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3290][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3278) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3297][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3313][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3301) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3320][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3337][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3325) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3344][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3360][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3348) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3367][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3384][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3371) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3390][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3407][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3395) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3414][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3430][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3418) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3437][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3454][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3442) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3461][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3477][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3465) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3484][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3501][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3489) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3508][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3524][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3512) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3531][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3548][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3536) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3555][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3571][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3559) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3578][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3595][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3583) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3602][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3618][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3606) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3625][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3642][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3629) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3648][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3665][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3653) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3672][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3688][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3676) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3695][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3712][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3700) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3719][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3735][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3723) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3742][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3759][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3747) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3766][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3782][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3770) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3789][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3806][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3794) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3813][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3829][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3817) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3836][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3853][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3841) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3860][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3876][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3864) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3883][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3900][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3887) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3907][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3923][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3911) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3930][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3947][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3934) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3953][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3970][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3958) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  3977][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  3993][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (3981) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4000][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4017][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4005) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4024][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4040][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4028) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4047][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4064][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4052) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4071][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4087][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4075) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4094][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4111][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4099) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4118][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4134][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4122) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4141][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4158][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4146) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4165][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4181][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4169) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4188][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4205][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4192) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4211][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4228][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4216) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4235][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4251][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4239) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4258][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4275][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4263) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4282][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4298][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4286) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4305][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4322][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4310) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4329][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4345][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4333) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4352][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4369][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4357) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4376][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4392][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4380) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4399][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4416][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4404) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4423][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4439][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4427) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4446][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4463][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4450) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4469][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4486][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4474) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4493][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4509][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4497) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4516][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4533][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4521) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4540][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4556][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4544) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4563][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4580][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4568) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4587][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4603][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4591) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4610][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4627][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4615) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4634][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4650][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4638) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4657][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4674][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4662) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4681][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4697][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4685) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4704][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4721][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4708) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4728][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4744][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4732) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4751][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4768][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4755) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4774][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4791][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4779) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4798][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4814][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4802) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4821][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4838][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4826) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4845][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4861][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4849) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4868][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4885][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4873) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4892][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4908][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4896) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4915][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4932][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4920) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4939][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4955][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4943) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4962][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  4979][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4967) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  4986][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5002][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (4990) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5009][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5026][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5013) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5032][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5049][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5037) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5056][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5072][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5060) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5079][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5096][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5084) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5103][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5119][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5107) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5126][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5143][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5131) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5150][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5166][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5154) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5173][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5190][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5178) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5197][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5213][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5201) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5220][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5237][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5225) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5244][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5260][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5248) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5267][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5284][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5271) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5291][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5307][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5295) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5314][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5331][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5318) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5337][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5354][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5342) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5361][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5377][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5365) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5384][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5401][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5389) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5408][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5424][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5412) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5431][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5448][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5436) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5455][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5471][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5459) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5478][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5495][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5483) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5502][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5518][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5506) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5525][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5542][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5530) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5549][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5565][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5553) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5572][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5589][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5576) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5595][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5612][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5600) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5619][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5635][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5623) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5642][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5659][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5647) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5666][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5682][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5670) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5689][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5706][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5694) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5713][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5729][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5717) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5736][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5753][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5741) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5760][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5776][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5764) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5783][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5800][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5788) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5807][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5823][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5811) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5830][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5847][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5834) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5853][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5870][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5858) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5877][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5893][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5881) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5900][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5917][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5905) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5924][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5940][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5928) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5947][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5964][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5952) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5971][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  5987][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5975) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  5994][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6011][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (5999) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6018][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6034][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6022) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6041][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6058][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6046) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6065][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6081][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6069) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6088][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6105][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6092) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6112][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6128][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6116) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6135][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6152][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6139) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6158][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6175][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6163) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6182][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6198][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6186) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6205][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6222][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6210) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6229][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6245][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6233) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6252][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6269][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6257) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6276][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6292][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6280) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6299][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6316][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6304) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6323][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6339][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6327) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6346][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6363][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6351) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6370][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6386][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6374) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6393][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6410][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6397) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6416][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6433][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6421) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6440][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6456][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6444) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6463][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6480][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6468) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6487][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6503][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6491) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6510][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6527][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6515) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6534][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6550][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6538) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6557][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6574][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6562) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6581][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6597][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6585) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6604][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6621][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6609) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6628][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6644][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6632) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6651][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6668][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6655) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6674][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6691][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6679) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6698][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6714][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6702) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6721][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6738][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6726) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6745][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6761][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6749) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6768][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6785][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6773) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6792][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6808][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6796) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6815][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6832][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6820) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6839][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6855][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6843) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6862][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6879][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6867) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6886][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6902][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6890) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6909][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6926][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6913) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6933][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6949][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6937) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6956][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6973][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6960) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  6979][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  6996][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (6984) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7003][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7019][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7007) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7026][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7043][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7031) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7050][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7066][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7054) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7073][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7090][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7078) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7097][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7113][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7101) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7120][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7137][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7125) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7144][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7160][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7148) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7167][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7184][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7172) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7191][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7207][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7195) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7214][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7231][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7218) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7237][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7254][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7242) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7261][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7277][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7265) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7284][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7301][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7289) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7308][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7324][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7312) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7331][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7348][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7336) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7355][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7371][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7359) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7378][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7395][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7383) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7402][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7418][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7406) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7425][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7442][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7430) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7449][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7465][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7453) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7472][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7489][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7476) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7496][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7512][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7500) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7519][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7536][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7523) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7542][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7559][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7547) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7566][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7582][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7570) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7589][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7606][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7594) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7613][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7629][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7617) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7636][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7653][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7641) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7660][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7676][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7664) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7683][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7700][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7688) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7707][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7723][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7711) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7730][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7747][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7735) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7754][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7770][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7758) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7777][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7794][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7781) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7800][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7817][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7805) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7824][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7840][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7828) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7847][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7864][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7852) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7871][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7887][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7875) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7894][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7911][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7899) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7918][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7934][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7922) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7941][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7958][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7946) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7965][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  7981][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7969) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  7988][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8005][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (7993) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8012][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8028][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8016) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8035][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8052][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8039) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8058][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8075][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8063) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8082][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8098][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8086) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8105][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8122][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8110) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8129][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8145][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8133) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8152][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8169][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8157) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8176][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8192][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8180) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8199][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8216][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8204) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8223][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8239][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8227) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8246][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8263][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8251) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8270][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8286][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8274) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8293][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8310][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8297) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8317][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8333][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8321) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8340][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8357][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8344) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8363][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8380][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8368) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8387][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8403][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8391) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8410][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8427][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8415) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8434][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8450][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8438) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8457][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8474][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8462) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8481][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8497][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8485) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8504][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8521][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8509) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8528][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8544][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8532) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8551][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8568][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8556) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8575][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8591][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8579) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8598][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8615][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8602) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8621][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8638][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8626) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8645][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8661][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8649) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8668][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8685][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8673) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8692][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8708][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8696) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8715][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8732][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8720) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8739][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8755][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8743) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8762][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8779][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8767) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8786][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8802][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8790) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8809][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8826][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8814) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8833][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8849][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8837) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8856][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8873][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8860) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8879][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8896][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8884) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8903][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8919][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8907) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8926][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8943][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8931) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8950][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8966][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8954) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8973][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  8990][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (8978) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  8997][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9013][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9001) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9020][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9037][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9025) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9044][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9060][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9048) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9067][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9084][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9072) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9091][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9107][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9095) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9114][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9131][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9118) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9138][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9154][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9142) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9161][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9178][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9165) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9184][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9201][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9189) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9208][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9224][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9212) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9231][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9248][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9236) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9255][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9271][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9259) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9278][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9295][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9283) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9302][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9318][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9306) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9325][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9342][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9330) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9349][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9365][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9353) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9372][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9389][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9377) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9396][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9412][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9400) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9419][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9436][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9423) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9442][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9459][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9447) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9466][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9482][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9470) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9489][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9506][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9494) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9513][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9529][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9517) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9536][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9553][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9541) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9560][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9576][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9564) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9583][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9600][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9588) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9607][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9623][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9611) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9630][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9647][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9635) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9654][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9670][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9658) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9677][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9694][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9681) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9701][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9717][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9705) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9724][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9741][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9728) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9747][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9764][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9752) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9771][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9787][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9775) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9794][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9811][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9799) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9818][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9834][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9822) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9841][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9858][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9846) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9865][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9881][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9869) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9888][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9905][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9893) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9912][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9928][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9916) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9935][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9952][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9940) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9959][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9975][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9963) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[  9982][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[  9999][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (9986) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10005][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10022][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10010) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10029][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10046][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10033) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10052][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10069][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10057) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10076][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10093][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10081) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10100][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10116][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10104) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10123][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10140][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10128) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10147][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10163][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10151) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10170][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10187][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10175) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10194][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10210][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10198) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10217][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10234][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10222) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10241][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10257][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10245) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10264][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10281][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10269) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10288][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10305][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10292) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10311][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10328][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10316) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10335][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10352][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10339) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10359][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10375][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10363) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10382][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10399][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10387) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10406][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10422][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10410) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10429][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10446][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10434) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10453][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10469][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10457) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10476][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10493][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10481) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10500][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10516][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10504) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10523][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10540][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10528) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10547][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10564][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10551) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10570][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10587][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10575) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10594][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10611][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10598) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10618][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10634][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10622) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10641][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10658][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10646) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10665][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10681][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10669) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10688][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10705][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10693) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10712][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10728][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10716) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10735][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10752][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10740) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10759][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10775][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10763) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10782][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10799][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10787) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10806][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10823][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10810) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10829][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10846][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10834) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10853][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10870][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10857) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10877][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10893][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10881) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10900][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10917][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10905) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10924][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10940][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10928) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10947][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10964][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10952) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10971][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 10987][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10975) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 10994][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11011][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (10999) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11018][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11034][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11022) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11041][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11058][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11046) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11065][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11081][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11069) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11088][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11105][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11093) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11112][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11129][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11116) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11136][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11152][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11140) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11159][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11176][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11164) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11183][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11199][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11187) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11206][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11223][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11211) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11230][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11246][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11234) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11253][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11270][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11258) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11277][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11293][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11281) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11300][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11317][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11305) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11324][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11340][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11328) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11347][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11364][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11352) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11371][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11388][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11375) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11394][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11411][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11399) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11418][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11435][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11423) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11442][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11458][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11446) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11465][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11482][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11470) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11489][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11505][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11493) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11512][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11529][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11517) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11536][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11552][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11540) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11559][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11576][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11564) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11583][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11599][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11587) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11606][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11623][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11611) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11630][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11647][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11634) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11653][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11670][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11658) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11677][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11694][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11682) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11701][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11717][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11705) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11724][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11741][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11729) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11748][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11764][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11752) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11771][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11788][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11776) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11795][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11811][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11799) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11818][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11835][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11823) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11842][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11858][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11846) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11865][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11882][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11870) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11889][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11906][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11893) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11912][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11929][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11917) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11936][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11953][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11941) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11960][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 11976][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11964) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 11983][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12000][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (11988) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12007][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12023][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12011) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12030][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12047][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12035) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12054][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12070][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12058) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12077][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12094][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12082) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12101][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12117][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12105) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12124][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12141][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12129) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12148][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12165][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12152) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12171][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12188][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12176) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12195][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12212][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12200) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12219][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12235][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12223) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12242][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12259][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12247) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12266][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12282][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12270) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12289][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12306][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12294) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12313][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12329][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12317) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12336][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12353][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12341) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12360][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12376][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12364) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12383][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12400][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12388) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12407][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12424][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12411) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12430][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12447][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12435) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12454][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12471][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12458) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12478][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12494][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12482) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12501][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12518][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12506) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12525][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12541][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12529) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12548][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12565][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12553) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12572][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12588][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12576) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12595][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12612][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12600) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12619][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12635][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12623) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12642][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12659][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12647) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12666][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12683][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12670) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12689][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12706][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12694) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12713][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12730][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12717) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12737][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12753][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12741) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12760][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12777][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12765) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12784][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12800][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12788) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12807][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12824][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12812) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12831][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12847][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12835) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12854][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12871][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12859) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12878][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12894][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12882) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12901][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12918][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12906) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12925][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12942][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12929) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12948][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12965][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12953) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12972][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 12989][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (12976) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 12996][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 13012][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E (13000) i2c.master: i2c_master_transmit_receive(1208): i2c receive buffer or size invalid
+[ 13019][E][i2c_driver.cpp:59] i2c_read_register(): I2C read failed with code: ESP_ERR_INVALID_ARG
+Trying...
+[ 13036][I][i2c_driver.cpp:56] i2c_read_register(): Size of data: 1
+E

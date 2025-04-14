@@ -49,6 +49,14 @@ void setUSER_CTRL(__USER_BANK_0::user_ctrl_t user_ctrl)
     i2c_write_register(__USER_BANK_0::REGISTERS::__USER_CTRL, user_ctrl.user_ctrl_u8, &icm20948_dev_handle);
 }
 
+__USER_BANK_0::user_ctrl_t getUSER_CTRL()
+{
+    setBank(__USER_BANK_0_ADDR);
+    __USER_BANK_0::user_ctrl_t user_ctrl = {.user_ctrl_u8 = 0};
+    i2c_read_register(__USER_BANK_0::REGISTERS::__USER_CTRL, &user_ctrl.user_ctrl_u8, &icm20948_dev_handle);
+    return user_ctrl;
+}
+
 void setLP_CONFIG(__USER_BANK_0::lp_config_t lp_config)
 {
     setBank(__USER_BANK_0_ADDR);
@@ -97,6 +105,14 @@ void setFIFO_RST(__USER_BANK_0::fifo_rst_t fifo_rst)
 {
     setBank(__USER_BANK_0_ADDR);
     i2c_write_register(__USER_BANK_0::REGISTERS::__FIFO_RST, fifo_rst.fifo_rst_u8, &icm20948_dev_handle);
+}
+
+__USER_BANK_0::fifo_rst_t getFIFO_RST()
+{
+    setBank(__USER_BANK_0_ADDR);
+    __USER_BANK_0::fifo_rst_t fifo_rst = {.fifo_rst_u8 = 0x00};
+    i2c_read_register(__USER_BANK_0::REGISTERS::__FIFO_RST, &fifo_rst.fifo_rst_u8, &icm20948_dev_handle);
+    return fifo_rst;
 }
 
 void setINT_ENABLE_1(__USER_BANK_0::int_enable_1_t int_enable_1)
